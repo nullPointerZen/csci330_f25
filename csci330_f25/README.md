@@ -113,6 +113,12 @@ docker-compose up -d cpp-dev
 5. Test your code
 6. Submit via GitHub
 
+## Course Development
+
+This course was developed through an innovative **human-AI collaborative process** that transformed aging course materials into the streamlined learning experience you see today. **AI is a tool, nothing more** - it enhanced systematic implementation while human expertise guided all pedagogical decisions.
+
+📖 **Full Development Story**: See [`../README.md`](../README.md) for the complete methodology and [`../instructor/AI_ASSISTED_DEVELOPMENT.md`](../instructor/AI_ASSISTED_DEVELOPMENT.md) for detailed documentation.
+
 ## Support
 
 - Check the main course documentation in the parent directory
