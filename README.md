@@ -59,6 +59,11 @@ This repository contains complete course materials for teaching/learning C++ pro
 17. **Filesystems** - Cross-platform file operations
 18. **Algorithms** - STL algorithms and data processing
 
+### 📚 Additional Book Chapters - Not Included in Course
+19. **Concurrency and Parallelism** - Multi-threading and parallel programming
+20. **Network Programming with Boost.Asio** - Network communication
+21. **Writing Applications** - Building complete applications
+
 ## 🛠️ Development Environment
 
 The course supports three development approaches:
