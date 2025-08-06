@@ -24,7 +24,15 @@ Congratulations on starting your C++ journey! This course is specifically design
 
 ## 🛣️ Your Learning Path
 
-### **Step 1: Choose Your Development Workflow** ⭐ CRITICAL FIRST DECISION
+### **Step 1: Verify Your Environment** ⭐ NEW!
+
+Before starting, check that everything is properly configured:
+```bash
+./test_integration.sh
+```
+This script verifies that all tools (Git, Docker, VS Code, C++) are properly installed and work together. If any tests fail, follow the setup instructions below.
+
+### **Step 2: Choose Your Development Workflow**
 
 You have **three workflow options**. Choose based on your comfort level and goals:
 
@@ -36,18 +44,19 @@ You have **three workflow options**. Choose based on your comfort level and goal
 
 **👉 Don't know which to choose?** Pick **VS Code + Docker** - it's designed for most students and provides the best learning experience.
 
-### **Step 2: Complete Your Setup**
+### **Step 3: Complete Your Setup**
 
-Based on your workflow choice:
+All setup instructions are now in ONE place:
+📖 **Read**: [`chapter_01_development_setup.md`](chapter_01_development_setup.md)
 
-#### **VS Code + Docker Setup** (Recommended)
-1. **Read**: [`chapter_01_vscode_setup.md`](chapter_01_vscode_setup.md) - Complete setup guide
-2. **Install**: Docker Desktop and VS Code
-3. **Test**: Follow the verification steps
-4. **Troubleshoot**: Use [`docker_troubleshooting.md`](docker_troubleshooting.md) if needed
+This consolidated guide covers:
+- Docker installation
+- VS Code setup
+- CMake build system
+- GitHub workflow
+- All three development options
 
-#### **Pure Docker/CLI Setup**
-1. **Read**: [`chapter_01_docker_setup.md`](chapter_01_docker_setup.md)
+**Troubleshooting**: Use [`docker_troubleshooting.md`](docker_troubleshooting.md) if needed
 2. **Install**: Docker Desktop
 3. **Test**: Command-line verification
 4. **Learn**: Basic Docker commands for daily use

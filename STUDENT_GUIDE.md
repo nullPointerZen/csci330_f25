@@ -15,17 +15,25 @@ This guide helps you navigate the simplified C++ course designed specifically fo
 ### Step 1: Complete Environment Setup
 Before diving into any chapter, complete the one-time setup:
 
-📋 **Follow**: [DEVELOPMENT_SETUP.md](./DEVELOPMENT_SETUP.md)
+📋 **Follow**: [chapter_01_development_setup.md](./chapter_01_development_setup.md)
 
-This setup guide will:
-- Install VS Code with C++ support
-- Set up Docker (optional but recommended)
-- Configure debugging tools
-- Verify your environment works
+This consolidated guide covers:
+- Docker installation (recommended)
+- VS Code with C++ support
+- CMake build system
+- GitHub workflow
+- Three development options to choose from
 
 **⏱️ Time**: ~15-20 minutes (one-time only)
 
-### Step 2: Understand Chapter Structure
+### Step 2: Verify Your Environment
+Run the integration test to ensure everything works:
+```bash
+./test_integration.sh
+```
+All tests should pass (Docker daemon test only fails if Docker isn't currently running).
+
+### Step 3: Understand Chapter Structure
 Every chapter follows the same format:
 
 ```

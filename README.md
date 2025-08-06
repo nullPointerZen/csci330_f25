@@ -22,9 +22,10 @@ This repository contains complete course materials for teaching/learning C++ pro
 
 ### Students
 1. Clone this repository
-2. Follow the setup guide in `chapter_01_development_setup.md`
-3. Start with `GETTING_STARTED.md`
-4. Work through chapters sequentially
+2. Run `./test_integration.sh` to verify your environment
+3. Follow the setup guide in `chapter_01_development_setup.md`
+4. Start with `GETTING_STARTED.md`
+5. Work through chapters sequentially
 
 ### Instructors
 1. Review materials in the `instructor/` folder
