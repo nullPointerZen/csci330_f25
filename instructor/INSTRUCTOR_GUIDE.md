@@ -271,8 +271,8 @@ The simplified course uses these key files:
 ├── DEVELOPMENT_SETUP.md          # One-time environment setup
 ├── STUDENT_GUIDE.md              # Course navigation for students  
 ├── INSTRUCTOR_GUIDE.md           # This file - teaching guidance
-├── chapter_01_complete.md        # Chapter 1: Up and Running
-├── chapter_02_complete.md        # Chapter 2: Types and Memory
+├── chapter_01_lecture_notes.md        # Chapter 1: Up and Running
+├── chapter_02_lecture_notes.md        # Chapter 2: Types and Memory
 ...                               # Chapters 3-14 (similar structure)
 ├── chapter_solutions/            # Solution files organized by chapter
 └── Legacy files...               # Original materials (for reference)

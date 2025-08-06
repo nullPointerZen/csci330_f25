@@ -84,7 +84,7 @@ Navigation Items:
 ```
 📁 Module 1: Up and Running
 ├── 📄 Chapter 1: Complete Guide
-│   └── External URL: chapter_01_complete.md
+│   └── External URL: chapter_01_lecture_notes.md
 ├── 💻 Assignment: Problem Set 1 - First Steps
 │   ├── Instructions: Complete problems 1.1-1.3 from Chapter 1
 │   ├── Submission: File upload (.cpp files) + Text reflection
@@ -113,7 +113,7 @@ Navigation Items:
 #### **Modules 2-14: Chapter Modules (Weeks 2-14)**
 ```
 [Pattern repeats for each chapter with:]
-├── 📄 Chapter Content (External URL to chapter_XX_complete.md)
+├── 📄 Chapter Content (External URL to chapter_XX_lecture_notes.md)
 ├── 💻 Problem Set 1 (30 points, Due: Monday)
 ├── 💻 Problem Set 2 (30 points, Due: Wednesday) 
 ├── 💻 Problem Set 3 (30 points, Due: Friday)

@@ -22,7 +22,7 @@ The simplified C++ course maps perfectly to Canvas modules:
 └── 💬 Introduction Discussion
 
 📁 Module 1: Up and Running
-├── 📄 Chapter 1 Content (Link to chapter_01_complete.md)
+├── 📄 Chapter 1 Content (Link to chapter_01_lecture_notes.md)
 ├── 💻 Problem Set 1: Basic Programs (Canvas Assignment)
 ├── 💻 Problem Set 2: Variables and Functions (Canvas Assignment)
 ├── 💻 Problem Set 3: Control Flow (Canvas Assignment)
@@ -30,7 +30,7 @@ The simplified C++ course maps perfectly to Canvas modules:
 └── 💬 Discussion: C++ vs Python/Java
 
 📁 Module 2: Types and Memory
-├── 📄 Chapter 2 Content (Link to chapter_02_complete.md)
+├── 📄 Chapter 2 Content (Link to chapter_02_lecture_notes.md)
 ├── 💻 Problem Set 1: Basic Types (Canvas Assignment)
 ├── 💻 Problem Set 2: Arrays and Pointers (Canvas Assignment)
 ├── 💻 Problem Set 3: Memory Management (Canvas Assignment)
@@ -71,7 +71,7 @@ Each chapter's 3 problem sets become Canvas assignments:
 
 ```
 Assignment: Chapter 1 - Problem Set 1 (Basic Programs)
-├── Instructions: Link to chapter_01_complete.md#problem-set-1
+├── Instructions: Link to chapter_01_lecture_notes.md#problem-set-1
 ├── Submission: File upload (.cpp files) + Text entry (reflection)
 ├── Rubric: Competency-based (Developing/Proficient/Advanced)
 ├── Due Date: Week 1 Friday
@@ -253,7 +253,7 @@ Link to: your-repo/cpp-course-materials
 ```
 Assignment Name: Chapter X - Problem Set Y
 Instructions: 
-- Follow the problem description in chapter_XX_complete.md
+- Follow the problem description in chapter_XX_lecture_notes.md
 - Submit your .cpp source files
 - Include a brief reflection on what you learned
 - Use the provided rubric for self-assessment

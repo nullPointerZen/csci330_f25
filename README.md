@@ -7,11 +7,12 @@ A comprehensive C++ programming course based on "C++ Crash Course" by Josh Lospi
 This repository contains complete course materials for teaching/learning C++ programming:
 
 ### For Students
-- **Chapter Materials** (`chapter_XX_complete.md`) - Comprehensive guides for each chapter
-- **Practice Problems** (`chapter_XX_problems.md`) - Hands-on coding exercises
+- **Student Guide** (`STUDENT_GUIDE.md`) - **START HERE** - Complete course guide and timeline
+- **Lecture Notes** (`chapter_XX_lecture_notes.md`) - Comprehensive teaching materials for each chapter
+- **Assignments** (`chapter_XX_assignments.md`) - Streamlined comprehensive projects
 - **Quick Help** (`chapter_XX_quick_help.md`) - Troubleshooting and quick reference
-- **Solutions** (`chapter_XX_solutions/`) - Complete solutions with explanations
-- **Development Setup** (`chapter_01_development_setup.md`) - Complete setup guide
+- **Solutions** (`chapter_XX_solutions/`) - Solution templates and approaches
+- **Development Setup** (`DEVELOPMENT_SETUP.md`) - One-time environment setup
 
 ### For Instructors
 - **Instructor Resources** (`instructor/`) - Lesson plans, rubrics, Canvas integration
@@ -22,10 +23,12 @@ This repository contains complete course materials for teaching/learning C++ pro
 
 ### Students
 1. Clone this repository
-2. Run `./test_integration.sh` to verify your environment
-3. Follow the setup guide in `chapter_01_development_setup.md`
-4. Start with `GETTING_STARTED.md`
-5. Work through chapters sequentially
+2. **Enter the course directory**: `cd csci330_f25`
+3. **Read `STUDENT_GUIDE.md`** - Your complete guide to the course
+4. Follow setup instructions in `DEVELOPMENT_SETUP.md`
+5. Run `./test_integration.sh` to verify your environment
+6. **🚨 ESSENTIAL**: For each chapter, READ the textbook chapter FIRST before any hands-on work
+7. Begin with Chapter 1 using the reading-first approach
 
 ### Instructors
 1. Review materials in the `instructor/` folder
@@ -69,15 +72,16 @@ All approaches are documented in the setup guide.
 
 ```
 cpp/
-├── chapter_XX_*.md          # Student materials
-├── chapter_XX_solutions/    # Problem solutions
 ├── instructor/              # Teaching resources
-├── csci330_f25/            # Course infrastructure
+├── csci330_f25/            # Course materials and infrastructure
+│   ├── chapter_XX_*.md     # Student materials
+│   ├── chapter_XX_solutions/# Problem solutions
 │   ├── assignment-templates/
-│   └── docker-compose.yml
-├── chapters/               # PDF resources
-├── STUDENT_GUIDE.md        # Student handbook
-└── GETTING_STARTED.md      # Course introduction
+│   ├── STUDENT_GUIDE.md    # Student handbook
+│   ├── DEVELOPMENT_SETUP.md # Environment setup
+│   └── test_integration.sh # Environment verification
+├── Powerpoints/            # PDF resources
+└── README.md              # This file
 ```
 
 ## 🎯 Learning Objectives
