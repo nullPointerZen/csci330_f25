@@ -1,190 +1,423 @@
-# C++ Development Environment Setup
+# Development Environment Setup Guide
 
-**One-time setup for all course chapters**
+## Overview
 
-This guide establishes the standard development environment used throughout the entire C++ course. Complete this setup once, then use it for all chapters.
+This guide will help you set up a professional C++ development environment using Docker, Git, and VSCode. By the end of this setup, you'll have a consistent development environment that works the same way regardless of whether you're using Windows, macOS, or Linux.
 
----
-
-## 🎯 What You'll Have After Setup
-
-- **VS Code** with C++ support for editing and debugging
-- **Docker** containerized C++ environment (no local compiler needed)
-- **Consistent workflow** that works on Windows, macOS, and Linux
-- **Ready for all chapters** - no additional setup required
+**What you'll learn to use:**
+- **Docker**: Creates a consistent development environment in a "container"
+- **Git**: Tracks changes to your code and enables collaboration
+- **VSCode**: A powerful code editor that integrates with Docker and Git
 
 ---
 
-## 🛠️ Installation (15 minutes)
+## Part 1: Required Software Installation
 
-### Step 1: Install VS Code
-1. Download from [code.visualstudio.com](https://code.visualstudio.com)
-2. Install with default settings
-3. Launch VS Code
+### 1.1 Install Docker Desktop
 
-### Step 2: Install Docker Desktop
-1. Download from [docker.com/products/docker-desktop](https://docker.com/products/docker-desktop)
-2. Install with default settings
-3. Launch Docker Desktop
-4. Wait for it to fully start (Docker icon in system tray should be running)
+Docker creates isolated environments called "containers" where your code runs consistently across different computers.
 
-### Step 3: Install VS Code Extensions
-Open VS Code and install these extensions:
-1. **C/C++** (by Microsoft) - Essential for C++ support
-2. **Dev Containers** (by Microsoft) - For Docker integration
-3. **C/C++ Extension Pack** (by Microsoft) - Includes additional tools
+#### For Windows Users:
 
-**How to install extensions:**
-- Press `Ctrl+Shift+X` (Cmd+Shift+X on macOS)
-- Search for each extension name
-- Click "Install"
+1. **Enable WSL2** (Windows Subsystem for Linux):
+   - Open PowerShell as Administrator
+   - Run: `wsl --install`
+   - Restart your computer when prompted
 
----
+2. **Download Docker Desktop**:
+   - Go to [docker.com](https://docker.com)
+   - Download "Docker Desktop for Windows"
+   - During installation, ensure "Use WSL 2 instead of Hyper-V" is checked
+   - Restart when prompted
 
-## 🚀 Quick Test (5 minutes)
+3. **Configure Docker Desktop**:
+   - Open Docker Desktop
+   - Go to Settings → Resources → WSL Integration
+   - Enable integration with your default WSL distro
+   - Allocate at least 4GB of memory
 
-Let's verify everything works:
+#### For macOS Users:
 
-### Step 1: Create Test Project
+1. **Download Docker Desktop**:
+   - Go to [docker.com](https://docker.com)
+   - Choose the correct version:
+     - **Apple Silicon (M1/M2/M3 Macs)**: Docker Desktop for Apple Silicon
+     - **Intel Macs**: Docker Desktop for Intel
+   - Drag the app to your Applications folder
+
+2. **Configure Docker Desktop**:
+   - Launch Docker Desktop
+   - Go to Preferences → Resources → Advanced
+   - Allocate at least 4GB of memory
+   - Grant necessary permissions when prompted
+
+### 1.2 Install VSCode and Extensions
+
+VSCode is a free, powerful code editor that will integrate with your Docker environment.
+
+1. **Download VSCode**:
+   - Go to [code.visualstudio.com](https://code.visualstudio.com)
+   - Download for your operating system
+
+2. **Install Required Extensions**: Open VSCode and install these extensions (Ctrl+Shift+X on Windows, Cmd+Shift+X on macOS):
+   - **C/C++ Extension Pack** (includes everything you need for C++)
+   - **Dev Containers** (for Docker integration)
+   - **Docker** (for managing containers)
+   - **GitLens** (enhances Git capabilities)
+
+### 1.3 Install Git
+
+Git tracks changes to your code and enables you to submit assignments.
+
+#### For Windows Users:
+- Download from [git-scm.com](https://git-scm.com)
+- Use default installation options
+- **Important**: Configure line endings by running this in Command Prompt:
+  ```
+  git config --global core.autocrlf input
+  git config --global core.eol lf
+  ```
+
+#### For macOS Users:
+
+**Option 1**: Install via Homebrew (if you have it):
 ```bash
-mkdir cpp-course-test
-cd cpp-course-test
-code .
+brew install git
 ```
 
-### Step 2: Create Test File
-Create `hello.cpp`:
-```cpp
-#include <iostream>
-int main() {
-    std::cout << "Development environment ready!" << std::endl;
-    return 0;
+**Option 2**: Install Xcode Command Line Tools:
+```bash
+xcode-select --install
+```
+
+#### Configure Git (All Platforms):
+
+Set up your identity (use your real name and school email):
+```bash
+git config --global user.name "Your Full Name"
+git config --global user.email "your.email@university.edu"
+```
+
+---
+
+## Part 2: Setting Up Your Development Environment
+
+### 2.1 Download the Course Repository
+
+Clone the course repository to your computer:
+
+```bash
+# Navigate to where you want to store your coursework
+cd Desktop  # or wherever you prefer
+
+# Clone the course repository
+git clone https://github.com/DEmcla/csci330_f25.git
+cd csci330_f25
+```
+
+### 2.2 Build Your Docker Environment
+
+This creates your C++ development environment:
+
+```bash
+# Build the Docker container (this may take a few minutes the first time)
+docker-compose build
+
+# Test that it works
+docker-compose run cpp-dev
+```
+
+If successful, you should see a Linux command prompt inside the container. Type `exit` to return to your normal terminal.
+
+### 2.3 Set Up VSCode Integration
+
+Create a folder called `.vscode` in your project directory and add this file:
+
+**Create `.vscode/devcontainer.json`:**
+```json
+{
+  "name": "C++ Development",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "cpp-dev",
+  "workspaceFolder": "/workspace",
+  "extensions": [
+    "ms-vscode.cpptools-extension-pack",
+    "ms-vscode.cmake-tools"
+  ],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  }
 }
 ```
 
-### Step 3: Test Compilation
-Open VS Code terminal (`Ctrl+`` ` or Terminal menu) and run:
+---
+
+## Part 3: Your Daily Development Workflow
+
+### 3.1 Starting Your Development Environment
+
+1. **Open your project in VSCode**:
+   - Open VSCode
+   - File → Open Folder
+   - Select your course directory
+
+2. **Start the development container**:
+   - Press `Ctrl+Shift+P` (Windows) or `Cmd+Shift+P` (macOS)
+   - Type "Dev Containers: Reopen in Container"
+   - Select it and wait for the container to start
+
+3. **You're ready to code!**
+   - The terminal inside VSCode is now running in your Docker container
+   - All your C++ tools are ready to use
+
+### 3.2 Building and Testing Your Code
+
+Navigate to an assignment directory and build:
+
 ```bash
-g++ hello.cpp -o hello && ./hello
+# Go to assignment directory
+cd /workspace/assignments/chapter_01
+
+# Create build directory
+mkdir -p build && cd build
+
+# Configure the project
+cmake ..
+
+# Build your code
+make
+
+# Run tests (if available)
+ctest --verbose
 ```
 
-**Expected output:** `Development environment ready!`
+### 3.3 Basic Git Workflow
+
+Git helps you track changes and submit assignments. Here's the basic workflow:
+
+**Understanding Git Concepts:**
+- **Repository (repo)**: A folder that Git is tracking
+- **Commit**: A snapshot of your code at a specific time
+- **Branch**: A separate line of development
+- **Push**: Upload your changes to GitHub/GitLab
+
+**Daily Git Commands:**
+
+1. **Check the status of your files**:
+   ```bash
+   git status
+   ```
+
+2. **Create a new branch for your assignment** (do this for each assignment):
+   ```bash
+   git checkout -b assignment-01
+   ```
+
+3. **Add your changes**:
+   ```bash
+   # Add specific files
+   git add src/main.cpp
+   
+   # Or add all changed files
+   git add .
+   ```
+
+4. **Commit your changes**:
+   ```bash
+   git commit -m "Implement basic calculator functions"
+   ```
+
+5. **Push your work to the remote repository**:
+   ```bash
+   git push origin assignment-01
+   ```
 
 ---
 
-## 📁 Project Structure (Standard for All Chapters)
+## Part 4: Assignment Submission Process
 
-Each chapter will use this consistent structure:
-```
-chapter_XX/
-├── .vscode/
-│   ├── tasks.json      # Build configuration
-│   └── launch.json     # Debug configuration
-├── src/
-│   └── main.cpp        # Your code goes here
-└── README.md           # Chapter-specific instructions
-```
+### 4.1 Completing an Assignment
 
-VS Code configuration files will be provided with each chapter for immediate use.
+1. **Create a branch for the assignment**:
+   ```bash
+   git checkout -b assignment-01
+   ```
 
----
+2. **Work on your code in the Docker environment**:
+   - Use VSCode with the Dev Container
+   - Build and test frequently
+   - Commit your changes regularly
 
-## 🔍 Essential VS Code Features
+3. **Final submission**:
+   ```bash
+   # Make sure all your work is saved
+   git add .
+   git commit -m "Complete assignment 01 - final submission"
+   git push origin assignment-01
+   ```
 
-### Compilation Shortcuts
-- **Build**: `Ctrl+Shift+B` (Cmd+Shift+B) - Compiles your code
-- **Run**: `Ctrl+F5` (Cmd+F5) - Runs without debugging
-- **Debug**: `F5` - Runs with debugging enabled
+4. **Submit to Canvas**:
+   - Copy your repository URL from GitHub/GitLab
+   - Submit in this format:
+     ```
+     Repository URL: https://github.com/yourusername/cpp-assignment-01
+     Branch: assignment-01
+     Commit Hash: [copy from Git or GitHub]
+     ```
 
-### Debugging Features
-- **Set breakpoint**: Click left margin next to line numbers
-- **Variables panel**: See variable values during debugging
-- **Watch panel**: Monitor specific expressions
-- **Call stack**: See function call hierarchy
+### 4.2 Getting the Commit Hash
 
-### Helpful Shortcuts
-- **Terminal**: `Ctrl+`` ` - Opens integrated terminal
-- **Command palette**: `Ctrl+Shift+P` - Access all VS Code commands
-- **File explorer**: `Ctrl+Shift+E` - Navigate project files
-- **Problems panel**: `Ctrl+Shift+M` - See compilation errors
-
----
-
-## 🐳 Docker Integration (Advanced)
-
-For chapters that mention Docker (optional enhancement):
-
-### Create Dockerfile
-```dockerfile
-FROM gcc:latest
-WORKDIR /usr/src/app
-COPY . .
-RUN g++ -o main main.cpp
-CMD ["./main"]
-```
-
-### Build and Run
+**Option 1: From command line:**
 ```bash
-docker build -t cpp-chapter .
-docker run cpp-chapter
+git log --oneline -1
 ```
 
-**Note**: Docker usage is optional. The standard setup works for all chapters.
+**Option 2: From GitHub/GitLab:**
+- Go to your repository online
+- Click on the branch you pushed
+- Copy the commit hash shown
 
 ---
 
-## 🚨 Troubleshooting
+## Part 5: Troubleshooting Common Issues
 
-### VS Code Issues
-**Extensions not working?**
-- Restart VS Code
-- Check that C/C++ extension is enabled
-- Try `Ctrl+Shift+P` → "C/C++: Reset IntelliSense Database"
+### 5.1 Docker Issues
 
-**Build task not found?**
-- Ensure `.vscode/tasks.json` exists in your project
-- Check that file content matches provided configuration
+#### Windows-Specific Problems:
 
-### Compilation Issues
-**"g++ not found" error?**
-- **Windows**: Install "Microsoft C++ Build Tools" or Visual Studio
-- **macOS**: Install Xcode command line tools: `xcode-select --install`
-- **Linux**: Install build-essential: `sudo apt install build-essential`
+**Docker Desktop won't start:**
+- Make sure WSL2 is enabled
+- Check that "Windows Subsystem for Linux" and "Virtual Machine Platform" are enabled in Windows Features
+- Restart Docker Desktop
 
-**Include errors?**
-- Verify file names match exactly (case-sensitive)
-- Check that all required headers are included
-- Ensure code syntax is correct
+**Permission errors:**
+```bash
+# In WSL2 terminal
+sudo chown -R $USER:$USER /path/to/your/project
+```
 
-### Docker Issues
-**Docker commands not working?**
-- Ensure Docker Desktop is running
-- Try: `docker run hello-world` to test basic functionality
-- Restart Docker Desktop if needed
+#### macOS-Specific Problems:
+
+**Docker needs permissions:**
+- Go to System Preferences → Security & Privacy → Privacy
+- Grant Docker Desktop access to your folders
+
+**Performance issues:**
+- Increase memory allocation in Docker Desktop settings
+- Enable "Use gRPC FUSE for file sharing"
+
+### 5.2 VSCode Issues
+
+**Container won't start:**
+- Make sure Docker Desktop is running
+- Try "Dev Containers: Rebuild Container" from Command Palette
+- If still having issues:
+  ```bash
+  docker-compose down -v
+  docker system prune -af
+  ```
+
+**Code completion not working:**
+- Make sure you're working inside the container
+- Try reloading: "Developer: Reload Window" from Command Palette
+
+### 5.3 Git Issues
+
+**"Repository not found" error:**
+- Check that you have access to the repository
+- Make sure you're using the correct URL
+- Verify your Git credentials
+
+**Merge conflicts:**
+- Always work in separate branches for each assignment
+- Ask for help if you see conflict messages
+
+**Large files causing problems:**
+- Never commit build artifacts (files in `build/` folders)
+- Check your `.gitignore` file includes:
+  ```
+  build/
+  *.o
+  *.exe
+  *.out
+  ```
 
 ---
 
-## ✅ Setup Complete!
+## Part 6: Getting Help
 
-You're now ready for all course chapters. Each chapter will:
-1. Provide pre-configured `.vscode` files
-2. Reference this setup guide if you need to troubleshoot
-3. Focus on learning C++ concepts rather than environment issues
+### 6.1 When Things Don't Work
 
-**Next steps:**
-- Start with Chapter 1 if you're beginning the course
-- Each chapter folder will have its own README with specific instructions
-- Return to this guide only if you encounter environment issues
+1. **Read error messages carefully** - they often tell you exactly what's wrong
+2. **Check the troubleshooting section above**
+3. **Ask classmates** - they might have encountered the same issue
+4. **Search online** - include the specific error message in your search
+5. **Ask your instructor** - provide the specific error message and what you were trying to do
+
+### 6.2 Best Practices
+
+- **Commit your work frequently** - at least after completing each function or major change
+- **Use descriptive commit messages** - "Fix calculator bug" is better than "update"
+- **Test your code before submitting** - make sure it compiles and runs
+- **Keep your repository organized** - don't commit unnecessary files
+- **Start assignments early** - setup issues are easier to resolve when you have time
 
 ---
 
-## 📖 Chapter Integration
+## Quick Reference
 
-This setup enables consistent development across all chapters:
+### Essential Commands
 
-- **Chapters 1-4**: Basic C++ concepts with debugging
-- **Chapters 5-8**: Advanced features with step-through debugging
-- **Chapters 9-12**: Complex projects with integrated development
-- **Chapters 13-14**: STL usage with container/iterator visualization
+**Docker:**
+```bash
+# Build your environment
+docker-compose build
 
-The same VS Code + compiler workflow applies to everything!
+# Start development container
+docker-compose run cpp-dev
+
+# If on Windows and having issues, try:
+docker-compose run --platform linux/amd64 cpp-dev
+```
+
+**Git:**
+```bash
+# Check status
+git status
+
+# Create new branch
+git checkout -b assignment-name
+
+# Add and commit changes
+git add .
+git commit -m "Descriptive message"
+
+# Push to remote
+git push origin assignment-name
+```
+
+**Building C++ Code:**
+```bash
+# In assignment directory
+mkdir build && cd build
+cmake ..
+make
+ctest --verbose  # run tests
+```
+
+**VSCode:**
+- **Windows**: Ctrl+Shift+P opens Command Palette
+- **macOS**: Cmd+Shift+P opens Command Palette
+- Use "Dev Containers: Reopen in Container" to start development environment
+
+---
+
+## Summary
+
+You now have a professional C++ development environment that:
+- Works consistently across different computers
+- Integrates modern development tools
+- Prepares you for industry-standard workflows
+- Makes assignment submission straightforward
+
+Remember: the initial setup might feel overwhelming, but once configured, this environment will make your C++ development much smoother throughout the course!
