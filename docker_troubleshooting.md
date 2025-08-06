@@ -6,6 +6,32 @@ This guide covers the most frequent Docker problems students encounter and their
 
 ---
 
+## 🚨 Most Common Issue: Docker Desktop Not Running
+
+**Problem**: Terminal shows "Cannot connect to the Docker daemon"
+
+**Solution**: Docker Desktop must be started from the APPLICATION, not terminal!
+
+### How to Start Docker Desktop:
+
+**Windows:**
+1. Click Start Menu → Search "Docker Desktop" → Click to launch
+2. Wait for whale icon in system tray (bottom-right corner)
+3. Icon should show "Docker Desktop is running"
+
+**macOS:**
+1. Open Finder → Applications → Double-click "Docker"
+2. Wait for whale icon in menu bar (top-right corner)
+3. Icon should show "Docker Desktop is running"
+
+**Linux:**
+- Docker runs as a service (no Desktop app needed)
+- Start with: `sudo systemctl start docker`
+
+⚠️ **Important**: Docker Desktop must be running BEFORE you use any `docker` or `docker-compose` commands in the terminal!
+
+---
+
 ## Installation Issues
 
 ### Windows: "Docker Desktop won't start"

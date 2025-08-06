@@ -21,13 +21,17 @@ Choose your development approach based on your needs:
 2. Install with default settings
 3. **Important**: Enable WSL2 backend when prompted
 4. Restart if required
-5. Verify: Open PowerShell, run `docker --version`
+5. **Start Docker Desktop**: Click the Docker Desktop icon from Start Menu or Desktop
+6. Wait for Docker icon in system tray to show "Docker Desktop is running"
+7. Verify: Open PowerShell, run `docker --version`
 
 #### macOS:
 1. Download [Docker Desktop](https://docker.com)
 2. Drag Docker.app to Applications
-3. Launch and accept terms
-4. Verify: Open Terminal, run `docker --version`
+3. **Start Docker Desktop**: Open Docker from Applications folder (Finder → Applications → Docker)
+4. Accept terms when prompted
+5. Wait for Docker icon in menu bar to show "Docker Desktop is running"
+6. Verify: Open Terminal, run `docker --version`
 
 #### Linux (Ubuntu/Debian):
 ```bash
@@ -264,6 +268,19 @@ gdb ./program
 ---
 
 ## Troubleshooting
+
+### Docker Desktop Not Running?
+**Windows**: 
+- Click Start Menu → Docker Desktop
+- Look for whale icon in system tray (bottom-right)
+- Right-click icon → "Dashboard" to see status
+
+**macOS**:
+- Open Finder → Applications → Docker
+- Look for whale icon in menu bar (top-right)
+- Click icon to see status
+
+**Both**: Docker Desktop must show "Running" before using terminal commands
 
 ### Docker Issues
 ```bash
