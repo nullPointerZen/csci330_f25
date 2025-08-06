@@ -1,0 +1,21 @@
+# Build artifacts
+build/
+*.o
+*.exe
+*.out
+*.dSYM/
+
+# IDE files
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker volumes
+.docker/
+
+# Personal notes
+instructor-notes.md

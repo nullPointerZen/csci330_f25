@@ -1,0 +1,17 @@
+
+services:
+  cpp-dev:
+    build: .
+    image: cpp-course:latest
+    platform: linux/amd64
+    volumes:
+      - .:/home/student/workspace
+      - cpp-build-cache:/home/student/workspace/build
+    working_dir: /home/student/workspace
+    stdin_open: true
+    tty: true
+    environment:
+      - TERM=xterm-256color
+
+volumes:
+  cpp-build-cache:
