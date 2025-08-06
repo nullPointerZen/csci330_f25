@@ -1,5 +1,14 @@
 # Chapter 4: Object Lifecycle - Problem Sets
 
+## 📋 Before You Begin
+
+**✅ Prerequisites Check:**
+- [ ] **Completed textbook reading**: Chapter 4 "Object Lifecycle"
+- [ ] **Worked through lecture notes**: All core concepts and hands-on problems
+- [ ] **Development environment ready**: VS Code + compiler setup verified
+
+**🚫 Don't start these assignments until you've completed the textbook and lecture notes!**
+
 ## ✨ Streamlined Assignment Structure  
 **New Approach**: 2 comprehensive projects instead of 9 micro-problems
 - **Core Assignment 1**: Banking System with RAII (2 hours) - REQUIRED

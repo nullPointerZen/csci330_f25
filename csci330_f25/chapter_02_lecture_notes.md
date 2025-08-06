@@ -1,5 +1,15 @@
 # Chapter 2: Types and Memory - Complete Guide
 
+## 📖 Learning Sequence (IMPORTANT!)
+
+**🔄 How This Chapter Works:**
+1. **📚 FIRST**: Read Textbook Chapter 2 "Types" (2-3 hours) 
+2. **🔍 SECOND**: Work through these lecture notes for Python/Java context and hands-on practice (6-8 hours)
+3. **✅ THIRD**: Complete the chapter assignments to demonstrate mastery (3 hours)
+
+**⚠️ Critical**: Each step builds on the previous one. Don't skip ahead!
+**🧠 Memory Focus**: This chapter introduces manual memory management - textbook reading is especially crucial!
+
 ## 🎯 Learning Objectives
 
 **📚 PREREQUISITE: Read Textbook Chapter 2 "Types" FIRST**  
@@ -26,6 +36,8 @@ After completing the textbook reading and this chapter's materials, you will:
 ---
 
 ## 🔗 Core Concepts: C++ vs Python/Java (2.5 hours)
+
+**📖 Bridge to Textbook**: Now that you've read about C++ types in Chapter 2, let's connect those concepts to the Python/Java knowledge you already have. The textbook brilliantly explains memory management - these examples will show you how it differs from what you know.
 
 ### 1. Static Typing: The Big Difference
 
@@ -214,6 +226,8 @@ Point p3 = {};              // Zero initialization
 ---
 
 ## 🧩 Hands-On Problems (2.25 hours)
+
+**📖 Ready to Apply**: You've read the textbook and reviewed the Python/Java connections above. Now let's put that knowledge to work with hands-on practice that prepares you for the assignments.
 
 ### Problem Set 1: Fundamental Types (45 minutes)
 

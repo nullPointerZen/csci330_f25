@@ -1,5 +1,14 @@
 # Chapter 5: Runtime Polymorphism - Problem Sets
 
+## 📋 Before You Begin
+
+**✅ Prerequisites Check:**
+- [ ] **Completed textbook reading**: Chapter 5 "Runtime Polymorphism"
+- [ ] **Worked through lecture notes**: All core concepts and hands-on problems
+- [ ] **Development environment ready**: VS Code + compiler setup verified
+
+**🚫 Don't start these assignments until you've completed the textbook and lecture notes!**
+
 ## Instructions
 - Complete these problems after reading Chapter 5 and working through the lesson
 - Each problem builds on concepts from inheritance and virtual functions

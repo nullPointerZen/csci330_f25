@@ -1,7 +1,37 @@
 # Chapter 2: Types - Lesson Plan
 
 ## Course: C++ for Python/Java Programmers
-## Estimated Time: 2.5 hours maximum (self-paced)
+## Delivery Mode: Self-Paced, Asynchronous
+## Estimated Time: 2.5 hours maximum (instructor-guided activities)
+
+## 📖 Three-Component Learning Sequence
+
+**This chapter follows our proven three-step learning model:**
+
+1. **📚 Textbook Foundation** (2-3 hours - Student Independent)
+   - Josh Lospinoso's Chapter 2 "Types" provides essential memory management theory
+   - Students must complete this BEFORE attempting lecture materials
+   - Critical for understanding manual memory management concepts
+
+2. **🔍 Lecture Materials** (6-8 hours - Student Self-Paced)
+   - Bridge textbook concepts to Python/Java knowledge
+   - Hands-on practice with guided problems
+   - Visual debugging techniques for memory concepts
+
+3. **✅ Assignments** (3 hours - Student Applied Practice)
+   - Two comprehensive projects demonstrating mastery
+   - Real-world applications of type and memory concepts
+   - Assessment of learning objectives
+
+## 🎯 Instructor Focus Areas
+
+**Primary Role**: Ensure students follow the sequence and provide targeted support
+
+### Sequence Emphasis Points:
+- **Pre-Lecture Check**: Verify textbook reading completion before hands-on work
+- **Memory Concept Support**: Extra guidance on pointer/memory management (most challenging topic)
+- **Debugging Assistance**: Help students set up and use visual debugging tools
+- **Assignment Readiness**: Confirm students have completed steps 1-2 before attempting assignments
 
 ---
 
@@ -72,13 +102,11 @@ By the end of this lesson, students will be able to:
 ---
 
 ## Development Environment Setup
-**Use the same workflow from Chapter 1. If you haven't set up your environment yet:**
+**Students should use the workflow established in Chapter 1 setup. Critical for this chapter:**
 
-- **Option A**: Docker + Command Line (lightweight, exact grading environment)
-- **Option B**: VS Code + Docker (recommended - visual debugging for complex concepts)
-- **Option C**: VS Code + Local Compiler (quick start)
-
-**For Chapter 2's memory concepts (pointers, arrays), VS Code debugging is highly recommended!**
+- **VS Code + Debugging**: Essential for memory concept visualization
+- **Visual Tools Required**: Memory inspector, variable watches, breakpoint debugging
+- **Instructor Note**: Students without proper debugging setup will struggle significantly with pointer concepts
 
 ---
 
@@ -291,59 +319,23 @@ By the end of this lesson, students will be able to:
 
 ## Assessment Strategy
 
-### Formative Assessment (Throughout)
-- **Quick Checks**: After each concept, small verification exercises
-- **Peer Review**: Students explain pointer concepts to each other
-- **Error Analysis**: Look at common compilation errors and fix them
+### Component-Based Assessment
+Assessment aligns with the three-component learning sequence:
 
-### Summative Assessment  
-**Student Record System** (45 minutes):
+#### Component 1: Textbook Foundation (Instructor Verification)
+- **Quick Check**: 5-minute discussion of key memory management concepts
+- **Prerequisite Gate**: Students cannot proceed without demonstrating textbook comprehension
+- **Focus Areas**: Static typing, memory addresses, pointer concepts from textbook
 
-#### Requirements
-1. Define a `Student` struct with name, id, and grades array
-2. Create an array of 3 students with sample data
-3. Write functions to:
-   - Calculate average grade for a student
-   - Find student with highest average
-   - Print all student information
-4. Use pointers to pass structs to functions
+#### Component 2: Lecture Material Engagement (Formative)
+- **Hands-On Completion**: Evidence of working through lecture note problems
+- **Debugging Demonstrations**: Show proper use of visual debugging tools
+- **Concept Bridges**: Can connect textbook theory to Python/Java equivalents
 
-#### Starter Template Provided
-```cpp
-#include <cstdio>
-#include <cstring>
-
-struct Student {
-    char name[30];
-    int id;
-    int grades[5];  // 5 test scores
-};
-
-// TODO: Write function to calculate average
-double calculateAverage(/* parameters */) {
-    // Your code here
-}
-
-// TODO: Write function to print student info
-void printStudent(/* parameters */) {
-    // Your code here
-}
-
-int main() {
-    // TODO: Create array of 3 students
-    // TODO: Call your functions
-    return 0;
-}
-```
-
-#### Rubric (Pass/Fail)
-| Criteria | Pass Requirement |
-|----------|------------------|
-| **Compilation** | Program compiles without errors |
-| **Struct Usage** | Correctly defines and uses Student struct |
-| **Array Handling** | Properly manages arrays within structs |
-| **Function Implementation** | Functions work correctly with proper parameters |
-| **Pointer Usage** | Uses pointers appropriately for function parameters |
+#### Component 3: Assignment Mastery (Summative)
+- **Two Core Assignments**: Comprehensive projects from chapter_02_assignments.md
+- **Integration Focus**: Combines all chapter concepts in real-world scenarios
+- **Memory Safety**: Demonstrates proper bounds checking and pointer validation
 
 ---
 
@@ -405,12 +397,27 @@ p.x = 30;               // Access member
 - **For Advanced Students**: Explore different integer sizes, unsigned types, memory layout
 - **For Struggling Students**: Use more visual aids, pair programming for pointer concepts
 
-### Time Management
-- Spend extra time on pointers if students struggle
-- Arrays usually click quickly for students with programming experience
-- Structs are familiar to Java students, new to Python students
+### Teaching Notes for Self-Paced Delivery
 
-### Assessment Tips
-- Check understanding frequently with small programs
-- Use debugger to show memory contents
-- Emphasize safety practices early (null pointer checks, array bounds)
+**Instructor Interventions:**
+- **Week 1**: Textbook reading verification and setup assistance
+- **Week 2**: Memory concept clarification and debugging support
+- **Week 3**: Assignment guidance and comprehensive review
+
+**Common Support Points:**
+- Memory management confusion (expect this - textbook reading is crucial)
+- Pointer syntax and dereferencing operations
+- Visual debugging setup and usage
+- Type conversion and casting understanding
+
+### Self-Paced Time Management
+- **Flexible Pacing**: Students work at individual speed through sequence
+- **Checkpoint System**: Regular verification of component completion
+- **Instructor Office Hours**: Focused support during peak difficulty periods
+- **Peer Learning**: Study groups for complex memory concepts
+
+### Assessment Tips for Asynchronous Delivery
+- **Component Gates**: Students cannot advance without completing prerequisites
+- **Visual Evidence**: Require screenshots of debugging sessions for concept verification
+- **Code Review Sessions**: Individual or small-group code examination
+- **Safety Emphasis**: Memory safety practices reinforced throughout sequence

@@ -1,11 +1,45 @@
 # Chapter 4: Object Lifecycle - Lesson Plan
 
 ## Course: C++ for Python/Java Programmers
-## Estimated Time: 2.5 hours maximum (self-paced)
+## Delivery Mode: Self-Paced, Asynchronous
+## Total Learning Time: 11.5-13.5 hours across 3 components
 
 ---
 
-## Development Environment Setup
+## 📖 Three-Component Learning Sequence
+
+This chapter follows a structured, self-paced approach where each component builds on the previous:
+
+### Component 1: Textbook Foundation (2-3 hours)
+**Student Activity**: Read Chapter 4 "Object Lifecycle" from C++ Crash Course
+- **Purpose**: Establish core theoretical foundation for constructors, destructors, and RAII
+- **Instructor Role**: None (self-paced reading)
+- **Assessment**: Comprehension verified through subsequent components
+
+### Component 2: Contextualized Tutorial (7-8 hours) 
+**Student Activity**: Work through `chapter_04_lecture_notes.md`
+- **Purpose**: Bridge textbook concepts to Python/Java knowledge with hands-on practice
+- **Instructor Role**: Available for office hours support
+- **Content**: Comparative explanations + guided practice problems
+
+### Component 3: Applied Assessment (2.5 hours)
+**Student Activity**: Complete `chapter_04_assignments.md` 
+- **Purpose**: Demonstrate mastery through independent problem-solving
+- **Instructor Role**: Grade final submissions
+- **Assessment**: Banking system + resource management projects
+
+---
+
+## 🎯 Instructor Focus Areas
+
+### Key Teaching Points
+**Emphasize the Learning Sequence**:
+- Students MUST complete textbook reading before lecture notes
+- Lecture notes contextualize and reinforce textbook concepts
+- Assignments test combined knowledge from both sources
+- **Critical**: Don't let students skip ahead or work out of sequence
+
+### Development Environment Setup
 **Continue using your chosen workflow from previous chapters:**
 - **Option A**: Docker + Command Line
 - **Option B**: VS Code + Docker (highly recommended for object lifecycle debugging)

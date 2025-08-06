@@ -1,7 +1,43 @@
 # Chapter 9: Functions - Lesson Plan
 
 ## Course: C++ for Python/Java Programmers
-## Estimated Time: 2.5 hours maximum (self-paced)
+## Delivery Mode: Self-Paced, Asynchronous
+## Total Learning Time: 7.25-9.25 hours across 3 components
+
+---
+
+## 📖 Three-Component Learning Sequence
+
+This chapter follows a structured, self-paced approach where each component builds on the previous:
+
+### Component 1: Textbook Foundation (2-3 hours)
+**Student Activity**: Read Chapter 9 "Functions" from C++ Crash Course
+- **Purpose**: Establish core theoretical foundation for advanced function features
+- **Instructor Role**: None (self-paced reading)
+- **Assessment**: Comprehension verified through subsequent components
+
+### Component 2: Contextualized Tutorial (4-5 hours) 
+**Student Activity**: Work through `chapter_09_lecture_notes.md`
+- **Purpose**: Bridge textbook concepts to Python/Java knowledge with hands-on practice
+- **Instructor Role**: Available for office hours support
+- **Content**: Comparative explanations + guided practice problems
+
+### Component 3: Applied Assessment (2.25 hours)
+**Student Activity**: Complete `chapter_09_assignments.md` 
+- **Purpose**: Demonstrate mastery through independent problem-solving
+- **Instructor Role**: Grade final submissions
+- **Assessment**: Function pointer projects + lambda expression exercises
+
+---
+
+## 🎯 Instructor Focus Areas
+
+### Key Teaching Points
+**Emphasize the Learning Sequence**:
+- Students MUST complete textbook reading before lecture notes
+- Lecture notes contextualize and reinforce textbook concepts
+- Assignments test combined knowledge from both sources
+- **Critical**: Don't let students skip ahead or work out of sequence
 
 ---
 
@@ -540,14 +576,95 @@ By the end of this lesson, students will be able to:
 
 ---
 
+## Student Support Strategy
+
+### Component-Based Office Hours Support
+
+#### During Component 1 (Textbook Reading)
+**Student Activity**: Independent reading
+**Instructor Support**: 
+- Minimal - reading is foundational
+- Answer clarifying questions about function concepts
+- **Red Flag**: Students asking about lambda syntax during reading phase
+
+#### During Component 2 (Lecture Notes Tutorial)  
+**Student Activity**: Contextual learning + hands-on practice
+**Instructor Support**:
+- **High availability** - this is where students need most help
+- Concept clarification (textbook + Python/Java bridges)
+- Debugging function pointers and lambda expressions
+- **Red Flag**: Students who haven't read textbook (refer them back to Component 1)
+
+#### During Component 3 (Assignments)
+**Student Activity**: Independent problem-solving
+**Instructor Support**:
+- **Minimal guidance** - this is assessment
+- Clarify assignment requirements only
+- **No debugging help** - they should be ready by this stage
+- **Red Flag**: Students struggling with basic function concepts (incomplete earlier components)
+
 ## Assessment Strategy
 
-### Formative Assessment (Throughout)
-- **Quick Checks**: Identify correct lambda capture modes
-- **Code Review**: Students explain function pointer vs lambda trade-offs
-- **Debugging**: Fix common capture and type issues
+### Component-Based Assessment
 
-### Summative Assessment
+#### Component 1 Assessment
+**Method**: Indirect (through Component 2 performance)
+**Indicator**: Students who struggle in Component 2 likely didn't complete reading
+
+#### Component 2 Assessment  
+**Method**: Formative (practice problems are scaffolded)
+**Purpose**: Build confidence and skill before Component 3
+
+#### Component 3 Assessment
+**Method**: Summative (graded assignments)
+**Requirements**: Function pointer projects + lambda expression exercises
+
+### Rubric (Pass/Fail)
+| Criteria | Pass Requirement |
+|----------|------------------|
+| Function Pointers | Correct syntax and usage for callbacks |
+| Lambda Expressions | Proper capture modes and inline functions |
+| Function Objects | Working functor implementations |
+| Design Decisions | Appropriate choice of function abstraction |
+
+## Teaching Notes for Self-Paced Delivery
+
+### Common Student Issues by Component
+
+#### Component 1 Issues (Textbook Reading)
+**Problem**: Students skip reading and jump to Component 2
+**Solution**: Emphasize that lecture notes assume textbook knowledge
+**Red Flag**: Students asking basic questions answered in textbook
+
+#### Component 2 Issues (Lecture Notes)
+**Problem**: Confusion about lambda captures and function pointer syntax
+**Solution**: Emphasize Python/Java parallels and provide clear examples
+**Red Flag**: Students trying to use dynamic typing patterns from Python
+
+#### Component 3 Issues (Assignments)
+**Problem**: Students not ready for independent work
+**Solution**: Refer back to Components 1-2, not debugging help
+**Red Flag**: Basic syntax errors indicate incomplete foundation
+
+### Supporting Weak Students
+- **Don't lower standards** - maintain the three-component sequence
+- **Provide more support in Component 2** (where teaching happens)
+- **Emphasize explanation in lecture notes helps everyone**
+- **Office hours focus**: Concept clarification and design patterns, not assignment debugging
+
+### Supporting Strong Students  
+- **Let them move quickly through Component 2**
+- **Encourage exploration of advanced lambda features**
+- **Component 3 extensions**: More complex higher-order function scenarios
+
+### Sequence Enforcement
+- **Monitor student questions** to identify sequence violations
+- **Redirect students back to prerequisite components**  
+- **Don't provide shortcuts** - the sequence builds proper foundation
+
+## Legacy Assessment Information
+
+### Previous Summative Assessment Example
 **Function-Based Calculator System** (45 minutes):
 
 #### Requirements

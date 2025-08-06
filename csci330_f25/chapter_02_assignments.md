@@ -1,5 +1,21 @@
 # Chapter 2: Types - Problem Sets
 
+## 📋 Before You Begin
+
+**⚠️ Prerequisites Checklist - Complete ALL before starting assignments:**
+
+- [ ] **📚 Textbook Reading**: Completed Chapter 2 "Types" (Josh Lospinoso explains memory management brilliantly - this is essential for success)
+- [ ] **🔍 Lecture Notes**: Reviewed chapter_02_lecture_notes.md with all hands-on problems
+- [ ] **🛠️ Development Environment**: VS Code + debugging setup ready from DEVELOPMENT_SETUP.md
+- [ ] **📝 Knowledge Check**: Can explain the difference between C++ static typing and Python/Java
+- [ ] **⚙️ Compiler Test**: Successfully compiled and debugged a simple program with variables and arrays
+
+**🚀 Ready to Start**: All checkboxes above are marked? Great! These assignments will solidify your understanding through comprehensive practice.
+
+**⚠️ WARNING**: Do NOT attempt these assignments without completing the textbook reading first. Memory management concepts are complex and require the foundation the textbook provides.
+
+---
+
 ## ✨ Streamlined Assignment Structure
 **New Approach**: 2 comprehensive assignments instead of 8 micro-problems
 - **Core Assignment 1**: Type System Exploration (90 minutes) - REQUIRED

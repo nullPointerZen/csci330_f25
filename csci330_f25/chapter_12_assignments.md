@@ -1,8 +1,21 @@
 # Chapter 12: Utilities - Programming Problems
 
-**Total Time Budget**: 2.25 hours (135 minutes)  
-**Target Audience**: Students with Python/Java experience  
-**Prerequisites**: Completed Chapter 12 lesson and Chapters 1-11
+## 📋 Before You Begin
+
+**✅ Prerequisites Check:**
+- [ ] **Completed textbook reading**: Chapter 12 "Utilities"
+- [ ] **Worked through lecture notes**: All core concepts and hands-on problems
+- [ ] **Development environment ready**: VS Code + compiler setup verified
+
+**🚫 Don't start these assignments until you've completed the textbook and lecture notes!**
+
+## Instructions
+- These problems apply concepts from both the textbook and lecture notes
+- Each problem builds on previous concepts  
+- **Time expectation**: 2.25 hours total for all three problem sets
+- Test all programs thoroughly before submission
+
+---
 
 ## Problem Set 1: Foundation Problems (45 minutes)
 *Focus: Basic usage of each utility type*

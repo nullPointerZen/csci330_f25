@@ -1,13 +1,19 @@
 # Chapter 15: Strings - Practice Problems
 
-## 🎯 Problem Sets Overview
+## 📋 Before You Begin
 
-These problems progress from basic string operations to advanced text processing. Each set builds on the previous one.
+**✅ Prerequisites Check:**
+- [ ] **Completed textbook reading**: Chapter 15 "Strings"
+- [ ] **Worked through lecture notes**: All core concepts and hands-on problems
+- [ ] **Development environment ready**: VS Code + compiler setup verified
 
-**Estimated Time**: 2.25 hours total
-- Problem Set 1 (Basic): 45 minutes
-- Problem Set 2 (Intermediate): 60 minutes  
-- Problem Set 3 (Advanced): 40 minutes
+**🚫 Don't start these assignments until you've completed the textbook and lecture notes!**
+
+## Instructions
+- These problems apply concepts from both the textbook and lecture notes
+- Each problem builds on previous concepts  
+- **Time expectation**: 2.25 hours total for all three problem sets
+- Test all programs thoroughly before submission
 
 ---
 

@@ -1,5 +1,20 @@
 # Chapter 8: Statements - Problem Sets
 
+## 📋 Before You Begin
+
+**✅ Prerequisites Check:**
+- [ ] **Completed textbook reading**: Chapter 8 "Statements"
+- [ ] **Worked through lecture notes**: All core concepts and hands-on problems
+- [ ] **Development environment ready**: VS Code + compiler setup verified
+
+**🚫 Don't start these assignments until you've completed the textbook and lecture notes!**
+
+## Instructions
+- These problems apply concepts from both the textbook and lecture notes
+- Each problem builds on previous concepts  
+- **Time expectation**: 2.25 hours total for all three problem sets
+- Test all programs thoroughly before submission
+
 **Target Audience**: Students with Python/Java background  
 **Total Time**: 2.25 hours (135 minutes)  
 **Prerequisites**: Chapters 1-7 completed + Chapter 8 lesson  

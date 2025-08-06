@@ -1,8 +1,20 @@
 # Chapter 6: Compile-Time Polymorphism - Complete Guide
 
-## 🎯 Learning Objectives (5 minutes)
+## 📖 Learning Sequence (IMPORTANT!)
 
-By the end of this chapter, you will:
+**🔄 How This Chapter Works:**
+1. **📚 FIRST**: Read Textbook Chapter 6 "Compile-Time Polymorphism" (3-4 hours)
+2. **🔍 SECOND**: Work through these lecture notes for Python/Java context and hands-on practice (7-9 hours)
+3. **✅ THIRD**: Complete the chapter assignments to demonstrate mastery (2.25 hours)
+
+**⚠️ Critical**: Each step builds on the previous one. Don't skip ahead!
+
+## 🎯 Learning Objectives
+
+**📚 PREREQUISITE: Read Textbook Chapter 6 "Compile-Time Polymorphism" FIRST**
+**📝 Template Warning**: Templates are one of the most challenging C++ concepts - thorough textbook reading is essential before attempting assignments.
+
+After completing the textbook reading and this chapter's materials, you will:
 1. **Understand** compile-time vs runtime polymorphism trade-offs
 2. **Write** function templates that work with multiple types safely
 3. **Create** template classes for generic data containers
@@ -12,16 +24,19 @@ By the end of this chapter, you will:
 
 **⏱️ Time Budget:**
 - **📚 Textbook Reading: 3-4 hours** (Chapter 6: "Compile-Time Polymorphism" - REQUIRED FIRST, complex topic)
-- **💻 Hands-on Work: 7-9 hours** (comprehensive template assignments + debugging)
+- **🔍 Learning: 2.5 hours** (core concepts with Python/Java context)
+- **💻 Hands-on Work: 4.5-6.5 hours** (comprehensive template assignments + debugging)
+- **✅ Assignments: 2.25 hours** (demonstrate mastery)
+- **📖 Note: Reading time is separate and must be completed BEFORE hands-on work**
 - **📖 Reading Note**: Templates are complex - the author's step-by-step approach is invaluable
-
-**📝 Template Warning**: Templates are one of the most challenging C++ concepts - thorough textbook reading is essential before attempting assignments.
 
 **🛠️ Development Environment**: This chapter assumes you've completed the setup in [DEVELOPMENT_SETUP.md](./DEVELOPMENT_SETUP.md). All debugging examples use the standard VS Code + Docker workflow established there.
 
 ---
 
 ## 🔄 Core Concepts: Templates vs Virtual Functions (2.5 hours)
+
+**📖 Bridge to Textbook**: Now that you've read about templates and compile-time polymorphism in Chapter 6, let's connect those concepts to Java generics and Python's dynamic typing, and see them in action.
 
 ### 1. The Motivation: Why Templates Matter
 
@@ -206,6 +221,8 @@ cout << TypeInfo<string>::name() << "\n"; // "text string"
 ---
 
 ## 🧩 Hands-On Problems (2.25 hours)
+
+**📖 Ready to Apply**: You've read the textbook and reviewed the Python/Java connections above. Now let's put that knowledge to work with hands-on practice that prepares you for the assignments.
 
 ### Problem Set 1: Function Template Fundamentals (45 minutes)
 

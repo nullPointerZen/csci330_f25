@@ -1,7 +1,45 @@
 # Chapter 8: Statements - Lesson Plan
 
+## Course: C++ for Python/Java Programmers
+## Delivery Mode: Self-Paced, Asynchronous
+## Total Learning Time: 7.25-9.25 hours across 3 components
+
+---
+
+## 📖 Three-Component Learning Sequence
+
+This chapter follows a structured, self-paced approach where each component builds on the previous:
+
+### Component 1: Textbook Foundation (2-3 hours)
+**Student Activity**: Read Chapter 8 "Statements" from C++ Crash Course
+- **Purpose**: Establish core theoretical foundation for control flow and exception handling
+- **Instructor Role**: None (self-paced reading)
+- **Assessment**: Comprehension verified through subsequent components
+
+### Component 2: Contextualized Tutorial (4-5 hours) 
+**Student Activity**: Work through `chapter_08_lecture_notes.md`
+- **Purpose**: Bridge textbook concepts to Python/Java knowledge with hands-on practice
+- **Instructor Role**: Available for office hours support
+- **Content**: Comparative explanations + guided practice problems
+
+### Component 3: Applied Assessment (2.25 hours)
+**Student Activity**: Complete `chapter_08_assignments.md` 
+- **Purpose**: Demonstrate mastery through independent problem-solving
+- **Instructor Role**: Grade final submissions
+- **Assessment**: Control flow projects + exception handling exercises
+
+---
+
+## 🎯 Instructor Focus Areas
+
+### Key Teaching Points
+**Emphasize the Learning Sequence**:
+- Students MUST complete textbook reading before lecture notes
+- Lecture notes contextualize and reinforce textbook concepts
+- Assignments test combined knowledge from both sources
+- **Critical**: Don't let students skip ahead or work out of sequence
+
 **Target Audience**: Students with Python/Java background (NOT hardcore CS majors)  
-**Time Budget**: 2.5 hours maximum  
 **Prerequisites**: Chapters 1-7 (basic programming, types, references, object lifecycle, polymorphism, templates, expressions)  
 
 ## Development Environment Setup
@@ -451,11 +489,88 @@ public:
 - **Exception Safety**: [Exception Safety Guarantees](https://en.cppreference.com/w/cpp/language/exceptions)
 - **Best Practices**: Modern C++ guidelines on exception handling
 
+## Student Support Strategy
+
+### Component-Based Office Hours Support
+
+#### During Component 1 (Textbook Reading)
+**Student Activity**: Independent reading
+**Instructor Support**: 
+- Minimal - reading is foundational
+- Answer clarifying questions about control flow concepts
+- **Red Flag**: Students asking about exception syntax during reading phase
+
+#### During Component 2 (Lecture Notes Tutorial)  
+**Student Activity**: Contextual learning + hands-on practice
+**Instructor Support**:
+- **High availability** - this is where students need most help
+- Concept clarification (textbook + Python/Java bridges)
+- Debugging control flow and exception handling
+- **Red Flag**: Students who haven't read textbook (refer them back to Component 1)
+
+#### During Component 3 (Assignments)
+**Student Activity**: Independent problem-solving
+**Instructor Support**:
+- **Minimal guidance** - this is assessment
+- Clarify assignment requirements only
+- **No debugging help** - they should be ready by this stage
+- **Red Flag**: Students struggling with basic control flow (incomplete earlier components)
+
 ## Assessment Strategy
 
-Students will be evaluated on:
-1. **Correct syntax** usage of control structures
-2. **Appropriate exception handling** for different scenarios
-3. **RAII implementation** in resource management
-4. **Code organization** and readability
-5. **Performance considerations** in control flow design
+### Component-Based Assessment
+
+#### Component 1 Assessment
+**Method**: Indirect (through Component 2 performance)
+**Indicator**: Students who struggle in Component 2 likely didn't complete reading
+
+#### Component 2 Assessment  
+**Method**: Formative (practice problems are scaffolded)
+**Purpose**: Build confidence and skill before Component 3
+
+#### Component 3 Assessment
+**Method**: Summative (graded assignments)
+**Requirements**: Control flow projects + exception handling exercises
+
+### Rubric (Pass/Fail)
+| Criteria | Pass Requirement |
+|----------|------------------|
+| Control Flow Syntax | Correct usage of if/else, switch, loops |
+| Exception Handling | Proper try/catch blocks and error propagation |
+| RAII Implementation | Resources properly managed in control structures |
+| Code Organization | Clean, readable control flow logic |
+
+## Teaching Notes for Self-Paced Delivery
+
+### Common Student Issues by Component
+
+#### Component 1 Issues (Textbook Reading)
+**Problem**: Students skip reading and jump to Component 2
+**Solution**: Emphasize that lecture notes assume textbook knowledge
+**Red Flag**: Students asking basic questions answered in textbook
+
+#### Component 2 Issues (Lecture Notes)
+**Problem**: Confusion about RAII vs Python/Java try/finally patterns
+**Solution**: Emphasize automatic cleanup through destructors
+**Red Flag**: Students trying to implement Java-style finally blocks
+
+#### Component 3 Issues (Assignments)
+**Problem**: Students not ready for independent work
+**Solution**: Refer back to Components 1-2, not debugging help
+**Red Flag**: Basic syntax errors indicate incomplete foundation
+
+### Supporting Weak Students
+- **Don't lower standards** - maintain the three-component sequence
+- **Provide more support in Component 2** (where teaching happens)
+- **Emphasize explanation in lecture notes helps everyone**
+- **Office hours focus**: Concept clarification and design patterns, not assignment debugging
+
+### Supporting Strong Students  
+- **Let them move quickly through Component 2**
+- **Encourage exploration of advanced exception types**
+- **Component 3 extensions**: More complex RAII scenarios
+
+### Sequence Enforcement
+- **Monitor student questions** to identify sequence violations
+- **Redirect students back to prerequisite components**  
+- **Don't provide shortcuts** - the sequence builds proper foundation

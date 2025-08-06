@@ -1,8 +1,19 @@
 # Chapter 8: Statements - Complete Guide
 
-## 🎯 Learning Objectives (5 minutes)
+## 📖 Learning Sequence (IMPORTANT!)
 
-By the end of this chapter, you will:
+**🔄 How This Chapter Works:**
+1. **📚 FIRST**: Read Textbook Chapter 8 "Statements" (2-3 hours)
+2. **🔍 SECOND**: Work through these lecture notes for Python/Java context and hands-on practice (4-5 hours)
+3. **✅ THIRD**: Complete the chapter assignments to demonstrate mastery (2.25 hours)
+
+**⚠️ Critical**: Each step builds on the previous one. Don't skip ahead!
+
+## 🎯 Learning Objectives
+
+**📚 PREREQUISITE: Read Textbook Chapter 8 "Statements" FIRST**
+
+After completing the textbook reading and this chapter's materials, you will:
 1. **Master** C++ control flow statements with proper syntax
 2. **Handle** exceptions using try/catch blocks effectively
 3. **Apply** RAII principles to resource management in control structures
@@ -10,9 +21,10 @@ By the end of this chapter, you will:
 5. **Debug** control flow and exception handling using VS Code
 6. **Compare** C++ control flow with Python/Java equivalents
 
-**⏱️ Time Budget: ~4.75 hours total**
-- Learning: 2.5 hours
-- Problems: 2.25 hours
+**⏱️ Time Budget:**
+- **📚 Textbook Reading: 2-3 hours** (Chapter 8: "Statements" - REQUIRED FIRST)
+- **💻 Hands-on Work: 4-5 hours** (course materials + assignments + debugging)
+- **📖 Note: Reading time is separate and must be completed BEFORE hands-on work**
 
 **🛠️ Development Environment**: This chapter assumes you've completed the setup in [DEVELOPMENT_SETUP.md](./DEVELOPMENT_SETUP.md). All debugging examples use the standard VS Code + Docker workflow established there.
 
@@ -20,9 +32,11 @@ By the end of this chapter, you will:
 
 ## 🎛️ Core Concepts: Control Flow and Exception Handling (2.5 hours)
 
+**📖 Bridge to Textbook**: Now that you've read about C++ statements in Chapter 8, let's connect those concepts to the Python/Java knowledge you already have and see practical examples.
+
 ### 1. Conditional Statements: Making Decisions
 
-**C++ provides familiar conditional statements with some unique features:**
+**From Textbook to Context**: The textbook covered C++ control flow statements. Here's how they compare to languages you know and work in practice:
 
 ```cpp
 // Basic if/else - same as Python/Java
@@ -71,6 +85,8 @@ switch (grade) {
 
 ### 2. Loop Statements: Repetition Control
 
+**📖 Bridge to Textbook**: The textbook explained C++ loop types. Here's how they compare to Python/Java loops and when to use each type:
+
 **C++ offers several loop types, each with specific use cases:**
 
 ```cpp
@@ -111,6 +127,8 @@ for (auto data = load_data(); const auto& item : data) {
 - **Java**: Similar to C++ but with different collection iteration
 
 ### 3. Exception Handling: Robust Error Management
+
+**📖 Bridge to Textbook**: You've read about C++ exceptions in the textbook. Here's how they compare to error handling in Python and Java:
 
 **C++ exceptions provide structured error handling:**
 
@@ -162,6 +180,8 @@ void demonstrate_exceptions() {
 | **Finally equivalent** | Destructors/RAII | `finally:` block | `finally` block |
 
 ### 4. RAII: Automatic Resource Management in Control Structures
+
+**📖 Bridge to Textbook**: The textbook introduced RAII concepts. Here's how this C++-unique pattern compares to resource management in Python/Java:
 
 **RAII (Resource Acquisition Is Initialization) ensures resources are cleaned up automatically, even when exceptions occur:**
 
@@ -333,6 +353,8 @@ unique_ptr<Resource> get_resource() {
 ---
 
 ## 🧩 Hands-On Problems (2.25 hours)
+
+**📖 Ready to Apply**: You've read the textbook and reviewed the Python/Java connections above. Now let's put that knowledge to work with hands-on practice that prepares you for the assignments.
 
 ### Problem Set 1: Control Flow Fundamentals (45 minutes)
 

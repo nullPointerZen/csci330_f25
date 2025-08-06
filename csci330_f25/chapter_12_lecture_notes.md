@@ -1,8 +1,19 @@
 # Chapter 12: Utilities - Complete Guide
 
-## 🎯 Learning Objectives (5 minutes)
+## 📖 Learning Sequence (IMPORTANT!)
 
-By the end of this chapter, you will:
+**🔄 How This Chapter Works:**
+1. **📚 FIRST**: Read Textbook Chapter 12 "Utilities" (1-2 hours)
+2. **🔍 SECOND**: Work through these lecture notes for Python/Java context and hands-on practice (4-5 hours)
+3. **✅ THIRD**: Complete the chapter assignments to demonstrate mastery (2.25 hours)
+
+**⚠️ Critical**: Each step builds on the previous one. Don't skip ahead!
+
+## 🎯 Learning Objectives
+
+**📚 PREREQUISITE: Read Textbook Chapter 12 "Utilities" FIRST**
+
+After completing the textbook reading and this chapter's materials, you will:
 1. **Master** `std::optional` to handle values that may or may not exist safely
 2. **Apply** `std::variant` for type-safe unions and flexible data handling
 3. **Utilize** `std::tuple` for grouping multiple values and multiple returns
@@ -10,15 +21,18 @@ By the end of this chapter, you will:
 5. **Integrate** these utilities to create robust, safe C++ applications
 6. **Debug** utility types using VS Code's advanced debugging features
 
-**⏱️ Time Budget: ~4.75 hours total**
-- Learning: 2.5 hours
-- Problems: 2.25 hours
+**⏱️ Time Budget:**
+- **📚 Textbook Reading: 1-2 hours** (Chapter 12: "Utilities" - REQUIRED FIRST)
+- **💻 Hands-on Work: 4-5 hours** (course materials + assignments + debugging)
+- **📖 Note: Reading time is separate and must be completed BEFORE hands-on work**
 
 **🛠️ Development Environment**: This chapter assumes you've completed the setup in [DEVELOPMENT_SETUP.md](./DEVELOPMENT_SETUP.md). All debugging examples use the standard VS Code + Docker workflow established there.
 
 ---
 
 ## 🛠️ Core Concepts: Modern C++ Utilities (2.5 hours)
+
+**📖 Bridge to Textbook**: Now that you've read about modern C++ utilities in Chapter 12, let's connect those concepts to the Python/Java knowledge you already have and see them in practical scenarios.
 
 ### 1. `std::optional` - "This Value Might Not Exist"
 
@@ -657,6 +671,8 @@ void debug_variant(const std::variant<Types...>& var, const std::string& name) {
 ---
 
 ## 🧩 Hands-On Problems (2.25 hours)
+
+**📖 Ready to Apply**: You've read the textbook and reviewed the modern C++ utilities concepts above. Now let's put that knowledge to work with hands-on practice that prepares you for the assignments.
 
 ### Problem Set 1: Foundation Problems (45 minutes)
 

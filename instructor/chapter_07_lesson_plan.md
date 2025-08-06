@@ -1,7 +1,45 @@
 # Chapter 7: Expressions - Lesson Plan
 
+## Course: C++ for Python/Java Programmers
+## Delivery Mode: Self-Paced, Asynchronous
+## Total Learning Time: 7.25-9.25 hours across 3 components
+
+---
+
+## 📖 Three-Component Learning Sequence
+
+This chapter follows a structured, self-paced approach where each component builds on the previous:
+
+### Component 1: Textbook Foundation (2-3 hours)
+**Student Activity**: Read Chapter 7 "Expressions" from C++ Crash Course
+- **Purpose**: Establish core theoretical foundation for expressions and operator overloading
+- **Instructor Role**: None (self-paced reading)
+- **Assessment**: Comprehension verified through subsequent components
+
+### Component 2: Contextualized Tutorial (4-5 hours) 
+**Student Activity**: Work through `chapter_07_lecture_notes.md`
+- **Purpose**: Bridge textbook concepts to Python/Java knowledge with hands-on practice
+- **Instructor Role**: Available for office hours support
+- **Content**: Comparative explanations + guided practice problems
+
+### Component 3: Applied Assessment (2.25 hours)
+**Student Activity**: Complete `chapter_07_assignments.md` 
+- **Purpose**: Demonstrate mastery through independent problem-solving
+- **Instructor Role**: Grade final submissions
+- **Assessment**: Operator overloading projects + expression evaluation exercises
+
+---
+
+## 🎯 Instructor Focus Areas
+
+### Key Teaching Points
+**Emphasize the Learning Sequence**:
+- Students MUST complete textbook reading before lecture notes
+- Lecture notes contextualize and reinforce textbook concepts
+- Assignments test combined knowledge from both sources
+- **Critical**: Don't let students skip ahead or work out of sequence
+
 **Target Audience**: Students with Python or Java experience  
-**Time Budget**: Maximum 2.5 hours of learning content  
 **Prerequisites**: Students understand basic programming, types, references, object lifecycle, runtime/compile-time polymorphism, and basic templates from Chapters 1-6.
 
 ## Development Environment Setup
@@ -350,19 +388,88 @@ public:
 2. Implement basic arithmetic operators for a `Fraction` class
 3. Add stream output operator to a custom class
 
-## Key Takeaways
-1. **Expressions are more than just math** - they include function calls, member access, etc.
-2. **Precedence matters** - when in doubt, use parentheses for clarity
-3. **Operator overloading should feel natural** - don't surprise users
-4. **Member vs. non-member operators** - choose based on what makes sense
-5. **Implement related operators together** - maintain consistency
+## Student Support Strategy
 
-## Connection to Next Chapter
-Chapter 8 will cover statements and control flow, building on expression evaluation to control program behavior. Students will use the operators learned here in conditional statements and loops.
+### Component-Based Office Hours Support
 
-## Assessment Preparation
-Students should be comfortable:
-- Reading complex expressions and predicting their evaluation order
-- Implementing basic operator overloading for custom classes
-- Choosing appropriate operators to overload for different scenarios
-- Understanding when to use member vs. non-member operator functions
+#### During Component 1 (Textbook Reading)
+**Student Activity**: Independent reading
+**Instructor Support**: 
+- Minimal - reading is foundational
+- Answer clarifying questions about expression concepts
+- **Red Flag**: Students asking about operator overloading syntax during reading phase
+
+#### During Component 2 (Lecture Notes Tutorial)  
+**Student Activity**: Contextual learning + hands-on practice
+**Instructor Support**:
+- **High availability** - this is where students need most help
+- Concept clarification (textbook + Python/Java bridges)
+- Debugging operator overloading implementations
+- **Red Flag**: Students who haven't read textbook (refer them back to Component 1)
+
+#### During Component 3 (Assignments)
+**Student Activity**: Independent problem-solving
+**Instructor Support**:
+- **Minimal guidance** - this is assessment
+- Clarify assignment requirements only
+- **No debugging help** - they should be ready by this stage
+- **Red Flag**: Students struggling with basic operator concepts (incomplete earlier components)
+
+## Assessment Strategy
+
+### Component-Based Assessment
+
+#### Component 1 Assessment
+**Method**: Indirect (through Component 2 performance)
+**Indicator**: Students who struggle in Component 2 likely didn't complete reading
+
+#### Component 2 Assessment  
+**Method**: Formative (practice problems are scaffolded)
+**Purpose**: Build confidence and skill before Component 3
+
+#### Component 3 Assessment
+**Method**: Summative (graded assignments)
+**Requirements**: Operator overloading projects + expression evaluation exercises
+
+### Rubric (Pass/Fail)
+| Criteria | Pass Requirement |
+|----------|------------------|
+| Expression Evaluation | Can predict precedence and type conversions correctly |
+| Basic Operators | Arithmetic and comparison operators work correctly |
+| Output Operators | Stream operators implemented properly |
+| Design Decisions | Appropriate choice of operators to overload |
+
+## Teaching Notes for Self-Paced Delivery
+
+### Common Student Issues by Component
+
+#### Component 1 Issues (Textbook Reading)
+**Problem**: Students skip reading and jump to Component 2
+**Solution**: Emphasize that lecture notes assume textbook knowledge
+**Red Flag**: Students asking basic questions answered in textbook
+
+#### Component 2 Issues (Lecture Notes)
+**Problem**: Confusion about operator overloading design principles
+**Solution**: Emphasize "principle of least surprise" - operators should behave naturally
+**Red Flag**: Students implementing surprising operator behaviors
+
+#### Component 3 Issues (Assignments)
+**Problem**: Students not ready for independent work
+**Solution**: Refer back to Components 1-2, not debugging help
+**Red Flag**: Basic syntax errors indicate incomplete foundation
+
+### Supporting Weak Students
+- **Don't lower standards** - maintain the three-component sequence
+- **Provide more support in Component 2** (where teaching happens)
+- **Emphasize explanation in lecture notes helps everyone**
+- **Office hours focus**: Concept clarification and design guidance, not assignment debugging
+
+### Supporting Strong Students  
+- **Let them move quickly through Component 2**
+- **Encourage exploration of advanced operators** (function call, subscript)
+- **Component 3 extensions**: More complex operator overloading scenarios
+
+### Sequence Enforcement
+- **Monitor student questions** to identify sequence violations
+- **Redirect students back to prerequisite components**  
+- **Don't provide shortcuts** - the sequence builds proper foundation

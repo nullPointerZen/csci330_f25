@@ -1,23 +1,38 @@
 # Chapter 3: References and Aliases - Complete Guide
 
-## 🎯 Learning Objectives (5 minutes)
+## 📖 Learning Sequence (IMPORTANT!)
 
-By the end of this chapter, you will:
+**🔄 How This Chapter Works:**
+1. **📚 FIRST**: Read Textbook Chapter 3 "References and Aliases" (1-2 hours)
+2. **🔍 SECOND**: Work through these lecture notes for Python/Java context and hands-on practice (4.5 hours)
+3. **✅ THIRD**: Complete the chapter assignments to demonstrate mastery (2.25 hours)
+
+**⚠️ Critical**: Each step builds on the previous one. Don't skip ahead!
+
+## 🎯 Learning Objectives
+
+**📚 PREREQUISITE: Read Textbook Chapter 3 "References and Aliases" FIRST**
+
+After completing the textbook reading and this chapter's materials, you will:
 1. **Create and use references** - Cleaner alternatives to pointers for aliasing variables
 2. **Master const correctness** - Prevent accidental modifications with const references
 3. **Distinguish references from pointers** - Know when to use each approach
 4. **Debug reference errors** - Fix common binding and initialization issues
 5. **Apply references in functions** - Pass parameters efficiently and safely
 
-**⏱️ Time Budget: ~4.75 hours total**
-- Learning: 2.5 hours
-- Problems: 2.25 hours
+**⏱️ Time Budget:**
+- **📚 Textbook Reading: 1-2 hours** (Chapter 3: "References and Aliases" - REQUIRED FIRST)
+- **🛠️ Learning: 2.5 hours** (core concepts with Python/Java context)
+- **💻 Problems: 2.25 hours** (hands-on practice and assignments)
+- **📖 Note: Reading time is separate and must be completed BEFORE hands-on work**
 
 **🛠️ Development Environment**: This chapter assumes you've completed the setup in [DEVELOPMENT_SETUP.md](./DEVELOPMENT_SETUP.md). All debugging examples use the standard VS Code + Docker workflow established there.
 
 ---
 
 ## 🔗 Core Concepts: References vs Python/Java (2.5 hours)
+
+**📖 Bridge to Textbook**: Now that you've read about references as aliases in Chapter 3, let's connect those concepts to the Python/Java knowledge you already have and see them in action.
 
 ### 1. What Are References?
 
@@ -158,6 +173,8 @@ void update_gpa(Student& s, double new_gpa) {
 ---
 
 ## 🧩 Hands-On Problems (2.25 hours)
+
+**📖 Ready to Apply**: You've read the textbook and reviewed the Python/Java connections above. Now let's put that knowledge to work with hands-on practice that prepares you for the assignments.
 
 ### Problem Set 1: Basic References (45 minutes)
 

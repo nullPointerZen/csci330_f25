@@ -1,13 +1,49 @@
 # Chapter 1: Up and Running - Lesson Plan
 
 ## Course: C++ for Python/Java Programmers
-## Estimated Time: 2.5 hours maximum (self-paced)
+## Delivery Mode: Self-Paced, Asynchronous
+## Total Learning Time: 7.25-8.25 hours across 3 components
+
+---
+
+## 📖 Three-Component Learning Sequence
+
+This chapter follows a structured, self-paced approach where each component builds on the previous:
+
+### Component 1: Textbook Foundation (1-2 hours)
+**Student Activity**: Read Chapter 1 "Up and Running" from C++ Crash Course
+- **Purpose**: Establish core theoretical foundation
+- **Instructor Role**: None (self-paced reading)
+- **Assessment**: Comprehension verified through subsequent components
+
+### Component 2: Contextualized Tutorial (4-5 hours) 
+**Student Activity**: Work through `chapter_01_lecture_notes.md`
+- **Purpose**: Bridge textbook concepts to Python/Java knowledge with hands-on practice
+- **Instructor Role**: Available for office hours support
+- **Content**: Comparative explanations + guided practice problems
+
+### Component 3: Applied Assessment (2.25 hours)
+**Student Activity**: Complete `chapter_01_assignments.md` 
+- **Purpose**: Demonstrate mastery through independent problem-solving
+- **Instructor Role**: Grade final submissions
+- **Assessment**: Mini calculator project + foundational exercises
+
+---
+
+## 🎯 Instructor Focus Areas
+
+### Key Teaching Points
+**Emphasize the Learning Sequence**:
+- Students MUST complete textbook reading before lecture notes
+- Lecture notes contextualize and reinforce textbook concepts
+- Assignments test combined knowledge from both sources
+- **Critical**: Don't let students skip ahead or work out of sequence
 
 ---
 
 ## Learning Objectives
 
-By the end of this lesson, students will be able to:
+By the end of this three-component sequence, students will be able to:
 
 1. **Set up** a C++ development environment on their operating system
 2. **Write, compile, and run** a basic C++ program
@@ -71,9 +107,55 @@ By the end of this lesson, students will be able to:
 
 ---
 
-## Lesson Structure
+## Student Support Strategy
 
-### Pre-Work: Environment Setup (Not counted in course time)
+### Component-Based Office Hours Support
+
+#### During Component 1 (Textbook Reading)
+**Student Activity**: Independent reading
+**Instructor Support**: 
+- Minimal - reading is foundational
+- Answer clarifying questions about concepts
+- **Red Flag**: Students asking about programming syntax during reading phase
+
+#### During Component 2 (Lecture Notes Tutorial)  
+**Student Activity**: Contextual learning + hands-on practice
+**Instructor Support**:
+- **High availability** - this is where students need most help
+- Environment setup troubleshooting
+- Concept clarification (textbook + Python/Java bridges)
+- Debugging compilation errors
+- **Red Flag**: Students who haven't read textbook (refer them back to Component 1)
+
+#### During Component 3 (Assignments)
+**Student Activity**: Independent problem-solving
+**Instructor Support**:
+- **Minimal guidance** - this is assessment
+- Clarify assignment requirements only
+- **No debugging help** - they should be ready by this stage
+- **Red Flag**: Students struggling with basic concepts (incomplete earlier components)
+
+---
+
+## Detailed Component Structure
+
+### Component 1: Textbook Foundation (1-2 hours)
+**Student Responsibility**: Read Chapter 1 independently
+
+**Learning Coverage**:
+- C++ program structure and compilation
+- Basic syntax and language features  
+- Fundamental programming concepts in C++
+
+**Instructor Monitoring**: 
+- No direct teaching required
+- Track completion through Component 2 performance
+
+### Component 2: Contextualized Tutorial (4-5 hours)
+**Student Activity**: Work through lecture notes with hands-on practice
+
+#### Module 2A: Environment Setup (30-60 minutes)
+**One-time setup - not counted in regular chapter time**
 **Complete before starting Chapter 1**
 
 #### Required Pre-Work
@@ -158,19 +240,35 @@ By the end of this lesson, students will be able to:
 
 ---
 
+### Component 3: Applied Assessment (2.25 hours)
+**Student Activity**: Complete assignments independently
+
+**Assessment Philosophy**: Students apply combined knowledge from textbook + lecture notes
+
+#### Problem Set Structure:
+1. **Getting Started (30 min)**: Basic program structure and compilation
+2. **Basic Programming (45 min)**: Variables, functions, control flow  
+3. **Mini Calculator Project (60 min)**: Integration of all concepts
+
+**Instructor Role**: Grade submissions, provide feedback
+
+---
+
 ## Assessment Strategy
 
-### Formative Assessment (Throughout)
-- **Auto-graded exercises**: Compilation and output checking
-- **Peer code review**: Students review each other's solutions
-- **Self-check quizzes**: After each module
+### Component-Based Assessment
 
-### Summative Assessment  
-- **Mini Calculator Project** (45 minutes):
-  - Add, subtract, and multiply two hardcoded numbers
-  - Use separate functions for each operation
-  - Include basic division with zero-check
-  - Starter template provided
+#### Component 1 Assessment
+**Method**: Indirect (through Component 2 performance)
+**Indicator**: Students who struggle in Component 2 likely didn't complete reading
+
+#### Component 2 Assessment  
+**Method**: Formative (practice problems are scaffolded)
+**Purpose**: Build confidence and skill before Component 3
+
+#### Component 3 Assessment
+**Method**: Summative (graded assignments)
+**Requirements**: Mini Calculator Project + foundational exercises
 
 ### Rubric (Pass/Fail)
 | Criteria | Pass Requirement |
@@ -207,18 +305,37 @@ By the end of this lesson, students will be able to:
 
 ---
 
-## Teaching Notes
+## Teaching Notes for Self-Paced Delivery
 
-### Common Challenges
-1. **Environment Setup**: Have alternative online compilers ready
-2. **Compilation Errors**: Students from Python struggle with syntax strictness
-3. **Static Typing**: Emphasize this is for performance and safety
+### Common Student Issues by Component
 
-### Differentiation
-- **For Advanced Students**: Explore compiler flags, optimization levels
-- **For Struggling Students**: Provide more scaffolded exercises, pair programming
+#### Component 1 Issues (Textbook Reading)
+**Problem**: Students skip reading and jump to Component 2
+**Solution**: Emphasize that lecture notes assume textbook knowledge
+**Red Flag**: Students asking basic questions answered in textbook
 
-### Time Management
-- Keep environment setup to time limit (provide pre-configured options)
-- Focus on concepts over syntax memorization
-- Use live coding to demonstrate common errors
+#### Component 2 Issues (Lecture Notes)
+**Problem**: Environment setup difficulties
+**Solution**: Multiple backup options (online compilers, pre-configured containers)
+**Red Flag**: Students spending too much time on setup vs. learning
+
+#### Component 3 Issues (Assignments)
+**Problem**: Students not ready for independent work
+**Solution**: Refer back to Components 1-2, not debugging help
+**Red Flag**: Basic syntax errors indicate incomplete foundation
+
+### Supporting Weak Students
+- **Don't lower standards** - maintain the three-component sequence
+- **Provide more support in Component 2** (where teaching happens)
+- **Emphasize that explanation in lecture notes helps everyone**
+- **Office hours focus**: Environment and concept clarification, not assignment debugging
+
+### Supporting Strong Students  
+- **Let them move quickly through Component 2**
+- **Encourage exploration of compiler flags, optimization**
+- **Component 3 extensions**: More complex calculator features
+
+### Sequence Enforcement
+- **Monitor student questions** to identify sequence violations
+- **Redirect students back to prerequisite components**  
+- **Don't provide shortcuts** - the sequence builds proper foundation

@@ -1,8 +1,47 @@
 # Chapter 6: Compile-Time Polymorphism - Lesson Plan
 
-## Estimated Time: 2.5 hours maximum
+## Course: C++ for Python/Java Programmers
+## Delivery Mode: Self-Paced, Asynchronous
+## Total Learning Time: 12.75-15.75 hours across 3 components
 
-## Development Environment Setup
+---
+
+## 📖 Three-Component Learning Sequence
+
+This chapter follows a structured, self-paced approach where each component builds on the previous:
+
+### Component 1: Textbook Foundation (3-4 hours)
+**Student Activity**: Read Chapter 6 "Compile-Time Polymorphism" from C++ Crash Course
+- **Purpose**: Establish core theoretical foundation for templates and compile-time polymorphism
+- **Instructor Role**: None (self-paced reading)
+- **Assessment**: Comprehension verified through subsequent components
+- **Note**: This is one of the most complex chapters - thorough reading is essential
+
+### Component 2: Contextualized Tutorial (7-9 hours) 
+**Student Activity**: Work through `chapter_06_lecture_notes.md`
+- **Purpose**: Bridge textbook concepts to Java generics and Python's dynamic typing
+- **Instructor Role**: Available for office hours support
+- **Content**: Comparative explanations + guided practice problems
+
+### Component 3: Applied Assessment (2.25 hours)
+**Student Activity**: Complete `chapter_06_assignments.md` 
+- **Purpose**: Demonstrate mastery through independent problem-solving
+- **Instructor Role**: Grade final submissions
+- **Assessment**: Function templates, class templates, and template debugging
+
+---
+
+## 🎯 Instructor Focus Areas
+
+### Key Teaching Points
+**Emphasize the Learning Sequence**:
+- Students MUST complete textbook reading before lecture notes
+- Templates are extremely complex - textbook foundation is critical
+- Lecture notes contextualize and reinforce textbook concepts
+- Assignments test combined knowledge from both sources
+- **Critical**: Don't let students skip ahead or work out of sequence
+
+### Development Environment Setup
 **Continue using your chosen workflow from previous chapters:**
 - **Option A**: Docker + Command Line
 - **Option B**: VS Code + Docker (great for template instantiation debugging)

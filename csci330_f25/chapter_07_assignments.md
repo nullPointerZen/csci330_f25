@@ -1,5 +1,20 @@
 # Chapter 7: Expressions - Problem Sets
 
+## 📋 Before You Begin
+
+**✅ Prerequisites Check:**
+- [ ] **Completed textbook reading**: Chapter 7 "Expressions"
+- [ ] **Worked through lecture notes**: All core concepts and hands-on problems
+- [ ] **Development environment ready**: VS Code + compiler setup verified
+
+**🚫 Don't start these assignments until you've completed the textbook and lecture notes!**
+
+## Instructions
+- These problems apply concepts from both the textbook and lecture notes
+- Each problem builds on previous concepts  
+- **Time expectation**: 2.25 hours total for all three problem sets
+- Test all programs thoroughly before submission
+
 **Total Time Budget**: 2.25 hours across 3 problem sets  
 **Target**: Students with Python/Java background learning C++ expressions and operator overloading
 

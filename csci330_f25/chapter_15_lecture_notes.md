@@ -1,15 +1,29 @@
 # Chapter 15: Strings - Complete Guide
 
-## 🎯 Learning Objectives (5 minutes)
+## 📖 Learning Sequence (IMPORTANT!)
 
-By the end of this chapter, you will:
+**🔄 How This Chapter Works:**
+1. **📚 FIRST**: Read Textbook Chapter 15 "Strings" (1-2 hours)
+2. **🔍 SECOND**: Work through these lecture notes for Python/Java context and hands-on practice (4-5 hours)
+3. **✅ THIRD**: Complete the chapter assignments to demonstrate mastery (2.25 hours)
+
+**⚠️ Critical**: Each step builds on the previous one. Don't skip ahead!
+
+## 🎯 Learning Objectives
+
+**📚 PREREQUISITE: Read Textbook Chapter 15 "Strings" FIRST**
+
+After completing the textbook reading and this chapter's materials, you will:
 - **Master C++ string fundamentals** - Understand `std::string` vs C-style strings
 - **Connect to your Python/Java knowledge** - See familiar string operations in C++ syntax
 - **Apply modern string techniques** - Use string views, formatting, and efficient operations
 - **Debug string problems** - Recognize common string errors and memory issues
 - **Write robust string code** - Handle Unicode, locales, and performance considerations
 
-**Time Commitment**: ~5 hours (2.5 hours concepts + 2.25 hours hands-on)
+**⏱️ Time Budget:**
+- **📚 Textbook Reading: 1-2 hours** (Chapter 15: "Strings" - REQUIRED FIRST)
+- **💻 Hands-on Work: 4-5 hours** (course materials + assignments + debugging)
+- **📖 Note: Reading time is separate and must be completed BEFORE hands-on work**
 
 ---
 
@@ -28,6 +42,8 @@ If you see errors, review [chapter_01_development_setup.md](chapter_01_developme
 ---
 
 ## 📚 Core Concepts
+
+**📖 Bridge to Textbook**: Now that you've read about C++ strings in Chapter 15, let's connect those concepts to the string handling you already know from Python and Java.
 
 ### Python/Java Developers: What's Different?
 
@@ -792,6 +808,8 @@ std::cout << "Bytes: " << utf8_text.size() << std::endl;      // Byte count
 ---
 
 ## 🧩 Hands-On Problems
+
+**📖 Ready to Apply**: You've read the textbook and reviewed the string handling concepts above. Now let's put that knowledge to work with hands-on practice that prepares you for the assignments.
 
 See [chapter_15_problems.md](chapter_15_problems.md) for practice exercises.
 

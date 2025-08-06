@@ -1,8 +1,19 @@
 # Chapter 13: STL Containers - Complete Guide
 
-## 🎯 Learning Objectives (5 minutes)
+## 📖 Learning Sequence (IMPORTANT!)
 
-By the end of this chapter, you will:
+**🔄 How This Chapter Works:**
+1. **📚 FIRST**: Read Textbook Chapter 13 "STL Containers" (1-2 hours)
+2. **🔍 SECOND**: Work through these lecture notes for Python/Java context and hands-on practice (4-5 hours)
+3. **✅ THIRD**: Complete the chapter assignments to demonstrate mastery (2.25 hours)
+
+**⚠️ Critical**: Each step builds on the previous one. Don't skip ahead!
+
+## 🎯 Learning Objectives
+
+**📚 PREREQUISITE: Read Textbook Chapter 13 "STL Containers" FIRST**
+
+After completing the textbook reading and this chapter's materials, you will:
 1. **Choose** appropriate STL containers for different programming scenarios
 2. **Master** sequence containers (`vector`, `list`) and their performance characteristics
 3. **Apply** associative containers (`map`, `set`) for key-value and unique element storage
@@ -10,15 +21,18 @@ By the end of this chapter, you will:
 5. **Understand** performance trade-offs between different container types
 6. **Connect** C++ containers to familiar Python/Java collections
 
-**⏱️ Time Budget: ~4.75 hours total**
-- Learning: 2.5 hours
-- Problems: 2.25 hours
+**⏱️ Time Budget:**
+- **📚 Textbook Reading: 1-2 hours** (Chapter 13: "STL Containers" - REQUIRED FIRST)
+- **💻 Hands-on Work: 4-5 hours** (course materials + assignments + debugging)
+- **📖 Note: Reading time is separate and must be completed BEFORE hands-on work**
 
 **🛠️ Development Environment**: This chapter assumes you've completed the setup in [DEVELOPMENT_SETUP.md](./DEVELOPMENT_SETUP.md). All debugging examples use the standard VS Code + Docker workflow established there.
 
 ---
 
 ## 🗂️ Core Concepts: STL Containers (2.5 hours)
+
+**📖 Bridge to Textbook**: Now that you've read about STL containers in Chapter 13, let's connect those concepts to the Python/Java collections you already know and see them in practical scenarios.
 
 ### 1. Container Fundamentals and Python/Java Connections
 
@@ -497,6 +511,8 @@ void debug_map(const std::map<K, V>& m, const std::string& name) {
 ---
 
 ## 🧩 Hands-On Problems (2.25 hours)
+
+**📖 Ready to Apply**: You've read the textbook and reviewed the STL container concepts above. Now let's put that knowledge to work with hands-on practice that prepares you for the assignments.
 
 ### Problem Set 1: Container Basics and Sequence Containers (45 minutes)
 

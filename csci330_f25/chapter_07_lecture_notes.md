@@ -1,8 +1,19 @@
 # Chapter 7: Expressions - Complete Guide
 
-## 🎯 Learning Objectives (5 minutes)
+## 📖 Learning Sequence (IMPORTANT!)
 
-By the end of this chapter, you will:
+**🔄 How This Chapter Works:**
+1. **📚 FIRST**: Read Textbook Chapter 7 "Expressions" (2-3 hours)
+2. **🔍 SECOND**: Work through these lecture notes for Python/Java context and hands-on practice (4-5 hours)
+3. **✅ THIRD**: Complete the chapter assignments to demonstrate mastery (2.25 hours)
+
+**⚠️ Critical**: Each step builds on the previous one. Don't skip ahead!
+
+## 🎯 Learning Objectives
+
+**📚 PREREQUISITE: Read Textbook Chapter 7 "Expressions" FIRST**
+
+After completing the textbook reading and this chapter's materials, you will:
 1. **Master** C++ expression evaluation rules and operator precedence
 2. **Use** built-in operators effectively with type conversions
 3. **Implement** operator overloading for custom classes
@@ -10,9 +21,10 @@ By the end of this chapter, you will:
 5. **Distinguish** when to overload operators vs using member functions
 6. **Debug** expression evaluation using VS Code step-through
 
-**⏱️ Time Budget: ~4.75 hours total**
-- Learning: 2.5 hours
-- Problems: 2.25 hours
+**⏱️ Time Budget:**
+- **📚 Textbook Reading: 2-3 hours** (Chapter 7: "Expressions" - REQUIRED FIRST)
+- **💻 Hands-on Work: 4-5 hours** (course materials + assignments + debugging)
+- **📖 Note: Reading time is separate and must be completed BEFORE hands-on work**
 
 **🛠️ Development Environment**: This chapter assumes you've completed the setup in [DEVELOPMENT_SETUP.md](./DEVELOPMENT_SETUP.md). All debugging examples use the standard VS Code + Docker workflow established there.
 
@@ -20,9 +32,11 @@ By the end of this chapter, you will:
 
 ## 📊 Core Concepts: Expressions and Operators (2.5 hours)
 
+**📖 Bridge to Textbook**: Now that you've read about C++ expressions in Chapter 7, let's connect those concepts to the Python/Java knowledge you already have and see practical examples.
+
 ### 1. Understanding Expressions: The Building Blocks of Computation
 
-**An expression is any code that produces a value. Understanding how expressions are evaluated is crucial for writing correct C++ programs:**
+**From Textbook to Context**: The textbook covered expression fundamentals. Now let's see how expressions work in practice and compare them to languages you know:
 
 ```cpp
 // Simple expressions
@@ -44,6 +58,8 @@ auto total = sum(data) + bonus_points(level);
 **Key insight**: Unlike Python's more forgiving dynamic typing or Java's simpler type system, C++ gives you precise control over how expressions are evaluated - but you need to understand the rules.
 
 ### 2. Operator Precedence: Avoiding the "Order of Operations" Trap
+
+**📖 Bridge to Textbook**: You read about operator precedence in the textbook. Here's how to apply those rules in practice and avoid common mistakes from Python/Java backgrounds:
 
 **The #1 source of expression bugs**: Not understanding operator precedence. Here are the most important rules to remember:
 
@@ -78,6 +94,8 @@ bool clear3 = (x == 5) || (y == 10); // Explicit comparison
 
 ### 3. Type Conversions in Expressions
 
+**📖 Bridge to Textbook**: The textbook explained C++ type conversion rules. Here's how they work in practice with familiar Python/Java comparisons:
+
 **C++ performs automatic conversions, but you can control them:**
 
 ```cpp
@@ -102,6 +120,8 @@ double precise = static_cast<double>(i) / 3;   // Avoid integer division
 4. Use explicit casts when conversion might lose data
 
 ### 4. Operator Overloading: Making Your Classes Feel Natural
+
+**📖 Bridge to Textbook**: You've read about operator overloading basics in the textbook. Now let's see how to design and implement them with Python/Java context for intuitive class behavior:
 
 **Goal**: Make custom types work intuitively with familiar operators. Good operator overloading makes code readable and expressive.
 
@@ -265,6 +285,8 @@ bool should_proceed = score > threshold && active;
 ---
 
 ## 🧩 Hands-On Problems (2.25 hours)
+
+**📖 Ready to Apply**: You've read the textbook and reviewed the Python/Java connections above. Now let's put that knowledge to work with hands-on practice that prepares you for the assignments.
 
 ### Problem Set 1: Expression Fundamentals (45 minutes)
 

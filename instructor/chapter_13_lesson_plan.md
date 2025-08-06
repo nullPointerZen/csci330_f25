@@ -1,8 +1,43 @@
 # Chapter 13: STL Containers - Lesson Plan
 
-**Target Audience**: Students with Python/Java experience  
-**Time Budget**: 2.5 hours maximum  
-**Prerequisites**: Chapters 1-12 (basic programming, types, references, object lifecycle, polymorphism, templates, expressions, control flow, functions, testing, smart pointers, utility classes)
+## Course: C++ for Python/Java Programmers
+## Delivery Mode: Self-Paced, Asynchronous
+## Total Learning Time: 7.25-8.25 hours across 3 components
+
+---
+
+## 📖 Three-Component Learning Sequence
+
+This chapter follows a structured, self-paced approach where each component builds on the previous:
+
+### Component 1: Textbook Foundation (1-2 hours)
+**Student Activity**: Read Chapter 13 "STL Containers" from C++ Crash Course
+- **Purpose**: Establish core theoretical foundation of container types and performance characteristics
+- **Instructor Role**: None (self-paced reading)
+- **Assessment**: Comprehension verified through subsequent components
+
+### Component 2: Contextualized Tutorial (4-5 hours) 
+**Student Activity**: Work through `chapter_13_lecture_notes.md`
+- **Purpose**: Bridge textbook concepts to Python/Java collections knowledge with hands-on practice
+- **Instructor Role**: Available for office hours support
+- **Content**: Container comparisons + guided practical applications
+
+### Component 3: Applied Assessment (2.25 hours)
+**Student Activity**: Complete `chapter_13_assignments.md` 
+- **Purpose**: Demonstrate mastery through independent problem-solving
+- **Instructor Role**: Grade final submissions
+- **Assessment**: Container selection and usage projects + performance analysis
+
+---
+
+## 🎯 Instructor Focus Areas
+
+### Key Teaching Points
+**Emphasize the Learning Sequence**:
+- Students MUST complete textbook reading before lecture notes
+- Lecture notes contextualize containers vs Python/Java collections
+- Assignments test combined knowledge from both sources
+- **Critical**: Don't let students skip ahead or work out of sequence
 
 ## Development Environment Setup
 **Continue using your chosen workflow from previous chapters:**

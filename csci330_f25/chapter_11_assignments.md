@@ -1,7 +1,21 @@
 # Chapter 11: Smart Pointers - Problem Sets
 
-**Time Budget**: 2.25 hours total across all problem sets  
-**Prerequisites**: Chapters 1-10, Chapter 11 lesson content
+## 📋 Before You Begin
+
+**✅ Prerequisites Check:**
+- [ ] **Completed textbook reading**: Chapter 11 "Smart Pointers"
+- [ ] **Worked through lecture notes**: All core concepts and hands-on problems
+- [ ] **Development environment ready**: VS Code + compiler setup verified
+
+**🚫 Don't start these assignments until you've completed the textbook and lecture notes!**
+
+## Instructions
+- These problems apply concepts from both the textbook and lecture notes
+- Each problem builds on previous concepts  
+- **Time expectation**: 2.25 hours total for all three problem sets
+- Test all programs thoroughly before submission
+
+---
 
 ## Problem Set 1: Basic Smart Pointer Usage (45 minutes)
 

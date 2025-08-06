@@ -1,7 +1,16 @@
 # Chapter 1: Up and Running - Problem Sets
 
+## 📋 Before You Begin
+
+**✅ Prerequisites Check:**
+- [ ] **Completed textbook reading**: Chapter 1 "Up and Running"
+- [ ] **Worked through lecture notes**: All core concepts and hands-on problems
+- [ ] **Development environment ready**: VS Code + compiler setup verified
+
+**🚫 Don't start these assignments until you've completed the textbook and lecture notes!**
+
 ## Instructions
-- Complete these problems after reading Chapter 1
+- These problems apply concepts from both the textbook and lecture notes
 - Each problem builds on previous concepts  
 - **Time expectation**: 2.25 hours total for all three problem sets
 - Test all programs thoroughly before submission

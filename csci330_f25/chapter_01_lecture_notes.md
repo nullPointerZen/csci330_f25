@@ -1,5 +1,14 @@
 # Chapter 1: Up and Running - Complete Guide
 
+## 📖 Learning Sequence (IMPORTANT!)
+
+**🔄 How This Chapter Works:**
+1. **📚 FIRST**: Read Textbook Chapter 1 "Up and Running" (1-2 hours)
+2. **🔍 SECOND**: Work through these lecture notes for Python/Java context and hands-on practice (4-5 hours)
+3. **✅ THIRD**: Complete the chapter assignments to demonstrate mastery (2.25 hours)
+
+**⚠️ Critical**: Each step builds on the previous one. Don't skip ahead!
+
 ## 🎯 Learning Objectives
 
 **📚 PREREQUISITE: Read Textbook Chapter 1 "Up and Running" FIRST**
@@ -41,9 +50,11 @@ This setup guide provides:
 
 ## 📚 Core Concepts: C++ vs Python/Java (2.5 hours)
 
+**📖 Bridge to Textbook**: Now that you've read about C++ program structure in Chapter 1, let's connect those concepts to the Python/Java knowledge you already have.
+
 ### 1. Program Structure & Entry Point
 
-Every C++ program needs a `main()` function - this is where execution begins.
+The textbook explained that every C++ program needs a `main()` function. Here's how this compares to languages you know:
 
 | Language | Entry Point | Notes |
 |----------|-------------|-------|
@@ -55,7 +66,7 @@ Every C++ program needs a `main()` function - this is where execution begins.
 
 ### 2. The Compilation Process
 
-**Big Difference**: C++ is compiled, not interpreted!
+**From Textbook to Context**: The textbook covered C++ compilation. Here's how it compares to the interpreted languages you know:
 
 | Language | Process | When Errors Found |
 |----------|---------|------------------|
@@ -125,6 +136,8 @@ int add(int a, int b) {    // Return type required
 ---
 
 ## 🧩 Hands-On Problems (2.25 hours)
+
+**📖 Ready to Apply**: You've read the textbook and reviewed the Python/Java connections above. Now let's put that knowledge to work with hands-on practice that prepares you for the assignments.
 
 ### Problem Set 1: First Steps (45 minutes)
 

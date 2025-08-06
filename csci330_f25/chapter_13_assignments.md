@@ -1,8 +1,19 @@
 # Chapter 13: STL Containers - Problem Sets
 
-**Total Time Budget**: 2.25 hours across all problem sets  
-**Target Audience**: Students with Python/Java experience  
-**Prerequisites**: Understanding of basic C++ syntax, templates, and memory management
+## 📋 Before You Begin
+
+**✅ Prerequisites Check:**
+- [ ] **Completed textbook reading**: Chapter 13 "STL Containers"
+- [ ] **Worked through lecture notes**: All core concepts and hands-on problems
+- [ ] **Development environment ready**: VS Code + compiler setup verified
+
+**🚫 Don't start these assignments until you've completed the textbook and lecture notes!**
+
+## Instructions
+- These problems apply concepts from both the textbook and lecture notes
+- Each problem builds on previous concepts  
+- **Time expectation**: 2.25 hours total for all three problem sets
+- Test all programs thoroughly before submission
 
 ---
 

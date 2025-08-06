@@ -1,5 +1,14 @@
 # Chapter 4: Object Lifecycle - Complete Guide
 
+## 📖 Learning Sequence (IMPORTANT!)
+
+**🔄 How This Chapter Works:**
+1. **📚 FIRST**: Read Textbook Chapter 4 "Object Lifecycle" (2-3 hours)
+2. **🔍 SECOND**: Work through these lecture notes for Python/Java context and hands-on practice (7-8 hours)
+3. **✅ THIRD**: Complete the chapter assignments to demonstrate mastery (2.5 hours)
+
+**⚠️ Critical**: Each step builds on the previous one. Don't skip ahead!
+
 ## 🎯 Learning Objectives
 
 **📚 PREREQUISITE: Read Textbook Chapter 4 "Object Lifecycle" FIRST**  
@@ -16,8 +25,10 @@ After completing the textbook reading and this chapter's materials, you will:
 
 **⏱️ Time Budget:**
 - **📚 Textbook Reading: 2-3 hours** (Chapter 4: "Object Lifecycle" - REQUIRED FIRST)
-- **💻 Hands-on Work: 7-8 hours** (2 comprehensive banking/RAII projects)
-- **📖 Reading Note**: The author's explanation of RAII is exceptional - read carefully!
+- **🔍 Learning: 2.5 hours** (core concepts with Python/Java context)
+- **💻 Hands-on Work: 4.5-5.5 hours** (comprehensive banking/RAII projects)
+- **✅ Assignments: 2.5 hours** (demonstrate mastery)
+- **📖 Note: Reading time is separate and must be completed BEFORE hands-on work**
 
 **📝 Difficulty Note**: Object lifecycle and RAII are new concepts for most students - the textbook reading provides essential conceptual foundation.
 
@@ -26,6 +37,8 @@ After completing the textbook reading and this chapter's materials, you will:
 ---
 
 ## 🔄 Core Concepts: Object Lifecycle (2.5 hours)
+
+**📖 Bridge to Textbook**: Now that you've read about constructors, destructors, and RAII in Chapter 4, let's connect those concepts to Python/Java patterns and see them in action with debugging tools.
 
 ### 1. The C++ Object Lifecycle
 
@@ -239,6 +252,8 @@ std::shared_ptr<BankAccount> shared2 = shared1;  // Both point to same object
 ---
 
 ## 🧩 Hands-On Problems (2.25 hours)
+
+**📖 Ready to Apply**: You've read the textbook and reviewed the Python/Java connections above. Now let's put that knowledge to work with hands-on practice that prepares you for the assignments.
 
 ### Problem Set 1: Basic Constructors and Destructors (45 minutes)
 

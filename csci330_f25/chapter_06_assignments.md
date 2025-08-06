@@ -1,5 +1,14 @@
 # Chapter 6: Compile-Time Polymorphism - Problem Sets
 
+## 📋 Before You Begin
+
+**✅ Prerequisites Check:**
+- [ ] **Completed textbook reading**: Chapter 6 "Compile-Time Polymorphism"
+- [ ] **Worked through lecture notes**: All core concepts and hands-on problems
+- [ ] **Development environment ready**: VS Code + compiler setup verified
+
+**🚫 Don't start these assignments until you've completed the textbook and lecture notes!**
+
 **Total Time: 2.25 hours across all problem sets**
 
 ## Problem Set 1: Function Template Fundamentals (45 minutes)
