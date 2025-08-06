@@ -4,9 +4,9 @@
 
 This guide helps you navigate the simplified C++ course designed specifically for students with Python or Java experience.
 
-**Course Structure**: 14 mandatory chapters + 1 optional chapter  
-**Time Commitment**: ~5 hours per chapter (~10 hours/week)  
-**Approach**: Single comprehensive file per chapter
+**Course Structure**: 10 core chapters + 8 supplemental chapters  
+**Time Commitment**: Core: ~5 hours per chapter (~10 hours/week)  
+**Approach**: Master core first, then explore supplemental topics
 
 ---
 
@@ -50,27 +50,41 @@ Every chapter follows the same format:
 
 ## 📖 Course Roadmap
 
-### Weeks 1-4: C++ Fundamentals
-- **Chapter 1**: Up and Running - Your first C++ programs
-- **Chapter 2**: Types and Memory - How C++ handles data differently
-- **Chapter 3**: References - Safer alternatives to pointers
-- **Chapter 4**: Object Lifecycle - Constructors, destructors, RAII
+### 🎯 Core Course: Weeks 1-10 (MANDATORY)
 
-### Weeks 5-8: Advanced C++ Features
+#### Weeks 1-3: C++ Fundamentals
+- **Chapter 1**: Up and Running - Your first C++ programs
+- **Chapter 2**: Types and Memory - How C++ handles data differently  
+- **Chapter 3**: References - Safer alternatives to pointers
+
+#### Weeks 4-6: Object-Oriented C++
+- **Chapter 4**: Object Lifecycle - Constructors, destructors, RAII
 - **Chapter 5**: Runtime Polymorphism - Virtual functions and inheritance
 - **Chapter 6**: Compile-Time Polymorphism - Templates and generic programming
+
+#### Weeks 7-9: Language Features
 - **Chapter 7**: Expressions - Operators and operator overloading
 - **Chapter 8**: Statements - Control flow and exception handling
-
-### Weeks 9-10: Modern C++ Programming
 - **Chapter 9**: Functions - Function pointers, lambdas, std::function
-- **Chapter 10**: Testing (Optional) - Unit testing frameworks and TDD
 
-### Weeks 11-14: STL and Modern C++
+#### Week 10: Text Processing
+- **Chapter 15**: Strings - Modern C++ string handling and text processing
+
+### 🔧 Supplemental Topics (OPTIONAL)
+
+#### Development & Testing (`supplemental-chapters/`)
+- **Chapter 10**: Testing - Unit testing frameworks and TDD
+
+#### Modern C++ Features (`supplemental-chapters/`)
 - **Chapter 11**: Smart Pointers - Modern memory management
 - **Chapter 12**: Utilities - optional, variant, tuple, and more
 - **Chapter 13**: STL Containers - vector, map, set, and performance
 - **Chapter 14**: Iterators - Traversing containers efficiently
+
+#### I/O and System Programming (`supplemental-chapters/`)
+- **Chapter 16**: Streams - File I/O and formatted output
+- **Chapter 17**: Filesystems - Cross-platform file operations
+- **Chapter 18**: Algorithms - STL algorithms and data processing
 
 ---
 

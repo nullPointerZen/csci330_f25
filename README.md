@@ -32,22 +32,29 @@ This repository contains complete course materials for teaching/learning C++ pro
 2. See `instructor/INSTRUCTOR_GUIDE.md` for course management
 3. Canvas integration guides available for LMS setup
 
-## 📖 Chapters
+## 📖 Course Structure
 
+### 🎯 Core Chapters (1-9, 15) - Mandatory
 1. **Up and Running** - Development environment, first programs
-2. **Types** - Fundamental types, arrays, strings
-3. **Reference Types** - Pointers and references
+2. **Types** - Fundamental types, arrays, memory
+3. **Reference Types** - Pointers and references  
 4. **Object Lifecycle** - RAII, constructors, destructors
 5. **Runtime Polymorphism** - Interfaces, virtual functions
 6. **Compile-Time Polymorphism** - Templates
 7. **Expressions** - Operators and expressions
 8. **Statements** - Control flow
 9. **Functions** - Function programming, lambdas
+15. **Strings** - Modern C++ string handling and text processing
+
+### 🔧 Supplemental Chapters (`supplemental-chapters/`) - Optional
 10. **Testing** - Unit testing with Catch2
 11. **Smart Pointers** - Modern memory management
 12. **Utilities** - Standard library utilities
 13. **Containers** - STL containers
 14. **Iterators** - Iterator patterns
+16. **Streams** - File I/O and formatted output
+17. **Filesystems** - Cross-platform file operations
+18. **Algorithms** - STL algorithms and data processing
 
 ## 🛠️ Development Environment
 
