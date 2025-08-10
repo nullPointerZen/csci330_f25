@@ -6,34 +6,58 @@ This is an audacious project:  I'm asking you to build a substantial C++ applica
 
 **Duration**: Full semester (15 weeks)  
 **Weight**: 30% of course grade (300 points)  
-**Philosophy**: This is an audacious project, so I expect you to build something real, substantial, and portfolio-worthy
+**Philosophy**: This is serious project, so I expect you to build something real, substantial, and portfolio-worthy
+
+> **📚 How to Use These Documents:**  
+> - Start here for the complete project overview ("map of the world")
+> - Use the individual phase guides (PROJECT_PHASE_1.md through PROJECT_PHASE_5.md) for detailed todo checklists
+> - Each phase guide breaks down the work into manageable weekly tasks
+> - Check off items as you complete them to track your progress
+
+## Important: Two Parallel Learning Paths
+
+**This project runs parallel to, not in lockstep with, the course chapters.** You're encouraged to use ANY C++ features you need at ANY point - whether from research, AI assistance, or looking ahead in the textbook. 
+
+- **The Chapters** provide deep, systematic understanding of C++ concepts (types, memory models, function mechanics, container internals)
+- **The Project** provides real-world context where you use whatever works to solve problems
+
+You might use `std::vector` in Phase 1 before studying Chapter 11 on containers in detail. This is by design and mirrors professional development - you often use tools to solve problems first, then later develop deeper understanding of their internals. The "lightbulb moment" when you formally study something you've already used in your project is valuable learning.
+
+**Bottom line**: Don't wait for permission from the chapters to use a feature. If you need it, research it, use it, and document it. The formal study will come later and deepen your understanding.
 
 ## The Five Phases
+
+Each phase has its own detailed guide with todo checklists to keep you on track:
 
 ### Phase 1: Planning & Proof of Concept (Weeks 1-3)
 **Due**: End of Week 3  
 **Points**: 40 (13%)  
-**Focus**: Validate your idea works
+**Focus**: Validate your idea works  
+📋 **[Detailed Todo List](PROJECT_PHASE_1.md)**
 
 ### Phase 2: Minimum Viable Product (Weeks 4-6)  
 **Due**: End of Week 6  
 **Points**: 60 (20%)  
-**Focus**: Core functionality complete
+**Focus**: Core functionality complete  
+📋 **[Detailed Todo List](PROJECT_PHASE_2.md)**
 
 ### Phase 3: Feature Development (Weeks 7-9)
 **Due**: End of Week 9  
 **Points**: 70 (23%)  
-**Focus**: Add the features that make it interesting
+**Focus**: Add the features that make it interesting  
+📋 **[Detailed Todo List](PROJECT_PHASE_3.md)**
 
 ### Phase 4: Robustness & Performance (Weeks 10-12)
 **Due**: End of Week 12  
 **Points**: 70 (23%)  
-**Focus**: Make it production-ready
+**Focus**: Make it production-ready  
+📋 **[Detailed Todo List](PROJECT_PHASE_4.md)**
 
 ### Phase 5: Polish & Presentation (Weeks 13-15)
 **Due**: Finals Week  
 **Points**: 60 (20%)  
-**Focus**: Professional finish and reflection
+**Focus**: Professional finish and reflection  
+📋 **[Detailed Todo List](PROJECT_PHASE_5.md)**
 
 ---
 
@@ -71,6 +95,13 @@ Working code that proves the hardest part is solvable:
 - **Post proof-of-concept screenshots** or demos to get early input
 - **Help others** troubleshoot their Phase 1 challenges
 - **Build connections** with potential peer reviewers
+
+#### Individual Check-In Meeting
+**Required**: 15-minute individual meeting with instructor during Week 3
+- **Discuss**: Project proposal and proof of concept
+- **Review**: Technical feasibility and scope appropriateness  
+- **Plan**: Adjustments needed for Phase 2
+- **Schedule**: Sign up for meeting slots posted in Canvas
 
 #### Peer Review Requirements
 Each phase includes mandatory peer collaboration:
@@ -120,6 +151,13 @@ Build the simplest version that could be considered "complete." If you had to sh
 - **Help others** debug their MVP challenges
 - **Celebrate milestones** and encourage classmates
 
+#### Individual Check-In Meeting
+**Required**: 15-minute individual meeting with instructor during Week 6
+- **Demo**: Core MVP functionality working
+- **Discuss**: Architecture decisions and code organization
+- **Review**: Progress toward Phase 3 goals
+- **Plan**: Feature development priorities
+
 ### Grading (60 points)
 - Core functionality complete: 20 pts
 - Code architecture and organization: 12 pts
@@ -161,6 +199,13 @@ Add the features that make your project interesting and differentiate it from a 
 - **Share performance optimization discoveries**
 - **Discuss design patterns** and architectural decisions
 - **Help others** implement similar advanced features
+
+#### Individual Check-In Meeting
+**Required**: 15-minute individual meeting with instructor during Week 9
+- **Demo**: New features and advanced functionality
+- **Discuss**: C++ features utilized and design patterns applied
+- **Review**: Code quality and maintainability
+- **Plan**: Robustness and performance optimization strategy
 
 ### Grading (70 points)
 - Feature implementation quality: 25 pts
@@ -207,6 +252,13 @@ Make it production-ready. Handle edge cases, optimize performance, ensure reliab
 - **Discuss production-ready practices** you've implemented
 - **Help others** solve robustness and performance challenges
 
+#### Individual Check-In Meeting
+**Required**: 15-minute individual meeting with instructor during Week 12
+- **Demo**: Production-ready functionality and stress testing
+- **Discuss**: Performance optimizations and profiling results
+- **Review**: Professional practices and documentation quality
+- **Plan**: Final presentation and reflection preparation
+
 ### Grading (70 points)
 - Robustness and reliability: 16 pts
 - Performance optimization: 12 pts
@@ -238,22 +290,27 @@ Create a professional finish and reflect on your journey.
 - **Help others** prepare for their final presentations
 - **Thank classmates** who supported you throughout the semester
 
-#### 5.2 Project Presentation (Finals Week - Individual meetings with instructor)
-**Presentation Format**: 15-minute individual appointment with instructor
+#### 5.2 Final Project Presentation (Finals Week)
+**Required**: 20-minute individual appointment with instructor
 
-**Live Demo** (5 minutes)
+**Live Demo** (7 minutes)
 - Show it working end-to-end
 - Demonstrate key features
 - Show it handling errors gracefully
 - Highlight most impressive functionality
 
 **Technical Deep Dive** (10 minutes)
-- Architecture overview and evolution
-- Most challenging problems solved
-- Sophisticated C++ features utilized
-- Performance characteristics and optimizations
+- Architecture overview and evolution across all phases
+- Most challenging problems solved and how you solved them
+- Sophisticated C++ features utilized and why you chose them
+- Performance characteristics and optimization results
 - Code walkthrough of your best implementations
 - AI collaboration throughout the project
+
+**Q&A and Reflection** (3 minutes)
+- Instructor questions about implementation details
+- Discussion of what you'd do differently
+- Reflection on growth as a C++ developer
 
 #### 5.3 Comprehensive Reflection Paper (3-4 pages)
 

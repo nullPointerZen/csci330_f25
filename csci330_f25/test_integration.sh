@@ -82,7 +82,7 @@ echo "--------------------------------"
 check_file "../README.md"
 check_file "../.gitignore"
 check_dir "../instructor"
-check_dir "chapter_01_solutions"
+# Solutions moved to instructor/solutions/ for academic integrity
 check_file "chapter_01_lecture_notes.md"
 check_file "DEVELOPMENT_SETUP.md"
 check_file "STUDENT_GUIDE.md"

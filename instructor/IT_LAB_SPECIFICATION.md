@@ -13,16 +13,19 @@
 ### **Core Development Tools**
 - [ ] VS Code (Latest Stable)
 - [ ] Git for Windows  
+- [ ] GitHub Desktop (GUI for Git)
 - [ ] Docker Desktop for Windows
 - [ ] Chocolatey Package Manager
 - [ ] Anaconda Python Distribution
+- [ ] Jupyter Notebooks (via Anaconda)
 - [ ] PostgreSQL Database Server
-- [ ] pgAdmin Database Management Tool
+- [ ] pgAdmin 4 Database Management Tool
+- [ ] yEd Graph Editor (Diagramming Tool)
 
 ### **Programming Language Support**
-- [ ] Python (via Anaconda)
+- [ ] Python 3.11+ (via Anaconda)
 - [ ] C++ Build Tools (MSVC/MinGW-w64)
-- [ ] Java Development Kit (OpenJDK)
+- [ ] Java Development Kit (OpenJDK 17 LTS)
 - [ ] Node.js (for VS Code extensions)
 
 ---
@@ -47,12 +50,16 @@ choco --version
 - Enable global confirmation prompts: `choco feature enable -n allowGlobalConfirmation`
 - Set installation timeout: `choco config set commandExecutionTimeoutSeconds 14400`
 
-### **2. Git for Windows**
+### **2. Git for Windows & GitHub Desktop**
 **Version**: Latest stable (2.42+)  
 **Installation**: Via Chocolatey
 
 ```powershell
+# Install Git
 choco install git -y
+
+# Install GitHub Desktop
+choco install github-desktop -y
 ```
 
 **Configuration Requirements**:
@@ -68,10 +75,17 @@ git config --global core.editor "code --wait"
 git config --global credential.helper manager-core
 ```
 
+**GitHub Desktop Configuration**:
+- Default editor: Visual Studio Code
+- Default shell: Git Bash
+- Clone path: `C:\DevWorkspace\Projects`
+- Enable automatic fetching
+
 **Additional Components**:
 - Git Bash integration
 - Git GUI tools
 - Windows Explorer context menu integration
+- GitHub CLI (optional): `choco install gh -y`
 
 ### **3. Docker Desktop for Windows**
 **Version**: Latest stable (4.20+)  
@@ -107,7 +121,7 @@ wsl --install -d Ubuntu
 - Resource limits: 4GB RAM, 2 CPUs (adjustable)
 - Start Docker Desktop on system boot
 
-### **4. Anaconda Python Distribution**
+### **4. Anaconda Python Distribution & Jupyter Notebooks**
 **Version**: Latest (2023.07+)  
 **Installation**: Direct download (NOT via Chocolatey for full features)
 
@@ -123,21 +137,43 @@ wsl --install -d Ubuntu
 # Update conda
 conda update conda -y
 
-# Create development environment
-conda create -n dev python=3.11 jupyter pandas numpy matplotlib scipy -y
+# Create development environment with Jupyter
+conda create -n dev python=3.11 jupyter pandas numpy matplotlib scipy seaborn scikit-learn -y
 
 # Activate environment
 conda activate dev
 
-# Install additional packages
-conda install -c conda-forge notebook jupyterlab -y
-pip install requests beautifulsoup4 flask django
+# Install Jupyter Lab and extensions
+conda install -c conda-forge notebook jupyterlab jupyterlab-git -y
+
+# Install additional Python packages
+pip install requests beautifulsoup4 flask django pytest black
+
+# Install Jupyter kernel for the environment
+python -m ipykernel install --user --name dev --display-name "Python 3.11 (dev)"
+```
+
+**Jupyter Configuration**:
+```powershell
+# Generate Jupyter config
+jupyter notebook --generate-config
+
+# Set default browser and port
+jupyter lab --generate-config
+
+# Create desktop shortcut for Jupyter Lab
+$WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("$Home\Desktop\Jupyter Lab.lnk")
+$Shortcut.TargetPath = "C:\ProgramData\Anaconda3\Scripts\jupyter-lab.exe"
+$Shortcut.WorkingDirectory = "C:\DevWorkspace\Projects\Python"
+$Shortcut.Save()
 ```
 
 **Environment Configuration**:
 - Default environment: `base` (Python 3.11+)
-- Development environment: `dev` with common packages
-- Jupyter Lab accessible via: `jupyter lab`
+- Development environment: `dev` with scientific packages
+- Jupyter Lab accessible via: `jupyter lab` or desktop shortcut
+- Default notebook directory: `C:\DevWorkspace\Projects\Python`
 
 ### **5. Visual Studio Code**
 **Version**: Latest stable  
@@ -312,7 +348,7 @@ CREATE USER devuser WITH PASSWORD 'devpass';
 GRANT ALL PRIVILEGES ON DATABASE devdb TO devuser;
 ```
 
-### **9. pgAdmin**
+### **9. pgAdmin 4**
 **Version**: pgAdmin 4 (Latest)  
 **Installation**: Via Chocolatey
 
@@ -324,6 +360,40 @@ choco install pgadmin4 -y
 - Default email: admin@admin.com
 - Default password: admin
 - Server connection pre-configured for localhost:5432
+- Enable dark mode for reduced eye strain
+- Set auto-refresh for query results
+
+### **10. yEd Graph Editor**
+**Version**: Latest stable  
+**Installation**: Via Chocolatey
+
+```powershell
+choco install yed -y
+```
+
+**Purpose**: Professional diagramming tool for:
+- UML diagrams (class, sequence, use case)
+- Database ER diagrams
+- Flowcharts and algorithms
+- Software architecture diagrams
+- Network topology diagrams
+
+**Configuration**:
+- Default save location: `C:\DevWorkspace\Resources\Diagrams`
+- Enable auto-save every 5 minutes
+- Install common diagram templates
+
+**Additional Diagram Palettes**:
+- UML Class Diagrams
+- ER Notation
+- BPMN (Business Process)
+- Flowchart symbols
+- Network shapes
+
+**File Format Support**:
+- Native yEd format (.graphml)
+- Export to PNG, SVG, PDF, JPG
+- Import from Visio (.vsdx)
 
 ---
 
@@ -365,12 +435,14 @@ Add-LocalGroupMember -Group "Performance Log Users" -Member "LabUser"
 C:\DevWorkspace\
 ├── Projects\
 │   ├── Python\
+│   │   └── Notebooks\
 │   ├── CPP\
 │   ├── Java\
 │   └── Database\
 ├── Resources\
 │   ├── Documentation\
-│   └── Templates\
+│   ├── Templates\
+│   └── Diagrams\
 └── Tools\
     └── Scripts\
 ```
@@ -379,7 +451,17 @@ C:\DevWorkspace\
 ```powershell
 # Create development workspace
 $workspacePath = "C:\DevWorkspace"
-$folders = @("Projects\Python", "Projects\CPP", "Projects\Java", "Projects\Database", "Resources\Documentation", "Resources\Templates", "Tools\Scripts")
+$folders = @(
+    "Projects\Python",
+    "Projects\Python\Notebooks",
+    "Projects\CPP",
+    "Projects\Java",
+    "Projects\Database",
+    "Resources\Documentation",
+    "Resources\Templates",
+    "Resources\Diagrams",
+    "Tools\Scripts"
+)
 
 New-Item -Path $workspacePath -ItemType Directory -Force
 foreach ($folder in $folders) {
@@ -413,18 +495,24 @@ if (!(Get-Command choco -ErrorAction SilentlyContinue)) {
 Write-Host "Installing development tools..." -ForegroundColor Yellow
 $chocoPackages = @(
     "git",
+    "github-desktop",
     "docker-desktop", 
     "vscode",
     "openjdk17",
     "postgresql",
     "pgadmin4",
+    "yed",
     "visualstudio2022buildtools",
-    "visualstudio2022-workload-vctools"
+    "visualstudio2022-workload-vctools",
+    "nodejs"
 )
 
 foreach ($package in $chocoPackages) {
     choco install $package -y
 }
+
+# Note: Anaconda should be installed manually for full features
+Write-Host "Please install Anaconda manually from https://www.anaconda.com/download" -ForegroundColor Yellow
 
 # 3. Enable Windows features
 Write-Host "Enabling Windows features..." -ForegroundColor Yellow
@@ -471,17 +559,29 @@ Write-Host "Please reboot the computer to complete setup." -ForegroundColor Red
 
 ### **Post-Installation Testing Checklist**
 
-#### **Python Environment**
+#### **Python Environment & Jupyter**
 ```powershell
 # Test Python
 python --version
 conda --version
 
-# Test Jupyter
+# Test Jupyter installations
 jupyter --version
+jupyter lab --version
+jupyter notebook --version
+
+# Test Jupyter Lab launch
+Start-Process "jupyter" -ArgumentList "lab", "--no-browser" -NoNewWindow
+Start-Sleep -Seconds 3
+# Check if Jupyter is running
+$jupyterRunning = Get-Process | Where-Object {$_.ProcessName -like "*jupyter*"}
+if ($jupyterRunning) { 
+    Write-Host "Jupyter Lab is running OK" -ForegroundColor Green
+    Stop-Process -Name "jupyter*" -Force
+}
 
 # Test package imports
-python -c "import pandas, numpy, matplotlib; print('Python packages OK')"
+python -c "import pandas, numpy, matplotlib, seaborn, sklearn, jupyter; print('Python packages OK')"
 ```
 
 #### **C++ Environment**
@@ -530,6 +630,30 @@ code --version
 code --list-extensions
 ```
 
+#### **GitHub Desktop**
+```powershell
+# Test GitHub Desktop installation
+if (Test-Path "$env:LOCALAPPDATA\GitHubDesktop\GitHubDesktop.exe") {
+    Write-Host "GitHub Desktop installed OK" -ForegroundColor Green
+} else {
+    Write-Host "GitHub Desktop not found" -ForegroundColor Red
+}
+
+# Test GitHub CLI (if installed)
+gh --version
+```
+
+#### **yEd Graph Editor**
+```powershell
+# Test yEd installation
+$yedPath = Get-ChildItem -Path "C:\Program Files*" -Filter "yed.exe" -Recurse -ErrorAction SilentlyContinue
+if ($yedPath) {
+    Write-Host "yEd installed at: $($yedPath.FullName)" -ForegroundColor Green
+} else {
+    Write-Host "yEd not found" -ForegroundColor Red
+}
+```
+
 ---
 
 ## 📊 Resource Requirements
@@ -544,12 +668,17 @@ code --list-extensions
 - Windows 11: ~20GB
 - Visual Studio Build Tools: ~3GB
 - Docker Desktop: ~1GB + container storage (~10GB)
-- Anaconda: ~5GB
-- PostgreSQL: ~200MB + data storage
+- Anaconda + Jupyter: ~5GB
+- PostgreSQL: ~200MB + data storage (~2GB)
+- pgAdmin 4: ~200MB
 - VS Code + Extensions: ~500MB
-- Workspace + Projects: ~5GB reserved
+- GitHub Desktop: ~250MB
+- yEd Graph Editor: ~150MB
+- Java JDK: ~300MB
+- Node.js: ~150MB
+- Workspace + Projects: ~10GB reserved
 
-**Total Estimated**: ~45GB minimum, 60GB recommended
+**Total Estimated**: ~50GB minimum, 75GB recommended
 
 ### **Network Requirements**
 - Internet access for package downloads
@@ -635,8 +764,194 @@ code --list-extensions
 
 ---
 
-**This specification provides complete Windows 11 lab computer configuration for comprehensive development education including Python, C++, Java, database development, and modern DevOps practices with Docker and Git.** 🎯
+## 🔍 Comprehensive System Verification Script
+
+**Save as `verify_lab_setup.ps1` and run to verify all components:**
+
+```powershell
+# Comprehensive Lab Setup Verification Script
+# Run as Administrator for complete verification
+
+Write-Host "=================================" -ForegroundColor Cyan
+Write-Host "Lab Computer Verification Script" -ForegroundColor Cyan
+Write-Host "=================================" -ForegroundColor Cyan
+
+$results = @{}
+
+# Check Windows Version
+Write-Host "`nChecking Windows Version..." -ForegroundColor Yellow
+$winVer = (Get-WmiObject -class Win32_OperatingSystem).Caption
+$results["Windows 11"] = if ($winVer -like "*Windows 11*") {"✓ Installed"} else {"✗ Not Found"}
+
+# Check Core Tools
+Write-Host "`nChecking Core Development Tools..." -ForegroundColor Yellow
+
+# Git
+$results["Git"] = if (Get-Command git -ErrorAction SilentlyContinue) {
+    "✓ " + (git --version)
+} else {"✗ Not Installed"}
+
+# GitHub Desktop
+$results["GitHub Desktop"] = if (Test-Path "$env:LOCALAPPDATA\GitHubDesktop\GitHubDesktop.exe") {
+    "✓ Installed"
+} else {"✗ Not Installed"}
+
+# Docker
+$results["Docker Desktop"] = if (Get-Command docker -ErrorAction SilentlyContinue) {
+    "✓ " + (docker --version)
+} else {"✗ Not Installed"}
+
+# VS Code
+$results["VS Code"] = if (Get-Command code -ErrorAction SilentlyContinue) {
+    "✓ " + (code --version | Select-Object -First 1)
+} else {"✗ Not Installed"}
+
+# Python/Anaconda
+$results["Python/Anaconda"] = if (Get-Command python -ErrorAction SilentlyContinue) {
+    "✓ Python " + (python --version 2>&1).ToString().Split()[1]
+} else {"✗ Not Installed"}
+
+# Jupyter
+$results["Jupyter Notebooks"] = if (Get-Command jupyter -ErrorAction SilentlyContinue) {
+    "✓ " + (jupyter --version 2>&1 | Select-String "notebook" | Select-Object -First 1)
+} else {"✗ Not Installed"}
+
+# Java
+$results["Java JDK"] = if (Get-Command java -ErrorAction SilentlyContinue) {
+    "✓ " + ((java --version 2>&1) | Select-Object -First 1)
+} else {"✗ Not Installed"}
+
+# C++ Compiler
+$results["C++ Compiler"] = if (Get-Command g++ -ErrorAction SilentlyContinue) {
+    "✓ MinGW " + ((g++ --version 2>&1) | Select-Object -First 1)
+} elseif (Get-Command cl -ErrorAction SilentlyContinue) {
+    "✓ MSVC Installed"
+} else {"✗ Not Installed"}
+
+# PostgreSQL
+$results["PostgreSQL"] = if (Get-Service -Name postgresql* -ErrorAction SilentlyContinue) {
+    "✓ Service Running"
+} else {"✗ Not Installed/Running"}
+
+# pgAdmin
+$results["pgAdmin 4"] = if (Test-Path "C:\Program Files*\pgAdmin*") {
+    "✓ Installed"
+} else {"✗ Not Installed"}
+
+# yEd
+$yedPath = Get-ChildItem -Path "C:\Program Files*" -Filter "yed.exe" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1
+$results["yEd Graph Editor"] = if ($yedPath) {
+    "✓ Installed"
+} else {"✗ Not Installed"}
+
+# Node.js
+$results["Node.js"] = if (Get-Command node -ErrorAction SilentlyContinue) {
+    "✓ " + (node --version)
+} else {"✗ Not Installed"}
+
+# Display Results
+Write-Host "`n=================================" -ForegroundColor Cyan
+Write-Host "Installation Status Report" -ForegroundColor Cyan
+Write-Host "=================================" -ForegroundColor Cyan
+
+foreach ($component in $results.Keys | Sort-Object) {
+    $status = $results[$component]
+    if ($status -like "✓*") {
+        Write-Host "$component : " -NoNewline
+        Write-Host $status -ForegroundColor Green
+    } else {
+        Write-Host "$component : " -NoNewline
+        Write-Host $status -ForegroundColor Red
+    }
+}
+
+# Check VS Code Extensions
+Write-Host "`n=================================" -ForegroundColor Cyan
+Write-Host "VS Code Extensions Check" -ForegroundColor Cyan
+Write-Host "=================================" -ForegroundColor Cyan
+
+if (Get-Command code -ErrorAction SilentlyContinue) {
+    $requiredExtensions = @(
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-vscode.cpptools",
+        "vscjava.vscode-java-pack",
+        "ms-azuretools.vscode-docker",
+        "ckolkman.vscode-postgres"
+    )
+    
+    $installedExtensions = code --list-extensions
+    
+    foreach ($ext in $requiredExtensions) {
+        if ($installedExtensions -contains $ext) {
+            Write-Host "✓ $ext" -ForegroundColor Green
+        } else {
+            Write-Host "✗ $ext (missing)" -ForegroundColor Red
+        }
+    }
+}
+
+# Check Workspace Directory
+Write-Host "`n=================================" -ForegroundColor Cyan
+Write-Host "Workspace Directory Check" -ForegroundColor Cyan
+Write-Host "=================================" -ForegroundColor Cyan
+
+$workspacePath = "C:\DevWorkspace"
+if (Test-Path $workspacePath) {
+    Write-Host "✓ DevWorkspace exists" -ForegroundColor Green
+    $subfolders = @(
+        "Projects\Python\Notebooks",
+        "Projects\CPP",
+        "Projects\Java",
+        "Projects\Database",
+        "Resources\Diagrams"
+    )
+    foreach ($folder in $subfolders) {
+        if (Test-Path "$workspacePath\$folder") {
+            Write-Host "  ✓ $folder" -ForegroundColor Green
+        } else {
+            Write-Host "  ✗ $folder (missing)" -ForegroundColor Red
+        }
+    }
+} else {
+    Write-Host "✗ DevWorkspace not found" -ForegroundColor Red
+}
+
+# Summary
+Write-Host "`n=================================" -ForegroundColor Cyan
+Write-Host "Summary" -ForegroundColor Cyan
+Write-Host "=================================" -ForegroundColor Cyan
+
+$installedCount = ($results.Values | Where-Object {$_ -like "✓*"}).Count
+$totalCount = $results.Count
+$percentage = [math]::Round(($installedCount / $totalCount) * 100, 1)
+
+Write-Host "Components Installed: $installedCount / $totalCount ($percentage%)" -ForegroundColor $(if ($percentage -ge 90) {"Green"} elseif ($percentage -ge 70) {"Yellow"} else {"Red"})
+
+if ($percentage -lt 100) {
+    Write-Host "`nMissing components should be installed to ensure full lab functionality." -ForegroundColor Yellow
+} else {
+    Write-Host "`nAll components successfully installed! Lab is ready for use." -ForegroundColor Green
+}
+
+Write-Host "`nPress any key to exit..."
+$null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+```
 
 ---
 
-*This IT specification supports the simplified C++ course and broader programming curriculum with professional development tools and practices.*
+**This specification provides complete Windows 11 lab computer configuration for comprehensive development education including:**
+- ✅ **Python Development** with Anaconda & Jupyter Notebooks
+- ✅ **C++ Development** with VS Code & Build Tools
+- ✅ **Java Development** with OpenJDK 17 LTS
+- ✅ **Database Development** with PostgreSQL & pgAdmin 4
+- ✅ **Version Control** with Git & GitHub Desktop
+- ✅ **Containerization** with Docker Desktop
+- ✅ **Diagramming** with yEd Graph Editor
+- ✅ **Modern IDE** with VS Code & Extensions
+
+**All key components verified and ready for deployment!** 🎯
+
+---
+
+*This comprehensive IT specification supports the simplified C++ course and broader programming curriculum with professional development tools and practices. Updated to include all requested components for Windows 11 lab environment.*

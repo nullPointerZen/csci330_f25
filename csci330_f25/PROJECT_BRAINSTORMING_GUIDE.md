@@ -1,220 +1,165 @@
 # CSCI 330 - Project Brainstorming Guide
 
-## 🎯 Finding Your Audacious Project
+## What Makes a Good Semester Project?
 
-This is your chance to build something substantial and portfolio-worthy. Don't think small - think about problems you actually want to solve or tools you wish existed.
+Your project should be:
+- **Substantial**: 2000-3000+ lines by the end, starting from 200-500
+- **Interesting**: Something you're excited to work on for 15 weeks
+- **Practical**: Solves a real problem or provides entertainment
+- **Portfolio-worthy**: You'd be proud to show this in interviews
 
-## 🔍 Discovery Questions
+## Project Ideas by Category
 
-### Start with Problems You Face
-- What repetitive tasks do you do that could be automated?
-- What tools do you wish existed for your hobbies or other coursework?
-- What data do you work with that's hard to analyze or visualize?
-- What games do you play that could be improved or reimplemented?
-- What would make your development workflow more efficient?
+### Games & Entertainment
 
-### Consider Your Domain Interests
-- **Computer Science Student**: Compiler tools, algorithm visualizers, code analyzers
-- **Data Science/Analytics**: Custom data processing pipelines, visualization tools
-- **Cybersecurity**: Security analysis tools, cryptographic implementations
-- **Gaming**: Game engines, AI for games, procedural generation
-- **Research**: Domain-specific analysis tools, simulation platforms
-- **Arts/Media**: Image/audio processing, creative coding tools
+#### Snake with AI Opponent
+- **Phase 1 Core**: Basic snake movement, collision detection, food spawning
+- **Growth Path**: AI pathfinding opponent, power-ups, obstacles, maze generation
+- **Technical Skills**: Game loops, collision algorithms, pathfinding (A*)
+- **Why It Works**: Classic game everyone knows, natural complexity progression
 
-### Think About Scale and Impact
-- Could other people actually use this?
-- Would this solve a real problem you have?
-- Could this be extended beyond the semester?
-- Does this demonstrate sophisticated programming skills?
+#### Text-Based RPG Engine
+- **Phase 1 Core**: Combat system with player/enemy stats and turn-based battles
+- **Growth Path**: Inventory system, quest tracking, save/load, dialogue trees
+- **Technical Skills**: State machines, file I/O, object hierarchies
+- **Why It Works**: Highly extensible, great for OOP design patterns
 
-## 💡 Brainstorming Techniques
+#### Tower Defense Framework
+- **Phase 1 Core**: Enemy waves following path, one tower type that shoots
+- **Growth Path**: Multiple towers, upgrades, economy, different enemy types
+- **Technical Skills**: Pathfinding, collision detection, resource management
+- **Why It Works**: Combines real-time action with strategic elements
 
-### The "What If" Approach
-- What if I rebuilt [familiar tool] with modern C++?
-- What if I combined [two different domains]?
-- What if I automated [manual process I know well]?
-- What if I visualized [complex data/concept]?
+#### Math Puzzle Generator
+- **Phase 1 Core**: Generate valid Sudoku puzzles with one difficulty
+- **Growth Path**: Solver algorithm, multiple difficulties, hint system, other puzzle types
+- **Technical Skills**: Constraint satisfaction, backtracking algorithms
+- **Why It Works**: Clear rules, algorithmic challenge, practical output
 
-### The Missing Tool Approach
-- "I wish there was a tool that could..."
-- "Why is [process] so complicated? I could build..."
-- "Every time I [do task], I think there should be..."
+### Developer Tools
 
-### The Learning Challenge Approach
-- What's a concept I want to understand better through implementation?
-- What's a technology I want to learn while building something useful?
-- What's a domain I want to explore through code?
+#### Static Code Analyzer
+- **Phase 1 Core**: Parse C++ files and count functions/classes
+- **Growth Path**: Complexity metrics, style checking, dependency graphs
+- **Technical Skills**: Parsing, AST manipulation, pattern matching
 
-## 🏗️ Project Categories with Examples
+#### Build System Tool
+- **Phase 1 Core**: Dependency tracking and basic compilation
+- **Growth Path**: Parallel builds, caching, cross-platform support
+- **Technical Skills**: Graph algorithms, process management, file watching
 
-### Systems & Performance
-Think about low-level systems and optimization:
-- Custom memory managers or allocators
-- Performance monitoring and profiling tools
-- System resource managers
-- File system utilities or analyzers
+#### Documentation Generator
+- **Phase 1 Core**: Extract comments and generate basic HTML
+- **Growth Path**: Markdown support, cross-references, search functionality
+- **Technical Skills**: Text parsing, template engines, static site generation
 
-### Developer Productivity
-Tools that make programming easier:
-- Code analysis and refactoring tools
-- Build system improvements
-- Documentation generators
-- Development environment utilities
+### Systems Programming
+
+#### Custom Shell
+- **Phase 1 Core**: Execute commands and handle basic piping
+- **Growth Path**: Job control, scripting, aliases, history
+- **Technical Skills**: Process management, signal handling, parsing
+
+#### Memory Pool Allocator
+- **Phase 1 Core**: Fixed-size block allocation
+- **Growth Path**: Variable sizes, thread safety, debugging features
+- **Technical Skills**: Memory management, performance optimization
+
+#### File System Utilities
+- **Phase 1 Core**: Recursive directory traversal and basic operations
+- **Growth Path**: Search patterns, compression, synchronization
+- **Technical Skills**: File I/O, tree algorithms, system calls
 
 ### Data & Analytics
-Processing and understanding information:
-- Custom database implementations
-- Data visualization frameworks
-- Stream processing systems
-- Analytics engines for specific domains
 
-### Interactive Applications
-Real-time user interfaces and experiences:
-- Game engines or frameworks
-- Interactive simulations
-- Real-time data dashboards
-- Educational software
+#### Time-Series Database
+- **Phase 1 Core**: Store and retrieve timestamped data
+- **Growth Path**: Indexing, aggregations, compression, queries
+- **Technical Skills**: B-trees, data structures, query optimization
 
-### Network & Communication
-Distributed systems and protocols:
-- Custom protocols or clients
-- Peer-to-peer applications
-- Real-time communication tools
-- Distributed computing frameworks
+#### CSV Processing Engine
+- **Phase 1 Core**: Parse and filter CSV files
+- **Growth Path**: Joins, aggregations, SQL-like queries, large file handling
+- **Technical Skills**: Stream processing, memory efficiency, parsing
 
-### Domain-Specific Solutions
-Applications for specific fields:
-- Scientific computation tools
-- Financial analysis systems
-- Creative tools (graphics, audio, text)
-- Educational platforms
+#### Data Visualization Tool
+- **Phase 1 Core**: Generate basic charts from data files
+- **Growth Path**: Interactive charts, real-time updates, multiple formats
+- **Technical Skills**: Graphics programming, data transformation
 
-## 🔧 Technical Considerations
+### Network Applications
 
-### Core Challenge First
-Your Phase 1 proof-of-concept should tackle the hardest part:
-- **Game**: Physics/collision detection, not the UI
-- **Database**: Storage and retrieval algorithms, not the query language
-- **Network App**: The protocol and connection handling, not the interface
-- **Compiler**: Parsing and code generation, not syntax highlighting
+#### Chat Application
+- **Phase 1 Core**: Client-server message exchange
+- **Growth Path**: Multiple rooms, encryption, file sharing, history
+- **Technical Skills**: Socket programming, protocols, concurrency
 
-### Scalability Planning
-Design for growth from day one:
-- How will this handle larger datasets?
-- How will performance scale?
-- How will you add features without rewriting everything?
-- What parts need to be optimized first?
+#### HTTP Server
+- **Phase 1 Core**: Serve static files with GET requests
+- **Growth Path**: Dynamic content, caching, compression, HTTPS
+- **Technical Skills**: Network protocols, concurrent connections
 
-### Platform Considerations
-- Will this run on multiple operating systems?
-- Do you need special libraries or dependencies?
-- Are there performance requirements?
-- Do you need a GUI or is command-line sufficient?
+#### P2P File Sharing
+- **Phase 1 Core**: Direct file transfer between two peers
+- **Growth Path**: Discovery, chunking, multiple peers, integrity checks
+- **Technical Skills**: Distributed systems, protocols, networking
 
-## 📝 Evaluation Criteria
+## Reality Check: Scope for 15 Weeks
 
-### Is This Project Audacious Enough?
-Ask yourself:
-- **Complexity**: Will this challenge me for 15 weeks?
-- **Scope**: Is this substantial enough to impress in interviews?
-- **Learning**: Will I master new concepts building this?
-- **Impact**: Could someone actually use this?
+### Phase Progression Guidelines
 
-### Red Flags to Avoid
-- **Too Simple**: "Just" adding features to existing code
-- **Too Broad**: Trying to build the next Facebook
-- **Too Narrow**: Single-purpose tools with obvious solutions
-- **Too Dependent**: Requires external services that might fail
+| Phase | Week | Lines of Code | What You Should Have |
+|-------|------|--------------|---------------------|
+| 1 | 3 | 200-500 | Core algorithm working |
+| 2 | 6 | 500-1000 | Basic complete system |
+| 3 | 9 | 1000-2000 | Key features added |
+| 4 | 12 | 1500-2500 | Robust and optimized |
+| 5 | 15 | 2000-3000+ | Polished and documented |
 
-### Green Flags to Seek
-- **Novel Combination**: Existing concepts applied in new ways
-- **Personal Passion**: You're excited to work on this
-- **Clear Growth Path**: Obvious progression from simple to sophisticated
-- **Portfolio Value**: You'd be proud to show this to employers
+### Warning Signs Your Scope is Too Big
+- Needs multiple complex algorithms to work at all
+- Requires extensive external libraries just to start
+- "It's like Facebook but..."
+- Can't explain it in one sentence
 
-## 🎮 Project Ideas Starter Kit
+### Signs Your Scope is Too Small
+- Could be done in a weekend
+- No room for interesting features
+- Single algorithm with no system around it
+- No clear path to grow complexity
 
-### For the Game-Inclined
-- **Real-Time Strategy Engine**: Unit AI, pathfinding, resource management
-- **Physics Sandbox**: Custom physics engine with interactive demos
-- **Procedural World Generator**: Terrain, cities, or dungeon generation
-- **Game Analytics Platform**: Performance metrics and player behavior analysis
+## Getting Started
 
-### For the Systems-Minded
-- **Custom Shell**: Advanced scripting, job control, and automation
-- **Container Runtime**: Lightweight virtualization system
-- **Distributed Cache**: Multi-node caching with consensus protocols
-- **Performance Profiler**: Real-time application analysis
+### Step 1: Pick Your Interest Area
+Choose based on what excites you:
+- Love games? Pick a game project
+- Into systems? Build a tool or utility  
+- Data person? Create an analytics engine
+- Network curious? Build a distributed app
 
-### For the Data-Driven
-- **Time-Series Database**: Optimized for high-frequency data ingestion
-- **Query Engine**: SQL-like language for custom data formats
-- **Real-Time Analytics**: Stream processing with windowing and aggregation
-- **Visualization Framework**: Custom charting with interactive features
+### Step 2: Identify Your Phase 1 Core
+What's the ONE thing that must work for your project to exist?
+- For a game: Core gameplay loop
+- For a database: Store and retrieve
+- For a network app: Connect and communicate
+- For a tool: Basic primary function
 
-### For the Security-Conscious
-- **Network Scanner**: Advanced port scanning and service detection
-- **Cryptographic Library**: Custom implementations of modern algorithms
-- **Static Analysis Tool**: Security vulnerability detection in source code
-- **Secure Communication**: End-to-end encrypted messaging protocol
+### Step 3: Plan Your Growth
+How will you expand across phases?
+- What features are "nice to have" vs. essential?
+- What can you add if you're ahead of schedule?
+- What can you cut if you fall behind?
 
-### For the Creative
-- **Audio Synthesis Engine**: Generate music or sound effects programmatically
-- **Image Processing Pipeline**: Custom filters and transformations
-- **3D Renderer**: Ray tracing or rasterization from scratch
-- **Creative Coding Platform**: Tools for generative art
+## Final Checklist
 
-## 💭 Refinement Process
+Before committing to your project:
 
-### Week 1: Generate Ideas
-- Brainstorm 5-10 potential projects
-- Don't filter yet - capture everything
-- Talk to friends, family, professors about problems they have
-
-### Week 2: Evaluate and Focus
-- Apply evaluation criteria to each idea
-- Research technical feasibility
-- Identify the core technical challenges
-- Choose your top 2-3 candidates
-
-### Week 3: Prototype and Decide
-- Build tiny prototypes for each candidate
-- See which excites you most when coding
-- Consider which aligns with your career goals
-- Make your final decision
-
-## 🚀 Making It Happen
-
-### Set Ambitious but Achievable Goals
-- Dream big for the final vision
-- Plan conservatively for the MVP
-- Build in buffer time for setbacks
-- Have backup features ready
-
-### Build Your Support Network
-- Identify classmates with complementary skills
-- Find domain experts who can give feedback
-- Connect with professionals in related fields
-- Use your instructor's expertise
-
-### Document Everything
-- Keep a project journal of decisions and discoveries
-- Screenshot interesting bugs and solutions
-- Track what you learn and when
-- Note when and how you use AI assistance
-
-## 🎯 Final Reality Check
-
-Before committing to your project, ask:
-
-1. **Am I excited to spend 15 weeks on this?**
-2. **Will this teach me skills I want to have?**
-3. **Can I explain why this matters to someone else?**
-4. **Do I have a clear vision of what success looks like?**
-5. **Can I break this into concrete, measurable milestones?**
-
-Remember: The best project is one that challenges you, excites you, and creates something you're genuinely proud to have built.
+✓ Can you build a proof of concept in 200-500 lines?  
+✓ Do you have 5-10 features to add over the semester?  
+✓ Will you learn new C++ concepts building this?  
+✓ Would you demo this in a job interview?  
+✓ Are you excited to work on this for 15 weeks?
 
 ---
 
-**Your project should be something you'd be excited to talk about in job interviews and proud to have on your GitHub profile. Make it count!**
+**Remember**: The best project is one that challenges you while being achievable. Pick something you'll enjoy building and be proud to have built!
