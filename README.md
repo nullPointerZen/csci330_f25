@@ -4,36 +4,43 @@ A comprehensive C++ programming course based on "C++ Crash Course" by Josh Lospi
 
 ## 📚 Course Structure
 
-This repository contains complete course materials for teaching/learning C++ programming:
+This repository contains complete course materials with **clear separation** between student and instructor resources:
 
-### For Students
-- **Student Guide** (`STUDENT_GUIDE.md`) - **START HERE** - Complete course guide and timeline
-- **Lecture Notes** (`chapter_XX_lecture_notes.md`) - Comprehensive teaching materials for each chapter
-- **Assignments** (`chapter_XX_assignments.md`) - Streamlined comprehensive projects
-- **Quick Help** (`chapter_XX_quick_help.md`) - Troubleshooting and quick reference
-- **Solutions** (`chapter_XX_solutions/`) - Solution templates and approaches
-- **Development Setup** (`DEVELOPMENT_SETUP.md`) - One-time environment setup
+### 🎓 For Students 
+**📁 Main Directory: [`csci330_f25/`](csci330_f25/)**
+- **📋 [README.md](csci330_f25/README.md)** - **START HERE** - Main student entry point
+- **📖 [GIT_WORKFLOW.md](csci330_f25/GIT_WORKFLOW.md)** - Professional Pull Request submissions
+- **⚙️ [DEVELOPMENT_SETUP.md](csci330_f25/DEVELOPMENT_SETUP.md)** - Environment setup guide  
+- **📝 [assignments/](csci330_f25/assignments/)** - Submission guidelines and workspace
+- **🔧 [quick-reference/](csci330_f25/quick-reference/)** - Git commands and troubleshooting
+- **📚 Chapter Materials** - Lecture notes, assignments, quick help (no solutions)
 
-### For Instructors
-- **Instructor Resources** (`instructor/`) - Lesson plans, rubrics, Canvas integration
-- **Assignment Templates** (`csci330_f25/`) - Docker-based assignment structure
-- **Assessment Tools** - Competency assessments and grading rubrics
+### 👨‍🏫 For Instructors
+**📁 Main Directory: [`instructor/`](instructor/)**
+- **🔐 All Solutions** - Complete solution sets (hidden from students)
+- **📋 Lesson Plans** - Teaching guides and timing
+- **🎯 Assessment Tools** - Rubrics, Canvas integration
+- **📊 Course Management** - Progress tracking, competency assessment
+
+**🔒 Security Note**: Solutions are separated from student workspace to maintain academic integrity.
 
 ## 🚀 Quick Start
 
-### Students
-1. Clone this repository
-2. **Enter the course directory**: `cd csci330_f25`
-3. **Read `STUDENT_GUIDE.md`** - Your complete guide to the course
-4. Follow setup instructions in `DEVELOPMENT_SETUP.md`
-5. Run `./test_integration.sh` to verify your environment
-6. **🚨 ESSENTIAL**: For each chapter, READ the textbook chapter FIRST before any hands-on work
-7. Begin with Chapter 1 using the reading-first approach
+### 🎓 Students
+1. **Fork this repository** on GitHub (for Pull Request submissions)
+2. **Clone your fork**: `git clone https://github.com/YOUR_USERNAME/cpp.git`
+3. **Enter the course directory**: `cd cpp/csci330_f25`
+4. **📋 Read [`README.md`](csci330_f25/README.md)** - Main student entry point
+5. **⚙️ Complete setup**: Follow [`DEVELOPMENT_SETUP.md`](csci330_f25/DEVELOPMENT_SETUP.md)
+6. **📖 Learn Git workflow**: Review [`GIT_WORKFLOW.md`](csci330_f25/GIT_WORKFLOW.md)
+7. **✅ Verify environment**: Run `./test_integration.sh`
+8. **📚 Begin Chapter 1**: Read textbook chapter FIRST, then course materials
 
-### Instructors
-1. Review materials in the `instructor/` folder
-2. See `instructor/INSTRUCTOR_GUIDE.md` for course management
-3. Canvas integration guides available for LMS setup
+### 👨‍🏫 Instructors
+1. **Review instructor materials**: [`instructor/`](instructor/) folder
+2. **Course management**: [`instructor/INSTRUCTOR_GUIDE.md`](instructor/INSTRUCTOR_GUIDE.md)
+3. **Canvas integration**: Available in instructor resources
+4. **⚠️ Important**: Solutions are in [`instructor/`](instructor/) - keep separate from student access
 
 ## 📖 Course Structure
 
@@ -77,17 +84,25 @@ All approaches are documented in the setup guide.
 
 ```
 cpp/
-├── instructor/              # Teaching resources
-├── csci330_f25/            # Course materials and infrastructure
-│   ├── chapter_XX_*.md     # Student materials
-│   ├── chapter_XX_solutions/# Problem solutions
-│   ├── assignment-templates/
-│   ├── STUDENT_GUIDE.md    # Student handbook
-│   ├── DEVELOPMENT_SETUP.md # Environment setup
+├── README.md               # Course overview (you are here)
+├── .github/                # Pull Request templates
+├── csci330_f25/          # 🎓 STUDENT WORKSPACE
+│   ├── README.md           # Main student entry point
+│   ├── GIT_WORKFLOW.md     # Pull Request submission guide
+│   ├── DEVELOPMENT_SETUP.md# Environment setup
+│   ├── assignments/        # Student submission workspace
+│   ├── assignment-templates/# Assignment starting code
+│   ├── quick-reference/    # Git commands & troubleshooting
+│   ├── chapter_XX_*.md     # Lecture notes, assignments, quick help
 │   └── test_integration.sh # Environment verification
-├── Powerpoints/            # PDF resources
-└── README.md              # This file
+└── instructor/            # 👨‍🏫 INSTRUCTOR ONLY
+    ├── INSTRUCTOR_GUIDE.md # Course management
+    ├── chapter_XX_solutions/# Complete solutions (hidden)
+    ├── chapter_XX_lesson_plan.md# Teaching guides
+    └── [assessment tools]   # Rubrics, Canvas integration
 ```
+
+**🔒 Academic Integrity**: Solutions are separated from student workspace.
 
 ## 🎯 Learning Objectives
 

@@ -157,7 +157,9 @@ graph TD
 ### **Assignment Templates**
 - **Structure**: Professional CMake-based projects
 - **Testing**: Catch2 integration for all assignments
-- **Workflow**: Git/GitHub submission process
+- **Workflow**: Professional Pull Request submissions via Git/GitHub
+
+📖 **Submission Process**: See [GIT_WORKFLOW.md](GIT_WORKFLOW.md) and [assignments/README.md](assignments/README.md)
 
 ---
 

@@ -25,10 +25,12 @@ This consolidated guide covers:
 - Docker installation (recommended)
 - VS Code with C++ support
 - CMake build system
-- GitHub workflow
+- Professional Git workflow with Pull Requests
 - Three development options to choose from
 
 **⏱️ Time**: 30-45 minutes (one-time, including troubleshooting)
+
+📖 **Important**: This course uses **Pull Request submissions** - see [GIT_WORKFLOW.md](GIT_WORKFLOW.md) for complete workflow details after setup.
 
 ### Step 2: Verify Your Environment
 Run the integration test to ensure everything works:
