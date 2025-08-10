@@ -104,14 +104,34 @@ docker-compose up -d cpp-dev
 - All tools are pre-installed in the container
 - Make sure you're working inside the container, not on your host
 
-## Assignment Workflow
+## Assignment Submission via Pull Requests
 
-1. Start with template in `assignment-templates/`
-2. Copy to your working directory
-3. Edit source files in `src/`
-4. Build with CMake
-5. Test your code
-6. Submit via GitHub
+This course uses **professional Git workflow** with Pull Requests for all assignment submissions. This teaches industry-standard practices while providing better code review and feedback.
+
+### Quick Start for Assignments
+
+1. **Fork & Clone** (one time setup - see `GIT_WORKFLOW.md`)
+2. **Start Assignment**: Create feature branch from updated main
+3. **Work**: Copy template to your directory, implement solution
+4. **Submit**: Push branch and create Pull Request with complete template
+5. **Review**: Address instructor feedback, merge when approved
+
+### Essential Commands
+```bash
+# Before each assignment
+git checkout main && git pull upstream main && git push origin main
+git checkout -b week##-assignment-name
+
+# During work  
+git add . && git commit -m "Descriptive message"
+git push origin week##-assignment-name
+
+# Submit via GitHub Pull Request
+```
+
+📖 **Complete Guide**: See [`GIT_WORKFLOW.md`](GIT_WORKFLOW.md) for full instructions  
+🔧 **Command Reference**: See [`quick-reference/git-commands.md`](quick-reference/git-commands.md)  
+📝 **Submission Process**: See [`assignments/README.md`](assignments/README.md)
 
 ## Course Development
 

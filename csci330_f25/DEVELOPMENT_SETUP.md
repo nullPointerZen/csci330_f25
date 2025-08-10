@@ -125,20 +125,49 @@ git config --global user.email "your.email@university.edu"
 
 Now let's get your actual C++ workspace ready!
 
-### 2.1 Download the Course Repository 📚
+### 2.1 Set Up Git Workflow for Assignment Submissions 📚
 
-Clone the course repository to your computer:
+This course uses **Pull Requests** for assignment submissions - the same workflow used by professional development teams!
 
+#### **Step 1: Fork the Course Repository**
+1. Go to the course repository on GitHub: `https://github.com/INSTRUCTOR_USERNAME/cpp`
+2. Click the "Fork" button to create your personal copy
+3. This creates `https://github.com/YOUR_USERNAME/cpp`
+
+#### **Step 2: Clone Your Fork**
 ```bash
 # Navigate to where you want to store your coursework
 cd Desktop  # or wherever you prefer
 
-# Clone the course repository
-git clone https://github.com/DEmcla/csci330_f25.git
-cd csci330_f25
+# Clone YOUR fork (replace YOUR_USERNAME)
+git clone https://github.com/YOUR_USERNAME/cpp.git
+cd cpp
 ```
 
-🎉 **Success!** You now have all the course materials on your computer!
+#### **Step 3: Add Upstream Connection**
+```bash
+# This connects you to the main course repository for updates
+git remote add upstream https://github.com/INSTRUCTOR_USERNAME/cpp.git
+
+# Verify your connections
+git remote -v
+# Should show both 'origin' (your fork) and 'upstream' (course repo)
+```
+
+#### **Step 4: Configure Git Identity for Course**
+```bash
+# Use course-specific identity (important for grading!)
+git config user.name "FirstName LastName - CSCI330"
+git config user.email "your.email@university.edu"
+```
+
+#### **Step 5: Create Your Assignment Directory**
+```bash
+# Replace FirstName and LastName with your actual name
+mkdir -p csci330_f25/assignments/CSCI330_FirstName_LastName
+```
+
+🎉 **Success!** You now have the professional Git workflow set up!
 
 ### 2.2 Build Your Docker Environment 🐳
 
@@ -275,53 +304,88 @@ Git helps you track changes and submit assignments. Here's the basic workflow:
 
 ---
 
-## 📤 Part 4: Assignment Submission Process
+## 📤 Part 4: Assignment Submission via Pull Requests
 
-Let's make sure you know exactly how to submit your work!
+This course uses **Pull Requests** for assignment submissions - the same professional workflow used in industry!
 
-### 4.1 Completing an Assignment ✍️
+### 4.1 Before Each Assignment: Sync with Course Updates 🔄
 
-1. **Create a branch for the assignment** 🌿:
-   ```bash
-   git checkout -b assignment-01
-   ```
-
-2. **Work on your code in the Docker environment** 💻:
-   - Use VSCode with the Dev Container
-   - Build and test frequently
-   - Commit your changes regularly
-   - 💡 **Pro tip**: Commit after each function works!
-
-3. **Final submission** 🚀:
-   ```bash
-   # Make sure all your work is saved
-   git add .
-   git commit -m "Complete assignment 01 - final submission"
-   git push origin assignment-01
-   ```
-
-4. **Submit to Canvas** 📚:
-   - Copy your repository URL from GitHub/GitLab
-   - Submit in this format:
-     ```
-     Repository URL: https://github.com/yourusername/cpp-assignment-01
-     Branch: assignment-01
-     Commit Hash: [copy from Git or GitHub]
-     ```
-
-### 4.2 Getting the Commit Hash 🔑
-
-**Option 1: From command line:**
 ```bash
-git log --oneline -1
+# Always start by getting the latest course materials
+git checkout main
+git pull upstream main
+git push origin main
 ```
 
-**Option 2: From GitHub/GitLab:**
-- Go to your repository online
-- Click on the branch you pushed
-- Copy the commit hash shown
+### 4.2 Assignment Workflow ✍️
 
-✅ **Double-check**: The hash should be a 7-40 character string like `a3f5c9b`
+#### **Step 1: Create Feature Branch** 🌿
+```bash
+# Create branch with descriptive name
+git checkout -b week01-pointers-basics
+```
+
+#### **Step 2: Set Up Assignment Files** 📁
+```bash
+# Copy template to your directory (replace FirstName_LastName)
+cp -r csci330_f25/assignment-templates/HW_01/* csci330_f25/assignments/CSCI330_FirstName_LastName/week01/
+
+# Navigate to your assignment directory
+cd csci330_f25/assignments/CSCI330_FirstName_LastName/week01/
+```
+
+#### **Step 3: Complete Your Work** 💻
+- Use VSCode with the Dev Container
+- Build and test frequently: `mkdir build && cd build && cmake .. && make`
+- Commit regularly with meaningful messages:
+  ```bash
+  git add .
+  git commit -m "Implement pointer arithmetic functions"
+  ```
+
+#### **Step 4: Submit Pull Request** 🚀
+```bash
+# Final push to your fork
+git push origin week01-pointers-basics
+```
+
+Then on GitHub:
+1. Go to your fork on GitHub
+2. Click "Compare & pull request" 
+3. **Fill out the PR template completely** (auto-generated)
+4. Submit the pull request
+
+### 4.3 Pull Request Requirements 📋
+
+Your PR must include:
+- ✅ **Proper title**: "Week X Assignment - FirstName LastName"
+- ✅ **Complete PR template**: All sections filled out
+- ✅ **Working code**: Compiles without errors/warnings
+- ✅ **All tests pass**: Run `make test` to verify
+- ✅ **Code in correct directory**: `assignments/CSCI330_YourName/weekXX/`
+
+### 4.4 Code Review and Grading Process 👨‍🏫
+
+1. **Instructor Reviews**: Line-by-line code feedback
+2. **Address Feedback**: Make requested changes and push to same branch
+3. **Approval**: Once approved, **you merge your own PR**
+4. **Grading**: Final grade recorded in Canvas
+5. **Clean Up**: Delete branch after merging
+
+### 4.5 After Assignment is Graded 🧹
+
+```bash
+# Switch back to main and clean up
+git checkout main
+git pull upstream main
+git push origin main
+
+# Delete old feature branch
+git branch -d week01-pointers-basics
+git push origin --delete week01-pointers-basics
+```
+
+**📖 Full Details**: See [`GIT_WORKFLOW.md`](GIT_WORKFLOW.md) for complete instructions!
 
 ---
 
