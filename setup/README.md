@@ -25,14 +25,15 @@
 ## Quick Commands
 
 ```bash
+# From the course root directory (csci330_f25/)
 # Start development environment
-docker-compose up -d cpp-dev
+docker-compose up -d
 
-# Enter container
-docker-compose exec cpp-dev bash
+# Enter container  
+docker exec -it csci330_f25-cpp-dev bash
 
-# Test your setup
-./test_integration.sh
+# Test your setup (from setup/ directory)
+cd setup && ./test_integration.sh
 
 # Stop container
 docker-compose down
