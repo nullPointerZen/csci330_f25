@@ -12,11 +12,11 @@
 ## Instructions
 - These problems apply concepts from both the textbook and lecture notes
 - Each problem builds on previous concepts  
-- **Time expectation**: 2.25 hours total for all three problem sets
+- **Time expectation**: 1.5 hours total for both problem sets
 - Test all programs thoroughly before submission
 
 **Target Audience**: Students with Python/Java background  
-**Total Time**: 2.25 hours (135 minutes)  
+**Total Time**: 1.5 hours (90 minutes)  
 **Prerequisites**: Chapters 1-11 completed + Chapter 12 lesson  
 
 ## Problem Set Structure

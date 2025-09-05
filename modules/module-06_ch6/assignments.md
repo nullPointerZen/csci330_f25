@@ -9,171 +9,101 @@
 
 **🚫 Don't start these assignments until you've completed the textbook and lecture notes!**
 
-**Total Time: 2.25 hours across all problem sets**
+**Total Time: 1.5 hours across both problem sets**
 
-## Problem Set 1: Function Template Fundamentals (45 minutes)
+## Problem Set 1: Template Fundamentals and Classes (50 minutes)
 
-### Problem 1.1: Basic Function Templates (15 minutes)
-Write a function template called `absolute_value` that returns the absolute value of any numeric type.
+### Problem 1.1: Essential Function Templates (15 minutes)
+Create a comprehensive template utility with multiple functions.
 
 **Requirements:**
-- Template should work with int, double, float
-- Use proper template syntax
-- Test with both positive and negative values
+- `absolute_value` template for any numeric type
+- `safe_divide` template with zero-division handling  
+- `swap` template with both explicit and automatic deduction
 
-**Expected Output:**
-```
-absolute_value(-5) = 5
-absolute_value(-3.14) = 3.14
-absolute_value(42) = 42
-```
-
-**Starter Template:**
+**Complete Template:**
 ```cpp
 #include <iostream>
 using namespace std;
 
-// Your template function here
+// Absolute value template
 template<typename T>
 T absolute_value(T value) {
-    // Implement this
+    // Implement this - handle negative values
+}
+
+// Safe division template
+template<typename T1, typename T2>
+auto safe_divide(T1 numerator, T2 denominator) -> decltype(numerator/denominator) {
+    // Implement this - handle division by zero by returning 0
+}
+
+// Swap template
+template<typename T>
+void swap_values(T& a, T& b) {
+    // Implement this to exchange values
 }
 
 int main() {
+    // Test absolute_value
+    cout << "=== Absolute Value Tests ===" << endl;
     cout << "absolute_value(-5) = " << absolute_value(-5) << endl;
     cout << "absolute_value(-3.14) = " << absolute_value(-3.14) << endl;
     cout << "absolute_value(42) = " << absolute_value(42) << endl;
-    return 0;
-}
-```
-
-### Problem 1.2: Multiple Template Parameters (20 minutes)
-Create a function template `safe_divide` that takes two parameters of potentially different types and returns their quotient. Handle division by zero by returning 0.
-
-**Requirements:**
-- Template should accept two different types
-- Return type should be appropriate for division
-- Handle division by zero case
-- Test with mixed types (int/double, double/int, etc.)
-
-**Expected Output:**
-```
-10 / 2 = 5
-10.5 / 2 = 5.25
-10 / 0 = 0 (division by zero)
-```
-
-**Starter Template:**
-```cpp
-#include <iostream>
-using namespace std;
-
-// Your template function here
-template<typename T1, typename T2>
-auto safe_divide(T1 numerator, T2 denominator) -> decltype(numerator/denominator) {
-    // Implement this
-}
-
-int main() {
+    
+    // Test safe_divide
+    cout << "\n=== Safe Division Tests ===" << endl;
     cout << "10 / 2 = " << safe_divide(10, 2) << endl;
     cout << "10.5 / 2 = " << safe_divide(10.5, 2) << endl;
     cout << "10 / 0 = " << safe_divide(10, 0) << " (division by zero)" << endl;
+    
+    // Test swap
+    cout << "\n=== Swap Tests ===" << endl;
+    int x = 10, y = 20;
+    cout << "Before swap: x=" << x << ", y=" << y << endl;
+    swap_values(x, y);
+    cout << "After swap: x=" << x << ", y=" << y << endl;
+    
     return 0;
 }
 ```
 
-### Problem 1.3: Template Argument Deduction (10 minutes)
-Write a `swap` function template that exchanges the values of two variables. Demonstrate both explicit template arguments and automatic deduction.
+### Problem 1.2: Template Container Class (35 minutes)
+Create a `Pair` template class and extend it to `SimpleArray` for dynamic storage.
 
 **Requirements:**
-- Function should work with any type
-- Modify the original variables (use references)
-- Show both `swap<int>(a, b)` and `swap(a, b)` usage
+- `Pair<T>` class with two values, getters, setters, and swap method
+- `SimpleArray<T>` class with dynamic memory, proper destructor, bounds checking
 
----
-
-## Problem Set 2: Template Classes (60 minutes)
-
-### Problem 2.1: Simple Template Container (35 minutes)
-Create a template class `Pair` that holds two values of the same type. This is similar to Python tuples or Java's paired objects.
-
-**Requirements:**
-- Template class with two private members
-- Constructor to initialize both values
-- Getter methods `first()` and `second()`
-- Setter methods `set_first()` and `set_second()`
-- A `swap()` method that exchanges the two values
-
-**Expected Usage:**
-```cpp
-Pair<int> numbers(10, 20);
-cout << "First: " << numbers.first() << ", Second: " << numbers.second() << endl;
-numbers.swap();
-cout << "After swap - First: " << numbers.first() << ", Second: " << numbers.second() << endl;
-
-Pair<string> words("hello", "world");
-cout << words.first() << " " << words.second() << endl;
-```
-
-**Starter Template:**
+**Complete Template:**
 ```cpp
 #include <iostream>
 #include <string>
 using namespace std;
 
+// Pair template class
 template<typename T>
 class Pair {
 private:
     T first_value;
     T second_value;
 public:
-    // Implement constructor and methods here
+    // Constructor
+    Pair(T first, T second) : first_value(first), second_value(second) {}
+    
+    // Getters
+    T first() const { return first_value; }
+    T second() const { return second_value; }
+    
+    // Setters
+    void set_first(T value) { /* implement */ }
+    void set_second(T value) { /* implement */ }
+    
+    // Swap method
+    void swap() { /* implement - exchange first and second */ }
 };
 
-int main() {
-    Pair<int> numbers(10, 20);
-    cout << "First: " << numbers.first() << ", Second: " << numbers.second() << endl;
-    
-    numbers.swap();
-    cout << "After swap - First: " << numbers.first() << ", Second: " << numbers.second() << endl;
-    
-    Pair<string> words("hello", "world");
-    cout << words.first() << " " << words.second() << endl;
-    
-    return 0;
-}
-```
-
-### Problem 2.2: Template Container with Dynamic Storage (25 minutes)
-Extend the concept to create a `SimpleArray` template that manages dynamic memory for an array of any type.
-
-**Requirements:**
-- Constructor takes size parameter
-- Proper destructor to avoid memory leaks
-- `get(index)` and `set(index, value)` methods
-- `size()` method
-- Basic bounds checking (print error for invalid index)
-
-**Expected Behavior:**
-```cpp
-SimpleArray<int> numbers(5);
-numbers.set(0, 100);
-numbers.set(1, 200);
-cout << "numbers[0] = " << numbers.get(0) << endl;
-cout << "Size: " << numbers.size() << endl;
-
-SimpleArray<string> words(3);
-words.set(0, "apple");
-words.set(1, "banana");
-cout << "words[0] = " << words.get(0) << endl;
-```
-
-**Starter Template:**
-```cpp
-#include <iostream>
-#include <string>
-using namespace std;
-
+// SimpleArray template class
 template<typename T>
 class SimpleArray {
 private:
@@ -188,20 +118,51 @@ public:
         delete[] data;
     }
     
-    // Implement the rest of the methods
+    // Disable copying to prevent double-delete
+    SimpleArray(const SimpleArray&) = delete;
+    SimpleArray& operator=(const SimpleArray&) = delete;
+    
+    // Methods to implement
+    T get(size_t index) const {
+        // Add bounds checking - print error for invalid index
+        // Return data[index] if valid
+    }
+    
+    void set(size_t index, const T& value) {
+        // Add bounds checking - print error for invalid index
+        // Set data[index] = value if valid
+    }
+    
+    size_t size() const { return array_size; }
 };
 
 int main() {
-    SimpleArray<int> numbers(5);
-    numbers.set(0, 100);
-    numbers.set(1, 200);
-    cout << "numbers[0] = " << numbers.get(0) << endl;
-    cout << "Size: " << numbers.size() << endl;
+    // Test Pair class
+    cout << "=== Pair Class Tests ===" << endl;
+    Pair<int> numbers(10, 20);
+    cout << "First: " << numbers.first() << ", Second: " << numbers.second() << endl;
     
-    SimpleArray<string> words(3);
-    words.set(0, "apple");
-    words.set(1, "banana");
-    cout << "words[0] = " << words.get(0) << endl;
+    numbers.swap();
+    cout << "After swap - First: " << numbers.first() << ", Second: " << numbers.second() << endl;
+    
+    Pair<string> words("hello", "world");
+    cout << words.first() << " " << words.second() << endl;
+    
+    // Test SimpleArray class
+    cout << "\n=== SimpleArray Class Tests ===" << endl;
+    SimpleArray<int> numbers_array(5);
+    numbers_array.set(0, 100);
+    numbers_array.set(1, 200);
+    cout << "numbers[0] = " << numbers_array.get(0) << endl;
+    cout << "Size: " << numbers_array.size() << endl;
+    
+    // Test bounds checking
+    numbers_array.get(10);  // Should show error
+    
+    SimpleArray<string> words_array(3);
+    words_array.set(0, "apple");
+    words_array.set(1, "banana");
+    cout << "words[0] = " << words_array.get(0) << endl;
     
     return 0;
 }
@@ -209,26 +170,16 @@ int main() {
 
 ---
 
-## Problem Set 3: Applied Templates and Debugging (40 minutes)
-
-### Problem 3.1: Template Specialization Introduction (20 minutes)
-Create a `Printer` template that has different behavior for different types. This introduces the concept of template specialization.
+### Problem 2.1: Template Specialization and Debugging (25 minutes)
+Create a `Printer` template with specializations and fix template errors.
 
 **Requirements:**
 - General template prints: "Value: [value]"
-- Specialization for `bool` prints: "Boolean: true/false"  
-- Specialization for `string` prints: "Text: [value]"
-- Test with int, bool, string, and double
+- Specializations for `bool` and `string` types
+- Fix provided buggy template code
+- Understand and explain template error messages
 
-**Expected Output:**
-```
-Value: 42
-Boolean: true
-Text: hello world
-Value: 3.14
-```
-
-**Starter Template:**
+**Complete Template:**
 ```cpp
 #include <iostream>
 #include <string>
@@ -243,26 +194,25 @@ public:
     }
 };
 
-// TODO: Add specializations for bool and string
-// Hint: template<> class Printer<bool> { ... };
+// TODO: Add specialization for bool
+template<>
+class Printer<bool> {
+public:
+    static void print(const bool& value) {
+        cout << "Boolean: " << (value ? "true" : "false") << endl;
+    }
+};
 
-int main() {
-    Printer<int>::print(42);
-    Printer<bool>::print(true);
-    Printer<string>::print("hello world");
-    Printer<double>::print(3.14);
-    return 0;
-}
-```
+// TODO: Add specialization for string
+template<>
+class Printer<string> {
+public:
+    static void print(const string& value) {
+        // Implement: print "Text: [value]"
+    }
+};
 
-### Problem 3.2: Debugging Template Errors (20 minutes)
-Fix the provided buggy template code. This teaches students to read template error messages.
-
-**Provided Buggy Code:**
-```cpp
-#include <iostream>
-using namespace std;
-
+// DEBUGGING EXERCISE: Fix the Calculator template
 template<typename T>
 class Calculator {
 private:
@@ -278,58 +228,98 @@ public:
         cout << "Result: " << value << endl;
     }
     
-    // Bug 1: Missing template syntax in method definition outside class
+    // TODO: Fix this declaration for outside definition
     T getValue();
 };
 
-T Calculator::getValue() {  // This line has errors
+// TODO: Fix this template method definition
+// HINT: Need proper template syntax
+template<typename T>
+T Calculator<T>::getValue() {
     return value;
 }
 
-// Bug 2: Trying to use undefined operation
-template<typename T>
-void processValue(T val) {
-    val.doSomething();  // Not all types have this method
-}
-
 int main() {
+    // Test Printer specializations
+    cout << "=== Printer Tests ===" << endl;
+    Printer<int>::print(42);
+    Printer<bool>::print(true);
+    Printer<string>::print("hello world");
+    Printer<double>::print(3.14);
+    
+    // Test fixed Calculator
+    cout << "\n=== Calculator Tests ===" << endl;
     Calculator<int> calc(10);
     calc.add(5);
     calc.print();
     cout << "Final value: " << calc.getValue() << endl;
     
-    // Bug 3: This will cause compilation error
-    processValue(42);  // int doesn't have doSomething()
-    
     return 0;
 }
 ```
 
-**Student Task:**
-1. Identify and fix the template syntax error in `getValue()` definition
-2. Comment out or fix the `processValue` function call that causes errors
-3. Explain what each error means in comments
+### Problem 2.2: Template Error Analysis (15 minutes)
+Analyze and document common template errors.
 
-**Debugging Hints Provided:**
-- Template methods defined outside the class need full template syntax
-- Template functions can only use operations that work for all possible types
-- Read compiler errors carefully - they often point to the exact problem line
+**Task:** Study the following problematic code and explain each error in comments:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+// Error Example 1: Incorrect template syntax
+template<typename T>
+void problematic_function1() {
+    T value;
+    value.nonexistent_method();  // What's wrong here?
+}
+
+// Error Example 2: Template instantiation issues  
+template<typename T>
+class ProblematicClass {
+public:
+    void process(T data) {
+        // Assume T has operator+, but what if it doesn't?
+        T result = data + data;
+        cout << result << endl;
+    }
+};
+
+int main() {
+    // TODO: Comment out problematic lines and explain why they fail
+    // problematic_function1<int>();  // Why does this fail?
+    
+    ProblematicClass<int> works;
+    works.process(5);  // This works
+    
+    // ProblematicClass<string> might_fail;
+    // might_fail.process("hello");  // Does this work? Why or why not?
+    
+    cout << "Template error analysis complete." << endl;
+    return 0;
+}
+```
+
+**Requirements:**
+- Add detailed comments explaining each potential error
+- Test which lines work and which don't
+- Explain the difference between compilation errors and logical errors
+- Suggest how to make the templates more robust
 
 ---
 
 ## Time Distribution Summary
-- **Problem Set 1** (45 min): Basic function templates and syntax
-- **Problem Set 2** (60 min): Template classes with practical applications  
-- **Problem Set 3** (40 min): Advanced concepts and debugging skills
-- **Total: 2.25 hours** (2 hours 15 minutes)
+- **Problem Set 1** (50 min): Template fundamentals and container classes
+- **Problem Set 2** (40 min): Specialization and debugging skills
+- **Total: 1.5 hours**
 
 ## Learning Progression
-1. **Set 1**: Students learn basic template syntax and understand type deduction
-2. **Set 2**: Students apply templates to create useful generic classes
-3. **Set 3**: Students learn to debug template code and understand specialization
+1. **Set 1**: Students master template syntax and create useful generic classes
+2. **Set 2**: Students learn specialization and develop debugging skills for template errors
 
-## Instructor Notes
-- Emphasize that templates are compile-time features (unlike virtual functions)
-- Show how template errors can be verbose but are usually specific
-- Connect back to Python's duck typing and Java's generics frequently
-- Stress the performance benefits of templates over runtime polymorphism
+## Success Criteria
+Students successfully complete when they can:
+- Write function and class templates with proper syntax
+- Handle template specialization for different types
+- Debug common template compilation errors
+- Understand when and how to use templates effectively

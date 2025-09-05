@@ -12,122 +12,105 @@
 ## Instructions
 - These problems apply concepts from both the textbook and lecture notes
 - Each problem builds on previous concepts  
-- **Time expectation**: 2.25 hours total for all three problem sets
+- **Time expectation**: 1.5 hours total for both problem sets
 - Test all programs thoroughly before submission
 
 ---
 
-## Problem Set 1: Getting Started (30 minutes)
+## Problem Set 1: Fundamentals and Basic Programming (45 minutes)
 
-### Problem 1.1: Your First Program
-**Objective**: Practice basic C++ program structure
+### Problem 1.1: Your First Program (10 minutes)
+**Objective**: Practice basic C++ program structure and compilation
 
-Write a program that:
-1. Prints your name
-2. Prints your favorite programming language  
-3. Prints one reason you're learning C++
+Write a program that prints your name, favorite programming language, and one reason you're learning C++.
 
-**Template to get you started**:
+**Complete Template**:
 ```cpp
 #include <cstdio>
 
 int main() {
-    // Your code here
+    // Print your information here
+    printf("Name: [Your Name]\n");
+    printf("Favorite Language: [Your Language]\n");
+    printf("Learning C++ because: [Your Reason]\n");
     return 0;
 }
 ```
 
-**Python/Java Note**: Unlike `python script.py` or `java ClassName`, C++ requires explicit compilation first.
+**Compilation Practice**:
+1. Save as `hello.cpp`
+2. Compile: `g++ -o hello hello.cpp`
+3. Run: `./hello` (Linux/macOS) or `hello.exe` (Windows)
+4. Document the compile-run cycle in comments
 
-### Problem 1.2: Fix the Errors  
-**Objective**: Understand common compilation errors
+### Problem 1.2: Temperature Converter with Functions (20 minutes)
+**Objective**: Work with variables, arithmetic, and functions
 
-Fix the 3 errors in this program:
-```cpp
-#include <cstdio>
-
-int main(){
-    int age = 25;
-    char name[] = "Alex";
-    printf("Hello, I am %s and I am %d years old\n", name, age);
-    return 0;
-}
-```
-
-**Hint**: This program is actually correct! Try to compile it. If it works, explain why these concepts might be confusing to Python/Java programmers.
-
-### Problem 1.3: Compilation Practice
-**Objective**: Get comfortable with the compile-run cycle
-
-1. Save your Problem 1.1 solution as `hello.cpp`
-2. Compile it using your chosen workflow:
-   - **Docker/CLI**: `g++ -o hello hello.cpp`
-   - **VS Code**: Press Ctrl+Shift+B (Cmd+Shift+B on macOS)
-   - **Command line**: `g++ -o hello hello.cpp`
-3. Run it:
-   - **Linux/macOS**: `./hello`
-   - **Windows**: `hello.exe`
-4. Document what happens at each step
-
----
-
-## Problem Set 2: Basic Programming (45 minutes)
-
-### Problem 2.1: Temperature Converter
-**Objective**: Work with variables and arithmetic
-
-Create a program that converts 25°C to Fahrenheit using the formula: F = (C × 9/5) + 32
-
-Requirements:
-- Use `int` variables for the calculation
-- Print both the Celsius and Fahrenheit values
-- Use meaningful variable names
-
-**Extension**: Try the same calculation with `double` variables. What's different?
-
-### Problem 2.2: Simple Function
-**Objective**: Write and call your first function
-
-Write a function called `square` that takes an integer and returns its square.
+Create a program with a function that converts Celsius to Fahrenheit using: F = (C × 9/5) + 32
 
 **Template**:
 ```cpp
 #include <cstdio>
 
-int square(int x) {
-    // Your code here
+// Function to convert Celsius to Fahrenheit
+int celsius_to_fahrenheit(int celsius) {
+    // Your conversion code here
 }
 
 int main() {
-    int num = 5;
-    int result = square(num);
-    printf("%d squared is %d\n", num, result);
+    int temp_celsius = 25;
+    int temp_fahrenheit = celsius_to_fahrenheit(temp_celsius);
+    
+    printf("%d°C = %d°F\n", temp_celsius, temp_fahrenheit);
+    
+    // Test with multiple values
+    printf("%d°C = %d°F\n", 0, celsius_to_fahrenheit(0));
+    printf("%d°C = %d°F\n", 100, celsius_to_fahrenheit(100));
+    
     return 0;
 }
 ```
 
-### Problem 2.3: Basic Decisions
-**Objective**: Use if-else statements
+**Extension**: Create a second function using `double` variables. Compare the results and explain the difference in comments.
 
-Write a program that:
-1. Declares an integer variable with any value you choose
-2. Uses if-else to print whether the number is positive, negative, or zero
+### Problem 1.3: Number Analysis with Decisions (15 minutes)
+**Objective**: Use if-else statements and understand program flow
 
-**Test cases**: Try with values like 10, -5, and 0.
+Write a program that analyzes multiple numbers and categorizes them.
+
+**Template**:
+```cpp
+#include <cstdio>
+
+void analyze_number(int num) {
+    printf("Analyzing %d: ", num);
+    
+    // Your if-else logic here
+    // Determine if positive, negative, or zero
+    // Also determine if even or odd (for non-zero numbers)
+}
+
+int main() {
+    // Test with various numbers
+    analyze_number(10);
+    analyze_number(-5);
+    analyze_number(0);
+    analyze_number(7);
+    
+    return 0;
+}
+```
 
 ---
 
-## Problem Set 3: Mini Calculator Project (60 minutes)
+## Problem Set 2: Integrated Calculator Project (45 minutes)
 
-### Problem 3.1: Calculator Functions
-**Objective**: Combine everything you've learned
+### Problem 2.1: Calculator Functions with Error Handling (30 minutes)
+**Objective**: Combine everything you've learned into a complete calculator
 
-Build a simple calculator with these functions:
-- `int add(int a, int b)`
-- `int subtract(int a, int b)`  
-- `int multiply(int a, int b)`
+Build a calculator with basic operations and error checking:
 
-**Starter template**:
+**Complete Template**:
 ```cpp
 #include <cstdio>
 
@@ -143,23 +126,6 @@ int multiply(int a, int b) {
     // Your code here
 }
 
-int main() {
-    int x = 10;
-    int y = 3;
-    
-    printf("%d + %d = %d\n", x, y, add(x, y));
-    printf("%d - %d = %d\n", x, y, subtract(x, y));
-    printf("%d * %d = %d\n", x, y, multiply(x, y));
-    
-    return 0;
-}
-```
-
-### Problem 3.2: Add Error Checking
-**Objective**: Handle edge cases
-
-Add a division function with a twist:
-```cpp
 void divide(int a, int b) {
     if (b == 0) {
         printf("Error: Cannot divide by zero!\n");
@@ -167,21 +133,61 @@ void divide(int a, int b) {
         printf("%d / %d = %d\n", a, b, a / b);
     }
 }
+
+int main() {
+    // Test all operations
+    int x = 15, y = 3;
+    
+    printf("Calculator Testing:\n");
+    printf("%d + %d = %d\n", x, y, add(x, y));
+    printf("%d - %d = %d\n", x, y, subtract(x, y));
+    printf("%d * %d = %d\n", x, y, multiply(x, y));
+    divide(x, y);
+    
+    // Test edge cases
+    printf("\nEdge Case Testing:\n");
+    divide(10, 0);  // Should show error
+    printf("%d + %d = %d\n", -5, 8, add(-5, 8));
+    
+    return 0;
+}
 ```
 
-Add this to your calculator and test it with both normal values and zero.
+### Problem 2.2: Interactive Calculator Enhancement (15 minutes)
+**Objective**: Add user interaction and validation
 
-### Problem 3.3: Test Your Calculator
-**Objective**: Verify your work
+Extend your calculator to read two numbers and perform all operations:
 
-Test your calculator with these inputs:
-- 15 + 7
-- 20 - 8  
-- 6 * 4
-- 12 / 3
-- 10 / 0 (should show error message)
+**Template**:
+```cpp
+#include <cstdio>
 
-Make sure all outputs are correct!
+// Use your functions from Problem 2.1 here
+int add(int a, int b) { return a + b; }
+int subtract(int a, int b) { /* your code */ }
+int multiply(int a, int b) { /* your code */ }
+void divide(int a, int b) { /* your code with error checking */ }
+
+int main() {
+    int num1, num2;
+    
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
+    
+    printf("\nCalculator Results for %d and %d:\n", num1, num2);
+    
+    // Perform all operations
+    printf("Addition: %d + %d = %d\n", num1, num2, add(num1, num2));
+    printf("Subtraction: %d - %d = %d\n", num1, num2, subtract(num1, num2));
+    printf("Multiplication: %d * %d = %d\n", num1, num2, multiply(num1, num2));
+    printf("Division: ");
+    divide(num1, num2);
+    
+    return 0;
+}
+```
+
+**Test Cases**: Try with inputs like (15, 3), (10, 0), and (-5, 2)
 
 ---
 
@@ -263,7 +269,7 @@ https://github.com/YourUsername/csci330_f25/tree/main/assignments/CSCI330_FirstN
 - [ ] Canvas submission includes correct GitHub directory link
 
 ### Time Expectation
-**Total: 2.25 hours** for all problem sets. If taking significantly longer, ask for help during office hours!
+**Total: 1.5 hours** for both problem sets. If taking significantly longer, ask for help during office hours!
 
 ### Need Help?
 - 📋 **Assignment template**: `modules/module-01_ch1/assignment-template/`

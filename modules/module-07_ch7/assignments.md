@@ -12,10 +12,10 @@
 ## Instructions
 - These problems apply concepts from both the textbook and lecture notes
 - Each problem builds on previous concepts  
-- **Time expectation**: 2.25 hours total for all three problem sets
+- **Time expectation**: 1.5 hours total for both problem sets
 - Test all programs thoroughly before submission
 
-**Total Time Budget**: 2.25 hours across 3 problem sets  
+**Total Time Budget**: 1.5 hours across 2 problem sets  
 **Target**: Students with Python/Java background learning C++ expressions and operator overloading
 
 ---

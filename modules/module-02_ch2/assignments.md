@@ -19,7 +19,7 @@
 ## Problem Set Structure
 
 - **Problem Set 1**: Type System and Fundamental Types (45 minutes)
-- **Problem Set 2**: Memory Management and Pointers (60 minutes) 
+- **Problem Set 2**: Memory Management and Pointers (60 minutes)
 - **Problem Set 3**: Advanced Memory Concepts (30 minutes)
 
 **Total Core Time**: 3 hours (vs previous 3.25 hours across 8 fragments)
@@ -27,14 +27,17 @@
 ---
 
 ## 🎯 Core Assignment 1: Type System Exploration (90 minutes)
+
 *Comprehensive project combining fundamental types, conversions, and practical applications*
 
 ### Part A: Type Discovery and Analysis (30 minutes)
+
 **Objective**: Build a comprehensive understanding of C++ type system through systematic exploration
 
 Create a program called `type_explorer.cpp` that:
 
 **Basic Type Analysis:**
+
 1. Declare and initialize variables of each fundamental type: `int`, `double`, `char`, `bool`, `long`, `float`
 2. Use `sizeof` to show the size in bytes of each type
 3. Display the range limits using `<climits>` and `<cfloat>` (e.g., `INT_MAX`, `DBL_MAX`)
@@ -47,6 +50,7 @@ Create a program called `type_explorer.cpp` that:
 8. Compare conversion results with and without explicit casting
 
 **Expected Output** (partial example):
+
 ```
 === C++ Type System Analysis ===
 Fundamental Types:
@@ -66,31 +70,37 @@ Explicit vs Implicit:
 ```
 
 ### Part B: Practical Application - Multi-Unit Converter (30 minutes)
+
 **Objective**: Apply type knowledge in a comprehensive conversion utility
 
 Extend your program to include a multi-unit converter that handles:
 
 **Temperature Conversions:**
+
 - Celsius ↔ Fahrenheit ↔ Kelvin
 - Handle integer inputs but provide precise double outputs
 - Show the impact of integer vs floating-point arithmetic
 
 **Distance Conversions:**  
+
 - Miles ↔ Kilometers ↔ Meters
 - Feet ↔ Meters ↔ Inches
 
 **Requirements:**
+
 1. Use appropriate types for each unit (int for counts, double for precise measurements)
 2. Demonstrate the difference between integer and floating-point division
 3. Format output with appropriate precision
 4. Handle common conversion scenarios with test cases
 
 ### Part C: Memory Behavior and Scope Analysis (30 minutes)
+
 **Objective**: Explore memory behavior, initialization, and scope rules
 
 Create a comprehensive analysis program that demonstrates:
 
 **Initialization Behavior:**
+
 1. Uninitialized local variables (show unpredictable values)
 2. Global variable auto-initialization (show zero-initialization)
 3. Const variable initialization requirements
@@ -117,14 +127,17 @@ Create a comprehensive analysis program that demonstrates:
 ---
 
 ## 🎯 Core Assignment 2: Memory and Data Structures (90 minutes)
+
 *Comprehensive project integrating arrays, pointers, and structs for real-world data management*
 
 ### Part A: Student Grade Management System (45 minutes)
+
 **Objective**: Build a comprehensive grade management system using arrays, pointers, and structs
 
 Create a program called `student_manager.cpp` that manages multiple students and their grades:
 
 **Data Structures:**
+
 1. Create a `Student` struct with: name (char array), student_id (int), grades array, grade_count
 2. Create an array to store multiple students (at least 3 students)
 3. Use both stack arrays and demonstrate pointer arithmetic
@@ -142,6 +155,7 @@ Create a program called `student_manager.cpp` that manages multiple students and
 11. Use assert() statements for debugging array bounds
 
 **Expected Output** (partial):
+
 ```
 === Student Grade Management System ===
 Student: Alice Johnson (ID: 1001)
@@ -163,11 +177,13 @@ Class Statistics:
 ```
 
 ### Part B: Advanced Memory Operations and Pointers (45 minutes)
+
 **Objective**: Master pointer arithmetic, memory layout, and dynamic operations
 
 Extend your student management program with advanced memory operations:
 
 **Pointer Operations:**
+
 1. Rewrite array processing functions using pointer arithmetic instead of indices
 2. Create functions that take pointer parameters: `calculate_average(int* grades, size_t count)`
 3. Demonstrate pointer vs array notation equivalence
@@ -195,13 +211,16 @@ Extend your student management program with advanced memory operations:
 
 ---
 
-## 🏆 Challenge Exercises (OPTIONAL - for advanced students)
+## 🏆 Challenge Exercises (OPTIONAL)
+
 *These problems provide additional practice but are not required for core competency*
 
 ### Challenge 1: Multi-dimensional Arrays (25 minutes)
+
 **Objective**: Master 2D arrays and matrix operations
 
 Create an advanced gradebook with matrix-style operations:
+
 1. Create a flexible gradebook supporting variable numbers of students and assignments
 2. Implement matrix-style operations (row sums, column sums, transpose)
 3. Add grade curve calculations (add points to all grades, percentage scaling)
@@ -209,9 +228,11 @@ Create an advanced gradebook with matrix-style operations:
 5. Implement simple statistical analysis (standard deviation, grade distribution)
 
 ### Challenge 2: Dynamic Inventory System (30 minutes)
+
 **Objective**: Advanced struct design with complex data relationships
 
 Build an inventory management system:
+
 1. Create nested struct hierarchy (Product -> Category -> Inventory)
 2. Implement search and filtering capabilities
 3. Add data validation and error handling
@@ -219,9 +240,11 @@ Build an inventory management system:
 5. Demonstrate complex pointer relationships
 
 ### Challenge 3: Memory Debugging Workshop (20 minutes)
+
 **Objective**: Master debugging techniques for memory-related issues
 
 Create programs that demonstrate common memory bugs:
+
 1. Buffer overflow demonstrations (controlled)
 2. Uninitialized variable detection
 3. Array bounds violation analysis
@@ -229,9 +252,11 @@ Create programs that demonstrate common memory bugs:
 5. Debugging with sanitizers and static analysis tools
 
 ### Challenge 4: Performance Optimization (25 minutes)
+
 **Objective**: Understand performance implications of different approaches
 
 Compare performance of different implementations:
+
 1. Array access patterns (sequential vs random)
 2. Pointer arithmetic vs array indexing
 3. Struct layout optimization (memory alignment)
@@ -239,9 +264,11 @@ Compare performance of different implementations:
 5. Compiler optimization analysis
 
 ### Challenge 5: Cross-Platform Type Behavior (20 minutes)
+
 **Objective**: Understand platform-dependent behavior
 
 Explore how types behave across different systems:
+
 1. Size differences on different architectures
 2. Endianness investigation
 3. Signed vs unsigned behavior differences
@@ -249,9 +276,11 @@ Explore how types behave across different systems:
 5. Compiler-specific behavior analysis
 
 ### Challenge 6: Advanced Type Safety (30 minutes)
+
 **Objective**: Build type-safe programming patterns
 
 Implement advanced safety mechanisms:
+
 1. Strong typing with custom types
 2. Compile-time size checking for arrays
 3. Safe casting mechanisms
@@ -272,10 +301,12 @@ Each assignment will be evaluated using the following rubric:
 | **Problem-Solving & Verification** | Clear evidence of systematic approach. Handles edge cases and error conditions. Shows thorough verification of results with multiple test scenarios. | Good problem-solving approach with reasonable error handling. Shows evidence of testing and verification of functionality. | Basic problem-solving evident but limited error handling. Some testing done but not comprehensive. Shows developing verification skills. | Little evidence of systematic approach. Minimal error handling or testing. No clear verification strategy demonstrated. |
 
 ### Challenge Exercises (Optional Bonus)
+
 - **Bonus Points**: Up to +4 points (25% bonus) for exceptional work on challenge exercises
 - **Quality Standards**: Challenge work must meet the same rubric standards as core assignments
 
 ### Professional Skills (Bonus Points)
+
 - **Code Organization**: Clean, readable, well-structured code
 - **Documentation**: Clear comments explaining complex concepts
 - **Git Usage**: Regular commits with meaningful messages
@@ -288,24 +319,28 @@ Each assignment will be evaluated using the following rubric:
 Before moving to Chapter 3, you should be able to:
 
 **Type System Mastery:**
+
 - [ ] Explain the difference between all fundamental C++ types
 - [ ] Predict the results of implicit and explicit type conversions
 - [ ] Use appropriate types for different programming scenarios
 - [ ] Debug type-related compilation errors
 
 **Memory and Data Structure Competency:**
+
 - [ ] Create and manipulate arrays safely with bounds checking
 - [ ] Use pointer arithmetic confidently for array operations
 - [ ] Design and implement struct-based data organization
 - [ ] Understand memory layout and address relationships
 
 **Professional Development Skills:**
+
 - [ ] Write defensive code that handles edge cases
 - [ ] Use debugging tools effectively to understand program behavior
 - [ ] Document code clearly for future maintenance
 - [ ] Follow consistent coding style and organization
 
 **Problem-Solving Approach:**
+
 - [ ] Break complex problems into manageable components
 - [ ] Implement systematic testing and verification
 - [ ] Handle errors gracefully with appropriate feedback
@@ -315,19 +350,22 @@ Before moving to Chapter 3, you should be able to:
 
 ## 💡 Study Tips
 
-### For Core Assignments:
+### For Core Assignments
+
 - **Start Early**: These are comprehensive projects, not quick exercises
 - **Test Incrementally**: Build and test each part before moving to the next
 - **Use the Debugger**: Visual debugging is essential for understanding memory concepts
 - **Ask Questions**: Don't struggle alone - use office hours and study groups
 
-### For Challenge Exercises:
+### For Challenge Exercises
+
 - **Choose Based on Interest**: Pick challenges that align with your career goals
 - **Focus on Learning**: Perfect solutions aren't required - demonstrate understanding
 - **Document Your Process**: Explain what you learned and what was difficult
 - **Share with Peers**: Help others and learn from different approaches
 
-### Time Management:
+### Time Management
+
 - **Week 1**: Complete Core Assignment 1 (Type System Exploration)
 - **Week 2**: Complete Core Assignment 2 (Memory and Data Structures)
 - **Bonus Time**: Work on Challenge Exercises if time permits

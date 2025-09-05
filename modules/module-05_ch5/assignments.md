@@ -12,7 +12,7 @@
 ## Instructions
 - Complete these problems after reading Chapter 5 and working through the lesson
 - Each problem builds on concepts from inheritance and virtual functions
-- **Time expectation**: 2.25 hours total for all three problem sets
+- **Time expectation**: 1.5 hours total for both problem sets
 - Test all programs thoroughly and pay attention to virtual function behavior
 
 ---
