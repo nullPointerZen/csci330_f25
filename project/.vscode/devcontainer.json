@@ -1,0 +1,13 @@
+{
+  "name": "C++ Development",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "cpp-dev",
+  "workspaceFolder": "/workspace",
+  "extensions": [
+    "ms-vscode.cpptools-extension-pack",
+    "ms-vscode.cmake-tools"
+  ],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  }
+}

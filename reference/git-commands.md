@@ -30,9 +30,9 @@ git push origin branch-name # Push to your fork
 ### Fork Setup
 ```bash
 # After forking on GitHub, clone your fork:
-git clone https://github.com/YOUR_USERNAME/csci330_f25.git
-cd csci330_f25
-git remote add upstream https://github.com/DEmcla/csci330_f25.git
+git clone https://github.com/YOUR_USERNAME/cpp.git
+cd cpp
+git remote add upstream https://github.com/INSTRUCTOR_USERNAME/cpp.git
 ```
 
 ### Configure Identity

@@ -328,7 +328,7 @@ git checkout -b week01-pointers-basics
 #### **Step 2: Set Up Assignment Files** 📁
 ```bash
 # Copy template to your directory (replace FirstName_LastName)
-cp -r csci330_f25/modules/module-01_ch1/assignment-template/* csci330_f25/assignments/CSCI330_FirstName_LastName/week01/
+cp -r csci330_f25/assignment-templates/HW_01/* csci330_f25/assignments/CSCI330_FirstName_LastName/week01/
 
 # Navigate to your assignment directory
 cd csci330_f25/assignments/CSCI330_FirstName_LastName/week01/

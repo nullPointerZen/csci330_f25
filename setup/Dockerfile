@@ -44,7 +44,7 @@ RUN echo 'export PS1="\[\033[01;32m\]student@cpp-dev\[\033[00m\]:\[\033[01;34m\]
     echo 'alias l="ls -CF"' >> ~/.bashrc && \
     echo 'alias cls="clear"' >> ~/.bashrc && \
     echo 'echo "Welcome to C++ Course Development Environment!"' >> ~/.bashrc && \
-    echo 'echo "Type '\''ls'\'' to see available files, '\''cd modules/module-01_ch1/assignment-template'\'' to start"' >> ~/.bashrc
+    echo 'echo "Type '\''ls'\'' to see available files, '\''cd assignment-templates/HW_01'\'' to start"' >> ~/.bashrc
 
 # Default command
 CMD ["/bin/bash"]

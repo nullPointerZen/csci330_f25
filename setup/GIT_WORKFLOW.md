@@ -23,29 +23,24 @@ This course uses a **professional Git workflow** with Pull Requests for all assi
 ### 2. Clone Your Fork
 
 ```bash
-# Replace YOUR_USERNAME with your actual GitHub username (e.g., john_smith123)
-git clone https://github.com/YOUR_USERNAME/csci330_f25.git
-cd csci330_f25
-```
-
-**Example**: If your GitHub username is `jane_doe2024`, you would run:
-```bash
-git clone https://github.com/jane_doe2024/csci330_f25.git
+# Replace YOUR_USERNAME with your GitHub username
+git clone https://github.com/YOUR_USERNAME/cpp.git
+cd cpp
 ```
 
 ### 3. Add Upstream Remote
 
 ```bash
 # This allows you to pull updates from the main course repository
-git remote add upstream https://github.com/DEmcla/csci330_f25.git
+git remote add upstream https://github.com/INSTRUCTOR_USERNAME/cpp.git
 
 # Verify your remotes
 git remote -v
 # Should show:
-# origin    https://github.com/YOUR_USERNAME/csci330_f25.git (fetch)
-# origin    https://github.com/YOUR_USERNAME/csci330_f25.git (push)
-# upstream  https://github.com/DEmcla/csci330_f25.git (fetch)
-# upstream  https://github.com/DEmcla/csci330_f25.git (push)
+# origin    https://github.com/YOUR_USERNAME/cpp.git (fetch)
+# origin    https://github.com/YOUR_USERNAME/cpp.git (push)
+# upstream  https://github.com/INSTRUCTOR_USERNAME/cpp.git (fetch)
+# upstream  https://github.com/INSTRUCTOR_USERNAME/cpp.git (push)
 ```
 
 ### 4. Configure Git Identity
@@ -60,11 +55,6 @@ git config user.email "your.email@university.edu"
 ```bash
 # Replace FirstName and LastName with your actual name
 mkdir -p csci330_f25/assignments/CSCI330_FirstName_LastName
-```
-
-**Example**: If your name is Jane Doe, you would run:
-```bash
-mkdir -p csci330_f25/assignments/CSCI330_Jane_Doe
 ```
 
 ## Weekly Assignment Workflow
@@ -102,7 +92,7 @@ git branch
 
 ```bash
 # Copy assignment template to your directory
-cp -r csci330_f25/modules/module-01_ch1/assignment-template/* csci330_f25/assignments/CSCI330_FirstName_LastName/week01/
+cp -r csci330_f25/assignment-templates/HW_01/* csci330_f25/assignments/CSCI330_FirstName_LastName/week01/
 
 # Navigate to your assignment directory
 cd csci330_f25/assignments/CSCI330_FirstName_LastName/week01/

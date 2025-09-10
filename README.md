@@ -14,7 +14,7 @@ Welcome to modern C++ programming! This course teaches professional C++ developm
 - **✅ [Verify Your Setup](setup/test_integration.sh)** - Test that everything works
 
 ### 2. **Understand the Course Structure**
-- **📚 [Course Modules](#-course-modules)** - 14 mandatory modules + 4 optional
+- **📚 [Course Chapters](#-course-chapters)** - 14 mandatory chapters + 4 optional
 - **🎯 [Semester Project](project/)** - Build something substantial and portfolio-worthy
 - **📝 [Assignment Submissions](assignments/)** - Professional Pull Request workflow
 
@@ -25,27 +25,27 @@ Welcome to modern C++ programming! This course teaches professional C++ developm
 
 ---
 
-## 📚 Course Modules
+## 📚 Course Chapters
 
 ### **Core Curriculum (Mandatory)**
-All students complete these 14 modules:
+All students complete these 14 chapters:
 
 | Chapter | Topic | Directory | Focus |
 |---------|-------|-----------|-------|
-| **01** | Up and Running | [modules/module-01_ch1/](modules/module-01_ch1/) | Environment, first programs |
-| **02** | Types and Memory | [modules/module-02_ch2/](modules/module-02_ch2/) | Fundamental types, debugging |
-| **03** | References | [modules/module-03_ch3/](modules/module-03_ch3/) | Pointers and references |
-| **04** | Object Lifecycle | [modules/module-04_ch4/](modules/module-04_ch4/) | Constructors, destructors, RAII |
-| **05** | Runtime Polymorphism | [modules/module-05_ch5/](modules/module-05_ch5/) | Virtual functions, inheritance |
-| **06** | Compile-Time Polymorphism | [modules/module-06_ch6/](modules/module-06_ch6/) | Templates, generic programming |
-| **07** | Expressions | [modules/module-07_ch7/](modules/module-07_ch7/) | Operators, operator overloading |
-| **08** | Statements | [modules/module-08_ch8/](modules/module-08_ch8/) | Control flow, exceptions |
-| **09** | Functions | [modules/module-09_ch9/](modules/module-09_ch9/) | Lambdas, function objects |
-| **11** | Smart Pointers | [modules/module-10_ch11/](modules/module-10_ch11/) | Modern memory management |
-| **12** | Utilities | [modules/module-11_ch12/](modules/module-11_ch12/) | Standard library utilities |
-| **13** | Containers | [modules/module-12_ch13/](modules/module-12_ch13/) | STL containers |
-| **14** | Iterators | [modules/module-13_ch14/](modules/module-13_ch14/) | Iterator patterns |
-| **15** | Strings | [modules/module-14_ch15/](modules/module-14_ch15/) | Text processing |
+| **01** | Up and Running | [chapters/chapter-01/](chapters/chapter-01/) | Environment, first programs |
+| **02** | Types and Memory | [chapters/chapter-02/](chapters/chapter-02/) | Fundamental types, debugging |
+| **03** | References | [chapters/chapter-03/](chapters/chapter-03/) | Pointers and references |
+| **04** | Object Lifecycle | [chapters/chapter-04/](chapters/chapter-04/) | Constructors, destructors, RAII |
+| **05** | Runtime Polymorphism | [chapters/chapter-05/](chapters/chapter-05/) | Virtual functions, inheritance |
+| **06** | Compile-Time Polymorphism | [chapters/chapter-06/](chapters/chapter-06/) | Templates, generic programming |
+| **07** | Expressions | [chapters/chapter-07/](chapters/chapter-07/) | Operators, operator overloading |
+| **08** | Statements | [chapters/chapter-08/](chapters/chapter-08/) | Control flow, exceptions |
+| **09** | Functions | [chapters/chapter-09/](chapters/chapter-09/) | Lambdas, function objects |
+| **11** | Smart Pointers | [chapters/chapter-11/](chapters/chapter-11/) | Modern memory management |
+| **12** | Utilities | [chapters/chapter-12/](chapters/chapter-12/) | Standard library utilities |
+| **13** | Containers | [chapters/chapter-13/](chapters/chapter-13/) | STL containers |
+| **14** | Iterators | [chapters/chapter-14/](chapters/chapter-14/) | Iterator patterns |
+| **15** | Strings | [chapters/chapter-15/](chapters/chapter-15/) | Text processing |
 
 ### **Supplemental Chapters (Optional)**
 Choose based on time and interest:
@@ -56,45 +56,6 @@ Choose based on time and interest:
 | **16** | Streams | [supplemental/chapter-16/](supplemental/chapter-16/) | File I/O operations |
 | **17** | Filesystems | [supplemental/chapter-17/](supplemental/chapter-17/) | File system manipulation |
 | **18** | Algorithms | [supplemental/chapter-18/](supplemental/chapter-18/) | STL algorithms |
-
----
-
-## 🧭 Course Navigation Guide
-
-### **Understanding the Structure**
-
-**Chapter vs Module Numbering:**
-- **Textbook Chapters**: 1-18 (Josh Lospinoso's "C++ Crash Course")  
-- **Course Modules**: Reorganized for optimal learning flow
-- **Example**: Textbook Chapter 11 → Course Module 10 (module-10_ch11)
-
-### **Module Organization**
-Each module directory contains:
-```
-modules/module-XX_chY/          # XX = module number, Y = textbook chapter
-├── README.md                   # Module overview and navigation
-├── lecture-notes.md            # Course-specific explanations  
-├── assignments.md              # Problem sets and projects
-├── quick-help.md              # Troubleshooting and references
-├── assignment-template/        # Starter code and build system
-└── tutorial-*.md              # Bridge tutorials (when available)
-```
-
-### **Navigation Tips**
-- **Start Here**: Always begin with the module's `README.md`
-- **Follow Order**: Complete modules sequentially (1→2→3...)
-- **Use Bridge Tutorials**: When struggling, check for `tutorial-*.md` files
-- **Get Help Fast**: Use `quick-help.md` for common issues
-- **Assignment Templates**: Copy from `assignment-template/` to your workspace
-
-### **Quick Module Access**
-| Module | Focus | Start Here |
-|--------|--------|------------|
-| [01](modules/module-01_ch1/) | Environment Setup | Getting C++ running |
-| [02](modules/module-02_ch2/) | Types & Memory | Understanding C++ fundamentals |
-| [06](modules/module-06_ch6/) | Templates | Generic programming |
-| [10](modules/module-10_ch11/) | Smart Pointers | Modern memory management |
-| [14](modules/module-14_ch15/) | Strings | Text processing |
 
 ---
 
@@ -124,32 +85,17 @@ This course uses **professional Pull Request workflow**:
 
 ---
 
-## 🆘 Need Extra Help? Bridge Tutorials Available!
-
-**Struggling with assignments?** These optional tutorials teach practical skills that assignments assume you know:
-
-| Tutorial | When to Use | Time | What You'll Learn |
-|----------|-------------|------|------------------|
-| **🛠️ [VS Code Mastery](modules/module-01_ch1/tutorial-vscode-mastery.md)** | After Ch 1 | 30-45 min | Debugging, shortcuts, Git workflow |
-| **🧪 [Testing Patterns](modules/module-02_ch2/tutorial-testing-patterns.md)** | After Ch 2 | 45-60 min | Systematic testing, input validation |
-| **🏗️ [Project Organization](modules/module-03_ch3/tutorial-project-organization.md)** | After Ch 3 | 30-45 min | Multi-file projects, professional structure |
-
-**💡 Pro Tip**: Complete these tutorials when you first struggle with assignments - they'll save hours of frustration!
-
----
-
 ## 📖 Chapter Workflow
 
 Every chapter follows the same structure for consistency:
 
 ### For Each Chapter:
 1. **📚 Read textbook chapter FIRST** - Essential foundation
-2. **📋 Review [lecture-notes.md](modules/module-01_ch1/lecture-notes.md)** - Course-specific content  
-3. **🛠️ Consider bridge tutorials** - Optional help with practical skills
-4. **🧩 Complete [assignments.md](modules/module-01_ch1/assignments.md)** - Hands-on practice
-5. **🔧 Use [quick-help.md](modules/module-01_ch1/quick-help.md)** - Troubleshooting and references
-6. **🐛 Follow debugging guides** (where applicable)
-7. **✅ Submit via Pull Request**
+2. **📋 Review [lecture-notes.md](chapters/chapter-01/lecture-notes.md)** - Course-specific content  
+3. **🧩 Complete [assignments.md](chapters/chapter-01/assignments.md)** - Hands-on practice
+4. **🔧 Use [quick-help.md](chapters/chapter-01/quick-help.md)** - Troubleshooting and references
+5. **🐛 Follow debugging guides** (where applicable)
+6. **✅ Submit via Pull Request**
 
 ---
 
@@ -183,7 +129,7 @@ cmake .. && make && ctest
 ### Essential Resources
 - **🔧 [Git Commands](reference/git-commands.md)** - Essential Git workflow commands
 - **🆘 [Troubleshooting](setup/docker_troubleshooting.md)** - Common issues and solutions  
-- **📋 [Assignment Templates](modules/)** - Starting code for projects (see each module's assignment-template folder)
+- **📋 [Assignment Templates](assignment-templates/)** - Starting code for projects
 
 ### Course Materials
 - **📖 Textbook**: "C++ Crash Course" by Josh Lospinoso
@@ -212,7 +158,7 @@ cmake .. && make && ctest
 ## 🆘 Getting Help
 
 ### When You're Stuck
-1. **📋 Check chapter [quick-help.md](modules/module-01_ch1/quick-help.md)**
+1. **📋 Check chapter [quick-help.md](chapters/chapter-01/quick-help.md)**
 2. **🔍 Use VS Code debugger** - Visualize what's happening
 3. **📖 Review [reference materials](reference/)**  
 4. **👥 Ask classmates** or study groups
@@ -232,7 +178,7 @@ cmake .. && make && ctest
 
 ---
 
-**🎯 Ready to start?** Begin with [Chapter 1: Up and Running](modules/module-01_ch1/) after completing your [environment setup](setup/DEVELOPMENT_SETUP.md).
+**🎯 Ready to start?** Begin with [Chapter 1: Up and Running](chapters/chapter-01/) after completing your [environment setup](setup/DEVELOPMENT_SETUP.md).
 
 **Questions?** Check the [reference materials](reference/) or ask in office hours!
 

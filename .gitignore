@@ -19,21 +19,3 @@ Thumbs.db
 
 # Personal notes
 instructor-notes.md
-
-# Instructor-only resources (CRITICAL - NEVER COMMIT)
-instructor/
-/instructor/**
-instructor-resources/
-/instructor-resources/**
-instructor-*/
-
-# Quiz and assessment materials
-**/quiz.md
-**/quiz-*.md
-**/*-quiz.zip
-**/SampleQuiz/
-
-# Canvas imports and tools
-canvas-imports/
-quiz_converter.py
-*-import.zip

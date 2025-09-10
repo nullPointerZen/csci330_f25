@@ -2,12 +2,13 @@
 
 This directory contains student assignment submissions using a professional Git workflow with Pull Requests.
 
-## 📁 Related Directories
+## 🎯 Quick Workflow Summary
 
-- **`/modules/module-XX_chX/assignment-template/`** - Starter code for each assignment (copy from here)
-- **`/assignments/`** - Student submissions (your work goes here)
-- **`/setup/test_integration.sh`** - Test your development environment
-- **See also**: Each module's `assignments.md` for specific requirements
+For each assignment:
+1. **Read**: `chapters/chapter-XX/assignments.md` (requirements)
+2. **Copy**: `assignment-templates/chapter-XX/` (starter code)  
+3. **Work**: In `assignments/CSCI330_YourName/weekXX/` (your solution)
+4. **Submit**: Via GitHub Pull Request
 
 ## Directory Structure
 
@@ -68,29 +69,33 @@ For each assignment, follow these steps:
    ```
 
 3. **Complete Your Work**
-   - Copy assignment template to your directory:
+   
+   **For each assignment:**
+   
+   a. **Read the requirements** in the course materials:
      ```bash
-     # IMPORTANT: Replace FirstName_LastName with your actual name
-     cp -r modules/module-01_ch1/assignment-template/* assignments/CSCI330_FirstName_LastName/week01/
+     # Find your assignment requirements
+     chapters/chapter-02/assignments.md  # (for week 2 example)
      ```
-   - Navigate to your working directory:
+   
+   b. **Copy the starter template** to your directory:
      ```bash
-     cd assignments/CSCI330_FirstName_LastName/week01/
+     # Copy template for the chapter you're working on
+     cp -r assignment-templates/chapter-02/ assignments/CSCI330_FirstName_LastName/week02/
      ```
-   - Implement your solution (complete the TODOs in the source files)
-   - Build and test your code:
-     ```bash
-     mkdir build && cd build
-     cmake .. && make
-     ./tests/test_main  # Run the tests
-     ```
-   - Commit regularly with meaningful messages
+   
+   c. **Implement your solution**:
+     - Edit `src/main.cpp` and other files as needed
+     - Follow the TODOs and requirements from the chapter assignments
+     - Test thoroughly using the provided build system
+   
+   d. **Commit regularly** with meaningful messages
 
 4. **Submit Pull Request**
    ```bash
-   git add assignments/CSCI330_FirstName_LastName/week01/
-   git commit -m "Complete Week 1 assignment: [brief description]"
-   git push origin week01-assignment-name
+   git add assignments/CSCI330_FirstName_LastName/week02/
+   git commit -m "Complete Week 2 assignment: [brief description]"
+   git push origin week02-assignment-name
    ```
    
    Then on GitHub:
