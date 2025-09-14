@@ -358,25 +358,6 @@ Processing time: X.XX ms
 - **Problem Set 3**: 40 minutes (1 × 40 minutes)
 - **Total**: 135 minutes (2.25 hours) ✓
 
-## Assessment Rubric
-
-### Problem Set 1 (Foundation)
-- **Excellent (90-100%)**: All functions work correctly, good use of utility types, clean code
-- **Good (80-89%)**: Most functions work, minor issues with utility usage
-- **Satisfactory (70-79%)**: Basic functionality present, some incorrect utility usage
-- **Needs Improvement (<70%)**: Major functionality missing or incorrect
-
-### Problem Set 2 (Intermediate)
-- **Excellent (90-100%)**: Robust error handling, efficient implementation, good integration of utilities
-- **Good (80-89%)**: Good functionality with minor edge case issues
-- **Satisfactory (70-79%)**: Basic requirements met, limited error handling
-- **Needs Improvement (<70%)**: Missing key functionality or poor utility integration
-
-### Problem Set 3 (Integration)
-- **Excellent (90-100%)**: Complete implementation, excellent error handling, clear output, efficient code
-- **Good (80-89%)**: Most requirements met, good error handling, minor issues
-- **Satisfactory (70-79%)**: Core functionality present, basic error handling
-- **Needs Improvement (<70%)**: Incomplete implementation or major functionality issues
 
 ## Compilation Instructions
 

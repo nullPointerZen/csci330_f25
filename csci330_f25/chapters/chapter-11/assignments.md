@@ -693,26 +693,6 @@ int main() {
 
 ---
 
-## Assessment Rubric
-
-### Problem Set 1 (Basic Usage) - 45 minutes
-- **Excellent (90-100%)**: All problems completed correctly, proper use of `make_unique`, understanding of move semantics, custom deleters implemented correctly
-- **Good (80-89%)**: Most problems completed, minor issues with syntax or edge cases
-- **Satisfactory (70-79%)**: Basic functionality works, some understanding gaps in RAII or move semantics
-- **Needs Improvement (<70%)**: Multiple compilation errors, fundamental misunderstanding of `unique_ptr`
-
-### Problem Set 2 (Shared Ownership) - 45 minutes  
-- **Excellent (90-100%)**: Correct use of `shared_ptr`, proper reference counting understanding, `weak_ptr` used appropriately in cache
-- **Good (80-89%)**: Shared ownership works correctly, minor issues with cache implementation
-- **Satisfactory (70-79%)**: Basic `shared_ptr` usage correct, some confusion about reference counting
-- **Needs Improvement (<70%)**: Incorrect sharing semantics, memory leaks, doesn't understand reference counting
-
-### Problem Set 3 (Advanced Scenarios) - 55 minutes
-- **Excellent (90-100%)**: Circular references fixed correctly, integration project demonstrates all three pointer types working together properly
-- **Good (80-89%)**: Most advanced concepts understood, minor integration issues
-- **Satisfactory (70-79%)**: Circular reference problem solved, integration project mostly functional
-- **Needs Improvement (<70%)**: Cannot identify or fix circular references, significant problems in integration
-
 ## Compilation Instructions
 
 **Choose your workflow:**
@@ -734,15 +714,3 @@ g++ -std=c++17 -Wall -Wextra -g -o smart_ptr_program program.cpp
 
 ---
 
-## Common Student Mistakes to Watch For
-
-1. **Mixing raw pointers and smart pointers** for the same object
-2. **Using `get()` to create new smart pointers** instead of sharing existing ones
-3. **Not understanding when to use each type** (defaulting to `shared_ptr` for everything)
-4. **Creating circular references** without recognizing the problem
-5. **Forgetting to use `make_shared` and `make_unique`**
-6. **Not understanding reference counting** and when objects are destroyed
-7. **Using `shared_ptr` when `unique_ptr` would suffice** (performance impact)
-
-## Solutions Available
-Complete solutions for all problems are provided in the `chapter_11_solutions/` directory with detailed explanations and alternative approaches.

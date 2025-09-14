@@ -10,19 +10,19 @@
 **🚫 Don't start these assignments until you've completed the textbook and lecture notes!**
 
 ## ✨ Streamlined Assignment Structure  
-**New Approach**: 2 comprehensive projects instead of 9 micro-problems
-- **Core Assignment 1**: Banking System with RAII (2 hours) - REQUIRED
-- **Core Assignment 2**: Resource Management Framework (2 hours) - REQUIRED
-- **Challenge Exercises**: 5 advanced problems for deeper exploration - OPTIONAL
+**New Approach**: 3 focused problems for better learning
+- **Problem Set 1**: Constructor Basics (45 minutes) - REQUIRED
+- **Problem Set 2**: RAII and Resource Management (60 minutes) - REQUIRED
+- **Problem Set 3**: Move Semantics Introduction (30 minutes) - REQUIRED
 
-**Total Core Time**: 4 hours (vs previous 2.25 hours across 9 fragments, but with much deeper learning)
+**Total Core Time**: 2.25 hours
 
 ---
 
-## 🎯 Core Assignment 1: Banking System with RAII (2 hours)
-*Comprehensive banking application demonstrating constructors, destructors, and resource management*
+## 🎯 Problem Set 1: Constructor and Destructor Basics (45 minutes)
+*Understanding object lifecycle through practical examples*
 
-### Part A: Account Hierarchy and Lifecycle (60 minutes)
+### Problem 1.1: Simple Bank Account (25 minutes)
 **Objective**: Master constructor/destructor patterns through a complete banking system
 
 Create a program called `banking_system.cpp` that implements:
@@ -47,7 +47,7 @@ Create a program called `banking_system.cpp` that implements:
 5. Demonstrate copy behavior and resource management
 6. Track total accounts created/destroyed (static members)
 
-### Part B: Transaction Management and RAII (60 minutes)  
+### Problem 1.2: Constructor Types (20 minutes)  
 **Objective**: Apply RAII principles for transaction safety and logging
 
 Extend your banking system with automatic resource management:
@@ -217,24 +217,6 @@ Build thread-safe resource management:
 
 ---
 
-## 📊 Assessment Rubric
-
-### Core Assignment 1: Banking System (50% of chapter grade)
-- **RAII Implementation (40%)**: Proper constructor/destructor usage and resource cleanup
-- **Object Design (35%)**: Well-designed class hierarchy with appropriate relationships
-- **Functionality (25%)**: Banking operations work correctly with proper validation
-
-### Core Assignment 2: Resource Management (50% of chapter grade)
-- **Memory Management (45%)**: Safe dynamic allocation and deallocation patterns
-- **Advanced Patterns (35%)**: Sophisticated RAII and dependency management
-- **Integration (20%)**: Successfully combines concepts from both assignments
-
-### Challenge Exercises (Bonus - up to +25%)
-- **Depth**: Deep understanding demonstrated beyond course requirements
-- **Innovation**: Creative approaches to complex problems  
-- **Analysis**: Thoughtful performance and design analysis
-
----
 
 ## 🎯 Success Criteria
 

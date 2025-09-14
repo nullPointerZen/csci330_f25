@@ -271,24 +271,6 @@ if (scores[name] > 0) {  // Bug: What's the issue?
 
 ---
 
-## Assessment Rubric
-
-### Problem Set 1 (15 points total)
-- **Problem 1.1** (5 points): Correct vector usage, proper iteration, mathematical calculations
-- **Problem 1.2** (5 points): Proper function implementation, correct use of algorithms
-- **Problem 1.3** (5 points): Accurate timing, correct performance analysis
-
-### Problem Set 2 (17 points total)
-- **Problem 2.1** (7 points): Correct map usage, proper iteration, finding maximum
-- **Problem 2.2** (5 points): Correct set operations, proper algorithm usage
-- **Problem 2.3** (5 points): Multiple container coordination, complete functionality
-
-### Problem Set 3 (18 points total)
-- **Problem 3.1** (5 points): Accurate performance measurement, correct analysis
-- **Problem 3.2** (8 points): Custom hash function, equality operator, proper testing
-- **Problem 3.3** (5 points): Appropriate container selection, complete system functionality
-
-**Total: 50 points**
 
 ## Compilation Instructions
 

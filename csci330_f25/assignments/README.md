@@ -2,6 +2,14 @@
 
 This directory contains student assignment submissions using a professional Git workflow with Pull Requests.
 
+## 🎯 Quick Workflow Summary
+
+For each assignment:
+1. **Read**: `chapters/chapter-XX/assignments.md` (requirements)
+2. **Copy**: `assignment-templates/chapter-XX/` (starter code)  
+3. **Work**: In `assignments/CSCI330_YourName/weekXX/` (your solution)
+4. **Submit**: Via GitHub Pull Request
+
 ## Directory Structure
 
 Each student creates their own directory following this naming pattern:
@@ -61,19 +69,33 @@ For each assignment, follow these steps:
    ```
 
 3. **Complete Your Work**
-   - Copy assignment template to your directory:
+   
+   **For each assignment:**
+   
+   a. **Read the requirements** in the course materials:
      ```bash
-     cp -r assignment-templates/HW_01/* assignments/CSCI330_FirstName_LastName/week01/
+     # Find your assignment requirements
+     chapters/chapter-02/assignments.md  # (for week 2 example)
      ```
-   - Implement your solution
-   - Test thoroughly
-   - Commit regularly with meaningful messages
+   
+   b. **Copy the starter template** to your directory:
+     ```bash
+     # Copy template for the chapter you're working on
+     cp -r assignment-templates/chapter-02/ assignments/CSCI330_FirstName_LastName/week02/
+     ```
+   
+   c. **Implement your solution**:
+     - Edit `src/main.cpp` and other files as needed
+     - Follow the TODOs and requirements from the chapter assignments
+     - Test thoroughly using the provided build system
+   
+   d. **Commit regularly** with meaningful messages
 
 4. **Submit Pull Request**
    ```bash
-   git add assignments/CSCI330_FirstName_LastName/week01/
-   git commit -m "Complete Week 1 assignment: [brief description]"
-   git push origin week01-assignment-name
+   git add assignments/CSCI330_FirstName_LastName/week02/
+   git commit -m "Complete Week 2 assignment: [brief description]"
+   git push origin week02-assignment-name
    ```
    
    Then on GitHub:

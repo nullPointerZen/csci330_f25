@@ -798,10 +798,12 @@ chapter09_solutions/
 
 ### Evaluation Criteria
 
-1. **Correctness** (40%): Programs compile and work as specified
-2. **Function Usage** (25%): Appropriate use of function pointers, lambdas, functors
-3. **Code Quality** (20%): Clean, readable, well-organized code  
-4. **Best Practices** (15%): Following C++ idioms and avoiding common pitfalls
+**Total: 16 Points (4 points per outcome criteria)**
+
+1. **Correctness** (4 points): Programs compile and work as specified
+2. **Function Usage** (4 points): Appropriate use of function pointers, lambdas, functors
+3. **Code Quality** (4 points): Clean, readable, well-organized code  
+4. **Best Practices** (4 points): Following C++ idioms and avoiding common pitfalls
 
 ### Time Management Tips
 

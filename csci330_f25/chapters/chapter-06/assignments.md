@@ -328,8 +328,3 @@ int main() {
 2. **Set 2**: Students apply templates to create useful generic classes
 3. **Set 3**: Students learn to debug template code and understand specialization
 
-## Instructor Notes
-- Emphasize that templates are compile-time features (unlike virtual functions)
-- Show how template errors can be verbose but are usually specific
-- Connect back to Python's duck typing and Java's generics frequently
-- Stress the performance benefits of templates over runtime polymorphism

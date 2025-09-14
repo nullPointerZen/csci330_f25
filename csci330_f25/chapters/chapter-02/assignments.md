@@ -18,15 +18,15 @@
 
 ## ✨ Streamlined Assignment Structure
 **New Approach**: 2 comprehensive assignments instead of 8 micro-problems
-- **Core Assignment 1**: Type System Exploration (90 minutes) - REQUIRED
-- **Core Assignment 2**: Memory and Data Structures (90 minutes) - REQUIRED  
-- **Challenge Exercises**: 6 additional problems for advanced students - OPTIONAL
+- **Core Assignment 1**: Type System Exploration (60 minutes) - REQUIRED
+- **Core Assignment 2**: Memory and Data Structures (75 minutes) - REQUIRED  
+- **Challenge Exercises**: Additional problems for advanced students - OPTIONAL
 
-**Total Core Time**: 3 hours (vs previous 3.25 hours across 8 fragments)
+**Total Core Time**: 2.25 hours
 
 ---
 
-## 🎯 Core Assignment 1: Type System Exploration (90 minutes)
+## 🎯 Core Assignment 1: Type System Exploration (60 minutes)
 *Comprehensive project combining fundamental types, conversions, and practical applications*
 
 ### Part A: Type Discovery and Analysis (30 minutes)
@@ -116,10 +116,10 @@ Create a comprehensive analysis program that demonstrates:
 
 ---
 
-## 🎯 Core Assignment 2: Memory and Data Structures (90 minutes)
+## 🎯 Core Assignment 2: Memory and Data Structures (75 minutes)
 *Comprehensive project integrating arrays, pointers, and structs for real-world data management*
 
-### Part A: Student Grade Management System (45 minutes)
+### Part A: Student Grade Management System (40 minutes)
 **Objective**: Build a comprehensive grade management system using arrays, pointers, and structs
 
 Create a program called `student_manager.cpp` that manages multiple students and their grades:
@@ -257,31 +257,6 @@ Implement advanced safety mechanisms:
 3. Safe casting mechanisms
 4. Type-safe printf alternatives
 5. Runtime type information (RTTI) exploration
-
----
-
-## 📊 Assessment Rubric
-
-### Core Assignment 1: Type System Exploration (40% of chapter grade)
-- **Understanding (40%)**: Demonstrates clear comprehension of C++ type system
-- **Implementation (35%)**: Correctly implements type analysis and conversion examples
-- **Analysis (25%)**: Provides thoughtful commentary on type behavior and safety
-
-### Core Assignment 2: Memory and Data Structures (40% of chapter grade)  
-- **Functionality (35%)**: Student management system works correctly
-- **Memory Management (40%)**: Proper use of pointers, arrays, and structs
-- **Safety (25%)**: Implements bounds checking and defensive programming
-
-### Challenge Exercises (20% of chapter grade - OPTIONAL BONUS)
-- **Completion**: +5% per completed challenge (up to +20% total)
-- **Quality**: Clean, well-documented, innovative solutions
-- **Learning**: Demonstrates understanding beyond core requirements
-
-### Professional Skills (Bonus Points)
-- **Code Organization**: Clean, readable, well-structured code
-- **Documentation**: Clear comments explaining complex concepts
-- **Git Usage**: Regular commits with meaningful messages
-- **Debugging**: Evidence of systematic debugging approach
 
 ---
 

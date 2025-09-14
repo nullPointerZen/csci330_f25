@@ -569,10 +569,12 @@ int main() {
 
 ### Evaluation Criteria
 
-1. **Correctness** (40%): Programs work as specified
-2. **Exception Safety** (25%): Proper exception handling and RAII
-3. **Code Quality** (20%): Clean, readable, well-organized code
-4. **Best Practices** (15%): Following C++ idioms and conventions
+**Total: 16 Points (4 points per outcome criteria)**
+
+1. **Correctness** (4 points): Programs work as specified
+2. **Exception Safety** (4 points): Proper exception handling and RAII
+3. **Code Quality** (4 points): Clean, readable, well-organized code
+4. **Best Practices** (4 points): Following C++ idioms and conventions
 
 ### Time Management Tips
 

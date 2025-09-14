@@ -22,13 +22,18 @@
 
 ---
 
-## ⏱️ Time Budget
+## ⏱️ Time Budget (Extended Chapter - 6 hours)
 
-- **📚 Textbook Reading**: 1-2 hours
-- **📋 Course Materials**: 2-3 hours  
-- **🧩 Assignments**: 3-4 hours
-- **🔧 Implementation/Debugging**: 1-2 hours
-- **Total**: 6-8 hours
+**This is an extended chapter spanning 2 class periods**
+
+- **📚 Textbook Reading**: 2 hours (comprehensive study)
+- **📝 Lecture Notes & Tutorials**: 2 hours (work through all exercises)
+- **🧩 Assignments & Projects**: 2 hours (complete container implementations)
+- **Total**: 6 hours
+
+### Recommended Schedule:
+- **Class 1**: Textbook + Lecture notes + Tutorial exercises (Problems 1.1-2.3)
+- **Class 2**: Complete tutorials + Full assignment project
 
 ---
 
