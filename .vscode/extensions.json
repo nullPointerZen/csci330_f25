@@ -1,0 +1,29 @@
+{
+    "recommendations": [
+        // Essential C++ Development
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cmake-tools",
+        // Debugging
+        "vadimcn.vscode-lldb",
+        // Remote Development (for Docker)
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode-remote.remote-wsl",
+        // Git Integration
+        "eamodio.gitlens",
+        // Code Quality
+        "ms-vscode.vscode-clangd",
+        "twxs.cmake",
+        // Productivity
+        "formulahendry.code-runner",
+        "ms-vscode.hexeditor",
+        "gruntfuggly.todo-tree",
+        // Themes (optional)
+        "ms-vscode.cpptools-themes",
+        "GitHub.github-vscode-theme"
+    ],
+    "unwantedRecommendations": [
+        // Avoid these extensions that can conflict
+        "ms-vscode.vscode-typescript-tslint-plugin"
+    ]
+}
