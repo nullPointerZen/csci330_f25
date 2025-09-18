@@ -387,3 +387,14 @@ These utilities prepare students for:
 - Error handling strategies
 - Performance measurement and optimization
 - Data processing applications
+
+---
+
+## Evaluation Criteria
+
+**Total: 16 Points (4 points per outcome criteria)**
+
+1. **Correctness** (4 points): Programs compile and work as specified
+2. **Code Quality** (4 points): Clean, readable, well-organized code
+3. **Best Practices** (4 points): Following C++ idioms and conventions
+4. **Documentation** (4 points): Appropriate comments and clear output
