@@ -374,3 +374,14 @@ If you get stuck:
 3. Look at compiler error messages carefully
 4. Test with simple examples first
 5. Use the debugger to step through your code
+
+---
+
+## Evaluation Criteria
+
+**Total: 16 Points (4 points per outcome criteria)**
+
+1. **Correctness** (4 points): Programs compile and work as specified
+2. **Code Quality** (4 points): Clean, readable, well-organized code
+3. **Best Practices** (4 points): Following C++ idioms and conventions
+4. **Documentation** (4 points): Appropriate comments and clear output
