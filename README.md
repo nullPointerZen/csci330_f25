@@ -1,187 +1,173 @@
-# CSCI 330 - Advanced C++ Programming
+# C++ Programming Course - CSCI 330
 
-**🎯 Your Single Starting Point for the Course**
+A comprehensive C++ programming course based on "C++ Crash Course" by Josh Lospinoso.
 
-Welcome to modern C++ programming! This course teaches professional C++ development through hands-on projects, industry-standard tools, and real-world practices.
+## 📚 Course Structure
 
----
+This repository contains complete course materials with **clear separation** between student and instructor resources:
 
-## 🚀 Getting Started (New Students)
+### 🎓 For Students 
+**📁 Main Directory: [`csci330_f25/`](csci330_f25/)**
+- **📋 [README.md](csci330_f25/README.md)** - **START HERE** - Main student entry point
+- **📖 [GIT_WORKFLOW.md](csci330_f25/GIT_WORKFLOW.md)** - Professional Pull Request submissions
+- **⚙️ [DEVELOPMENT_SETUP.md](csci330_f25/DEVELOPMENT_SETUP.md)** - Environment setup guide  
+- **📝 [assignments/](csci330_f25/assignments/)** - Submission guidelines and workspace
+- **🔧 [quick-reference/](csci330_f25/quick-reference/)** - Git commands and troubleshooting
+- **📚 Chapter Materials** - Lecture notes, assignments, quick help (no solutions)
 
-### 1. **First Time Setup** ⚙️
-- **📋 [Complete Environment Setup](setup/DEVELOPMENT_SETUP.md)** - Docker, VS Code, Git (30-45 min)
-- **📖 [Learn Git Workflow](setup/GIT_WORKFLOW.md)** - Professional Pull Request submissions
-- **✅ [Verify Your Setup](setup/test_integration.sh)** - Test that everything works
+### 👨‍🏫 For Instructors
+**📁 Main Directory: [`instructor/`](instructor/)**
+- **🔐 All Solutions** - Complete solution sets (hidden from students)
+- **📋 Lesson Plans** - Teaching guides and timing
+- **🎯 Assessment Tools** - Rubrics, Canvas integration
+- **📊 Course Management** - Progress tracking, competency assessment
 
-### 2. **Understand the Course Structure**
-- **📚 [Course Chapters](#-course-chapters)** - 14 mandatory chapters + 4 optional
-- **🎯 [Semester Project](project/)** - Build something substantial and portfolio-worthy
-- **📝 [Assignment Submissions](assignments/)** - Professional Pull Request workflow
+**🔒 Security Note**: Solutions are separated from student workspace to maintain academic integrity.
 
-### 3. **Start Learning**
-- **📖 Read textbook chapter FIRST** (Josh Lospinoso's "C++ Crash Course")
-- **📋 Work through course materials** in each chapter directory
-- **💻 Submit via Pull Request** when complete
+## 🚀 Quick Start
 
----
+### 🎓 Students
+1. **Fork this repository** on GitHub (for Pull Request submissions)
+2. **Clone your fork**: `git clone https://github.com/YOUR_USERNAME/cpp.git`
+3. **Enter the course directory**: `cd cpp/csci330_f25`
+4. **📋 Read [`README.md`](csci330_f25/README.md)** - Main student entry point
+5. **⚙️ Complete setup**: Follow [`DEVELOPMENT_SETUP.md`](csci330_f25/DEVELOPMENT_SETUP.md)
+6. **📖 Learn Git workflow**: Review [`GIT_WORKFLOW.md`](csci330_f25/GIT_WORKFLOW.md)
+7. **✅ Verify environment**: Run `./test_integration.sh`
+8. **📚 Begin Chapter 1**: Read textbook chapter FIRST, then course materials
 
-## 📚 Course Chapters
+### 👨‍🏫 Instructors
+1. **Review instructor materials**: [`instructor/`](instructor/) folder
+2. **Course management**: [`instructor/INSTRUCTOR_GUIDE.md`](instructor/INSTRUCTOR_GUIDE.md)
+3. **Canvas integration**: Available in instructor resources
+4. **⚠️ Important**: Solutions are in [`instructor/`](instructor/) - keep separate from student access
 
-### **Core Curriculum (Mandatory)**
-All students complete these 14 chapters:
+## 📖 Course Structure
 
-| Chapter | Topic | Directory | Focus |
-|---------|-------|-----------|-------|
-| **01** | Up and Running | [chapters/chapter-01/](chapters/chapter-01/) | Environment, first programs |
-| **02** | Types and Memory | [chapters/chapter-02/](chapters/chapter-02/) | Fundamental types, debugging |
-| **03** | References | [chapters/chapter-03/](chapters/chapter-03/) | Pointers and references |
-| **04** | Object Lifecycle | [chapters/chapter-04/](chapters/chapter-04/) | Constructors, destructors, RAII |
-| **05** | Runtime Polymorphism | [chapters/chapter-05/](chapters/chapter-05/) | Virtual functions, inheritance |
-| **06** | Compile-Time Polymorphism | [chapters/chapter-06/](chapters/chapter-06/) | Templates, generic programming |
-| **07** | Expressions | [chapters/chapter-07/](chapters/chapter-07/) | Operators, operator overloading |
-| **08** | Statements | [chapters/chapter-08/](chapters/chapter-08/) | Control flow, exceptions |
-| **09** | Functions | [chapters/chapter-09/](chapters/chapter-09/) | Lambdas, function objects |
-| **11** | Smart Pointers | [chapters/chapter-11/](chapters/chapter-11/) | Modern memory management |
-| **12** | Utilities | [chapters/chapter-12/](chapters/chapter-12/) | Standard library utilities |
-| **13** | Containers | [chapters/chapter-13/](chapters/chapter-13/) | STL containers |
-| **14** | Iterators | [chapters/chapter-14/](chapters/chapter-14/) | Iterator patterns |
-| **15** | Strings | [chapters/chapter-15/](chapters/chapter-15/) | Text processing |
+### 🎯 Core Chapters (1-9, 11-15) - Mandatory
+1. **Up and Running** - Development environment, first programs
+2. **Types** - Fundamental types, arrays, memory
+3. **Reference Types** - Pointers and references  
+4. **Object Lifecycle** - RAII, constructors, destructors
+5. **Runtime Polymorphism** - Interfaces, virtual functions
+6. **Compile-Time Polymorphism** - Templates
+7. **Expressions** - Operators and expressions
+8. **Statements** - Control flow
+9. **Functions** - Function programming, lambdas
+11. **Smart Pointers** - Modern memory management
+12. **Utilities** - Standard library utilities
+13. **Containers** - STL containers
+14. **Iterators** - Iterator patterns
+15. **Strings** - Modern C++ string handling and text processing
 
-### **Supplemental Chapters (Optional)**
-Choose based on time and interest:
+### 🔧 Supplemental Chapters (`supplemental-chapters/`) - Optional
+10. **Testing** - Unit testing with Catch2
+16. **Streams** - File I/O and formatted output
+17. **Filesystems** - Cross-platform file operations
+18. **Algorithms** - STL algorithms and data processing
 
-| Chapter | Topic | Directory | When to Use |
-|---------|-------|-----------|-------------|
-| **10** | Testing | [supplemental/chapter-10/](supplemental/chapter-10/) | Professional testing practices |
-| **16** | Streams | [supplemental/chapter-16/](supplemental/chapter-16/) | File I/O operations |
-| **17** | Filesystems | [supplemental/chapter-17/](supplemental/chapter-17/) | File system manipulation |
-| **18** | Algorithms | [supplemental/chapter-18/](supplemental/chapter-18/) | STL algorithms |
-
----
-
-## 🎯 Semester Project
-
-Build something substantial and portfolio-worthy over 15 weeks:
-
-- **📋 [Project Overview](project/semester-project.md)** - Goals and requirements
-- **💡 [Brainstorming Guide](project/brainstorming-guide.md)** - Find your perfect project
-- **🏗️ [Project Phases](project/phases/)** - 5-phase development process
-- **👥 [Peer Reviews](project/peer-review-forms.md)** - Collaborative feedback
-
----
-
-## 📝 Assignment Submission
-
-This course uses **professional Pull Request workflow**:
-
-### Quick Submission Process
-1. **Create feature branch**: `git checkout -b week01-assignment-name`
-2. **Complete work** in your assignment directory
-3. **Submit Pull Request** with complete template
-4. **Address feedback** and iterate
-5. **Merge when approved**
-
-**📖 Complete Guide**: [assignments/README.md](assignments/README.md)
-
----
-
-## 📖 Chapter Workflow
-
-Every chapter follows the same structure for consistency:
-
-### For Each Chapter:
-1. **📚 Read textbook chapter FIRST** - Essential foundation
-2. **📋 Review [lecture-notes.md](chapters/chapter-01/lecture-notes.md)** - Course-specific content  
-3. **🧩 Complete [assignments.md](chapters/chapter-01/assignments.md)** - Hands-on practice
-4. **🔧 Use [quick-help.md](chapters/chapter-01/quick-help.md)** - Troubleshooting and references
-5. **🐛 Follow debugging guides** (where applicable)
-6. **✅ Submit via Pull Request**
-
----
+### 📚 Additional Book Chapters - Not Included in Course
+19. **Concurrency and Parallelism** - Multi-threading and parallel programming
+20. **Network Programming with Boost.Asio** - Network communication
+21. **Writing Applications** - Building complete applications
 
 ## 🛠️ Development Environment
 
-### **Docker + VS Code** (Recommended)
-- Consistent environment across all platforms
-- Professional debugging tools
-- Integrated testing framework
+The course supports three development approaches:
+1. **Docker + VS Code** (Recommended) - Consistent environment with IDE features
+2. **Docker CLI** - Pure command-line development
+3. **Local Setup** - Traditional local compiler installation
 
-### **Quick Commands**
-```bash
-# Start environment
-cd setup/
-docker-compose up -d cpp-dev
+All approaches are documented in the setup guide.
 
-# Enter container
-docker-compose exec cpp-dev bash
+## 📂 Repository Structure
 
-# Build and test
-mkdir build && cd build
-cmake .. && make && ctest
+```
+cpp/
+├── README.md               # Course overview (you are here)
+├── .github/                # Pull Request templates
+├── csci330_f25/          # 🎓 STUDENT WORKSPACE
+│   ├── README.md           # Main student entry point
+│   ├── GIT_WORKFLOW.md     # Pull Request submission guide
+│   ├── DEVELOPMENT_SETUP.md# Environment setup
+│   ├── assignments/        # Student submission workspace
+│   ├── assignment-templates/# Assignment starting code
+│   ├── quick-reference/    # Git commands & troubleshooting
+│   ├── chapter_XX_*.md     # Lecture notes, assignments, quick help
+│   └── test_integration.sh # Environment verification
+└── instructor/            # 👨‍🏫 INSTRUCTOR ONLY
+    ├── INSTRUCTOR_GUIDE.md # Course management
+    ├── chapter_XX_solutions/# Complete solutions (hidden)
+    ├── chapter_XX_lesson_plan.md# Teaching guides
+    └── [assessment tools]   # Rubrics, Canvas integration
 ```
 
-**📖 Complete Setup Guide**: [setup/DEVELOPMENT_SETUP.md](setup/DEVELOPMENT_SETUP.md)
+**🔒 Academic Integrity**: Solutions are separated from student workspace.
+
+## 🎯 Learning Objectives
+
+- Master modern C++ (C++17/20)
+- Understand memory management and RAII
+- Apply object-oriented and generic programming
+- Develop debugging and testing skills
+- Use professional development tools (Git, Docker, CMake)
+
+## 📝 Prerequisites
+
+- Basic programming experience (any language)
+- Familiarity with command line
+- Computer with 4GB+ RAM
+
+## 🤖 Course Development Process
+
+This course was developed through an innovative AI-assisted collaborative process using Claude AI (Anthropic). The development methodology combined human pedagogical expertise with AI-powered analysis and organization:
+
+### **Development Phases**
+- **📊 Content Analysis**: AI reviewed existing course materials for redundancy, clarity, and pedagogical effectiveness
+- **👥 Student Experience Design**: Created learner personas to identify gaps and improve accessibility  
+- **🏗️ Structure Optimization**: Streamlined 50+ scattered files into coherent, navigable modules
+- **🔧 Infrastructure Integration**: Coordinated Docker, VS Code, Git, and Canvas LMS components
+- **📚 Documentation Generation**: Created comprehensive student and instructor guides
+- **🔄 Iterative Refinement**: Multiple feedback cycles ensuring educational quality
+
+### **Key Improvements Achieved**
+- **70% reduction in file complexity** while preserving all educational content
+- **Unified development environment** with Docker + VS Code integration
+- **Multiple learning pathways** for different student needs and contexts
+- **Professional-grade tooling** from day one (Git workflow, debugging, testing)
+- **Competency-based assessments** focusing on practical skills
+
+### **Human-AI Collaboration Model**
+- **Human Expertise**: Provided domain knowledge, pedagogical requirements, and quality judgment
+- **AI Assistance**: Handled systematic implementation, pattern recognition, and comprehensive documentation
+- **Iterative Process**: Continuous feedback loops ensured educational goals and professional standards were met
+
+### **AI as Tool Philosophy**
+**AI is a tool, nothing more.** It is through the deliberate use of this tool that we are able to understand its strengths and limitations. In this course development:
+- **AI Strengths**: Pattern recognition, systematic implementation, comprehensive documentation generation
+- **AI Limitations**: No pedagogical judgment, no domain expertise, no understanding of student needs, tendency to over-generate content and create distractions from core objectives
+- **Human Control**: All educational decisions, quality standards, and learning outcomes remained under human direction
+
+This approach demonstrates how thoughtful AI integration can enhance educational resource development while maintaining the human expertise essential for effective teaching.
+
+## 🤝 Contributing
+
+This is a course repository. For corrections or suggestions:
+1. Open an issue describing the improvement
+2. Submit pull requests for fixes
+
+## 📄 License
+
+Educational materials for academic use. Based on "C++ Crash Course" by Josh Lospinoso.
+
+## 🔗 Resources
+
+- [C++ Reference](https://en.cppreference.com/)
+- [Book: C++ Crash Course](https://cppcrash.com/)
+- [Docker Documentation](https://docs.docker.com/)
+- [CMake Documentation](https://cmake.org/documentation/)
 
 ---
 
-## 📚 Quick References
-
-### Essential Resources
-- **🔧 [Git Commands](reference/git-commands.md)** - Essential Git workflow commands
-- **🆘 [Troubleshooting](setup/docker_troubleshooting.md)** - Common issues and solutions  
-- **📋 [Assignment Templates](assignment-templates/)** - Starting code for projects
-
-### Course Materials
-- **📖 Textbook**: "C++ Crash Course" by Josh Lospinoso
-- **💻 Development Environment**: Docker + VS Code + Git
-- **🎯 Assessment**: Pull Request submissions + Semester project
-
----
-
-## 🎓 Learning Approach
-
-### **Reading-First Workflow** (Critical for Success)
-1. **📖 Read textbook chapter** thoroughly first (1-2 hours)
-2. **🎯 Review learning objectives** - Know what you're aiming for
-3. **💻 Work through course materials** actively
-4. **🧩 Complete assignments** with understanding focus
-5. **✅ Submit and iterate** based on feedback
-
-### **Time Management**
-- **Budget 6-8 hours per chapter** (reading + assignments)
-- **Plan 12-15 hours per week** for the full course
-- **Don't rush** - understanding > speed
-- **Ask for help** after 2+ hours stuck on same problem
-
----
-
-## 🆘 Getting Help
-
-### When You're Stuck
-1. **📋 Check chapter [quick-help.md](chapters/chapter-01/quick-help.md)**
-2. **🔍 Use VS Code debugger** - Visualize what's happening
-3. **📖 Review [reference materials](reference/)**  
-4. **👥 Ask classmates** or study groups
-5. **🏢 Office hours** - Don't struggle alone!
-
-### **2-Hour Rule**: If stuck on same problem for 2+ hours, seek help immediately.
-
----
-
-## 🌟 Success Tips
-
-- **🔄 Commit frequently** - Small, meaningful commits
-- **🐛 Debug systematically** - Use the visual debugger
-- **📚 Connect to textbook** - Course reinforces book concepts
-- **💪 Challenge yourself** - Try optional chapters and advanced features
-- **🤝 Collaborate professionally** - Help others, learn from feedback
-
----
-
-**🎯 Ready to start?** Begin with [Chapter 1: Up and Running](chapters/chapter-01/) after completing your [environment setup](setup/DEVELOPMENT_SETUP.md).
-
-**Questions?** Check the [reference materials](reference/) or ask in office hours!
-
----
-
-*Course developed with professional Git workflow, Docker containerization, and industry best practices. Designed for students ready to master systems programming.*
+**Course Version**: Fall 2025
+**Last Updated**: December 2024
