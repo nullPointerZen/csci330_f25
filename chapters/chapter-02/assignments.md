@@ -310,3 +310,14 @@ Before moving to Chapter 3, you should be able to:
 - **Bonus Time**: Work on Challenge Exercises if time permits
 
 Remember: The goal is deep understanding, not speed. Take the time you need to truly master these foundational concepts.
+
+---
+
+## Evaluation Criteria
+
+**Total: 16 Points (4 points per outcome criteria)**
+
+1. **Correctness** (4 points): Programs compile and work as specified
+2. **Code Quality** (4 points): Clean, readable, well-organized code
+3. **Best Practices** (4 points): Following C++ idioms and conventions
+4. **Documentation** (4 points): Appropriate comments and clear output
