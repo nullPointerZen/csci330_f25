@@ -80,3 +80,8 @@ compile_commands.json
 # Local environment files
 .env
 .env.local
+
+# Instructor-only content (SECURITY: Keep solutions private)
+instructor/
+*_solution.cpp
+*_solutions/
