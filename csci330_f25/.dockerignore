@@ -1,8 +1,0 @@
-.git
-.vscode
-build/
-*.o
-*.exe
-*.out
-.DS_Store
-node_modules/
