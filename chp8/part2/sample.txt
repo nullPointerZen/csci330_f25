@@ -1,0 +1,5 @@
+This is a sample file.
+It contains several lines of text.
+Each line has a few words.
+Let's count them using C++.
+RAII ensures the file closes safely.
